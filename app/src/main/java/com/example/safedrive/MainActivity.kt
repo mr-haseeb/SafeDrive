@@ -17,8 +17,8 @@
 package com.example.safedrive
 
 import android.os.Bundle
+import android.view.View
 import androidx.appcompat.app.AppCompatActivity
-
 import com.example.safedrive.fragments.dashborad.Dashborad
 import com.example.safedrive.fragments.Profile.Profile
 import com.example.safedrive.fragments.collect_data.CollectData
@@ -36,6 +36,7 @@ class MainActivity : AppCompatActivity() {
   override fun onCreate(savedInstanceState: Bundle?) {
     super.onCreate(savedInstanceState)
     setContentView(R.layout.activity_main)
+
 
     // Default Selected Fragment
     supportFragmentManager.beginTransaction()

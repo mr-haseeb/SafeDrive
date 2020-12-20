@@ -27,9 +27,20 @@ anim design_bottom_sheet_slide_in
 anim design_bottom_sheet_slide_out
 anim design_snackbar_in
 anim design_snackbar_out
+anim generic_confirmation_animation
+anim generic_confirmation_animation_interpolator_0
+anim generic_confirmation_animation_interpolator_1
+anim generic_confirmation_animation_interpolator_2
+anim generic_confirmation_animation_interpolator_3
+anim generic_confirmation_icon_animation
 anim mtrl_bottom_sheet_slide_in
 anim mtrl_bottom_sheet_slide_out
 anim mtrl_card_lowers_interpolator
+anim open_on_phone_animation_interpolator_0
+anim open_on_phone_animation_interpolator_1
+anim open_on_phone_arrow_animation
+anim open_on_phone_path_1_animation
+anim open_on_phone_path_2_animation
 animator design_appbar_state_list_animator
 animator design_fab_hide_motion_spec
 animator design_fab_show_motion_spec
@@ -45,6 +56,7 @@ animator mtrl_fab_hide_motion_spec
 animator mtrl_fab_show_motion_spec
 animator mtrl_fab_transformation_sheet_collapse_spec
 animator mtrl_fab_transformation_sheet_expand_spec
+array circular_progress_layout_color_scheme_colors
 attr actionBarDivider
 attr actionBarItemBackground
 attr actionBarPopupTheme
@@ -59,6 +71,7 @@ attr actionBarWidgetTheme
 attr actionButtonStyle
 attr actionDropDownStyle
 attr actionLayout
+attr actionMenu
 attr actionMenuTextAppearance
 attr actionMenuTextColor
 attr actionModeBackground
@@ -114,6 +127,15 @@ attr backgroundSplit
 attr backgroundStacked
 attr backgroundTint
 attr backgroundTintMode
+attr background_border_cap
+attr background_border_color
+attr background_border_width
+attr background_color
+attr background_radius
+attr background_radius_percent
+attr background_radius_pressed
+attr background_radius_pressed_percent
+attr background_shadow_width
 attr badgeGravity
 attr badgeStyle
 attr badgeTextColor
@@ -132,6 +154,7 @@ attr behavior_overlapTop
 attr behavior_peekHeight
 attr behavior_saveFlags
 attr behavior_skipCollapsed
+attr bezelWidth
 attr borderWidth
 attr borderlessButtonStyle
 attr bottomAppBarStyle
@@ -149,6 +172,7 @@ attr boxStrokeColor
 attr boxStrokeErrorColor
 attr boxStrokeWidth
 attr boxStrokeWidthFocused
+attr boxedEdges
 attr brightness
 attr buttonBarButtonStyle
 attr buttonBarNegativeButtonStyle
@@ -163,6 +187,7 @@ attr buttonStyle
 attr buttonStyleSmall
 attr buttonTint
 attr buttonTintMode
+attr captureMode
 attr cardBackgroundColor
 attr cardCornerRadius
 attr cardElevation
@@ -201,7 +226,10 @@ attr chipStrokeWidth
 attr chipStyle
 attr chipSurfaceColor
 attr circleRadius
+attr circularScrollingGestureEnabled
 attr clickAction
+attr clipEnabled
+attr clip_dimen
 attr closeIcon
 attr closeIconEnabled
 attr closeIconEndPadding
@@ -248,6 +276,7 @@ attr colorPrimary
 attr colorPrimaryDark
 attr colorPrimarySurface
 attr colorPrimaryVariant
+attr colorSchemeColors
 attr colorSecondary
 attr colorSecondaryVariant
 attr colorSurface
@@ -336,6 +365,8 @@ attr drawableTint
 attr drawableTintMode
 attr drawableTopCompat
 attr drawerArrowStyle
+attr drawerContent
+attr drawerTitle
 attr dropDownListViewStyle
 attr dropdownListPreferredItemHeight
 attr duration
@@ -345,6 +376,7 @@ attr editTextStyle
 attr elevation
 attr elevationOverlayColor
 attr elevationOverlayEnabled
+attr enableAutoPeek
 attr endIconCheckable
 attr endIconContentDescription
 attr endIconDrawable
@@ -385,6 +417,7 @@ attr fastScrollHorizontalTrackDrawable
 attr fastScrollVerticalThumbDrawable
 attr fastScrollVerticalTrackDrawable
 attr firstBaselineToTopHeight
+attr flash
 attr floatingActionButtonStyle
 attr flow_firstHorizontalBias
 attr flow_firstHorizontalStyle
@@ -450,6 +483,11 @@ attr iconTint
 attr iconTintMode
 attr iconifiedByDefault
 attr imageButtonStyle
+attr img_circle_percentage
+attr img_horizontal_offset_percentage
+attr img_padding
+attr img_tint
+attr indeterminate
 attr indeterminateProgressStyle
 attr initialActivityCount
 attr insetForeground
@@ -550,6 +588,7 @@ attr layout_keyline
 attr layout_optimizationLevel
 attr layout_scrollFlags
 attr layout_scrollInterpolator
+attr lensFacing
 attr liftOnScroll
 attr liftOnScrollTargetViewId
 attr limitBoundsTo
@@ -625,6 +664,7 @@ attr multiChoiceItemLayout
 attr navigationContentDescription
 attr navigationIcon
 attr navigationMode
+attr navigationStyle
 attr navigationViewStyle
 attr nestedScrollFlags
 attr number
@@ -654,11 +694,13 @@ attr passwordToggleTint
 attr passwordToggleTintMode
 attr pathMotionArc
 attr path_percent
+attr peekView
 attr percentHeight
 attr percentWidth
 attr percentX
 attr percentY
 attr perpendicularPath_percent
+attr pinchToZoomEnabled
 attr pivotAnchor
 attr placeholderText
 attr placeholderTextAppearance
@@ -679,6 +721,7 @@ attr progressBarStyle
 attr queryBackground
 attr queryHint
 attr radioButtonStyle
+attr radius
 attr rangeFillColor
 attr ratingBarStyle
 attr ratingBarStyleIndicator
@@ -693,9 +736,11 @@ attr rippleColor
 attr round
 attr roundPercent
 attr saturation
+attr scaleType
 attr scrimAnimationDuration
 attr scrimBackground
 attr scrimVisibleHeightTrigger
+attr scrollDegreesPerScreen
 attr searchHintIcon
 attr searchIcon
 attr searchViewStyle
@@ -711,6 +756,7 @@ attr shapeAppearanceSmallComponent
 attr showAsAction
 attr showDividers
 attr showMotionSpec
+attr showOverflowInPeek
 attr showPaths
 attr showText
 attr showTitle
@@ -897,6 +943,19 @@ attr windowFixedWidthMinor
 attr windowMinWidthMajor
 attr windowMinWidthMinor
 attr windowNoTitle
+attr wsPageIndicatorDotColor
+attr wsPageIndicatorDotColorSelected
+attr wsPageIndicatorDotFadeInDuration
+attr wsPageIndicatorDotFadeOutDelay
+attr wsPageIndicatorDotFadeOutDuration
+attr wsPageIndicatorDotFadeWhenIdle
+attr wsPageIndicatorDotRadius
+attr wsPageIndicatorDotRadiusSelected
+attr wsPageIndicatorDotShadowColor
+attr wsPageIndicatorDotShadowDx
+attr wsPageIndicatorDotShadowDy
+attr wsPageIndicatorDotShadowRadius
+attr wsPageIndicatorDotSpacing
 attr yearSelectedStyle
 attr yearStyle
 attr yearTodayStyle
@@ -948,6 +1007,11 @@ color cardview_light_background
 color cardview_shadow_end_color
 color cardview_shadow_start_color
 color checkbox_themeable_attribute_color
+color circular_progress_layout_background_color
+color circular_progress_layout_blue
+color circular_progress_layout_green
+color circular_progress_layout_red
+color circular_progress_layout_yellow
 color cnb_default_badge_color
 color cnb_default_unselected_color
 color colorAccent
@@ -1114,6 +1178,8 @@ color tfe_semi_transparent
 color tooltip_background_dark
 color tooltip_background_light
 color white
+color ws_switch_thumb_color_material
+color ws_switch_track_color_material
 dimen abc_action_bar_content_inset_material
 dimen abc_action_bar_content_inset_with_nav
 dimen abc_action_bar_default_height_material
@@ -1194,9 +1260,11 @@ dimen abc_text_size_title_material
 dimen abc_text_size_title_material_toolbar
 dimen action_bar_size
 dimen appcompat_dialog_background_inset
+dimen box_inset_layout_padding
 dimen cardview_compat_inset_shadow
 dimen cardview_default_elevation
 dimen cardview_default_radius
+dimen circular_progress_layout_stroke_width
 dimen cnb_badge_size
 dimen cnb_badge_size_numberless
 dimen cnb_badge_stroke_width
@@ -1213,6 +1281,8 @@ dimen compat_button_padding_vertical_material
 dimen compat_control_corner_material
 dimen compat_notification_large_icon_max_height
 dimen compat_notification_large_icon_max_width
+dimen confirmation_overlay_image_size
+dimen confirmation_overlay_text_size
 dimen default_dimension
 dimen design_appbar_elevation
 dimen design_bottom_navigation_active_item_max_width
@@ -1272,6 +1342,7 @@ dimen hint_alpha_material_dark
 dimen hint_alpha_material_light
 dimen hint_pressed_alpha_material_dark
 dimen hint_pressed_alpha_material_light
+dimen inner_frame_layout_padding
 dimen item_touch_helper_max_drag_scroll_per_frame
 dimen item_touch_helper_swipe_escape_max_velocity
 dimen item_touch_helper_swipe_escape_velocity
@@ -1471,6 +1542,52 @@ dimen tooltip_precise_anchor_threshold
 dimen tooltip_vertical_padding
 dimen tooltip_y_offset_non_touch
 dimen tooltip_y_offset_touch
+dimen ws_action_drawer_expand_icon_top_margin
+dimen ws_action_drawer_item_bottom_padding
+dimen ws_action_drawer_item_icon_padding
+dimen ws_action_drawer_item_icon_right_margin
+dimen ws_action_drawer_item_icon_size
+dimen ws_action_drawer_item_text_size
+dimen ws_action_drawer_item_top_padding
+dimen ws_action_drawer_peek_top_padding
+dimen ws_action_drawer_peek_view_height
+dimen ws_action_drawer_title_end
+dimen ws_action_drawer_title_start
+dimen ws_drawer_view_edge_size
+dimen ws_nav_drawer_margin_2_items_end
+dimen ws_nav_drawer_margin_2_items_start
+dimen ws_nav_drawer_margin_3_items_end
+dimen ws_nav_drawer_margin_3_items_start
+dimen ws_nav_drawer_margin_4_items_end
+dimen ws_nav_drawer_margin_4_items_start
+dimen ws_nav_drawer_margin_4_items_top
+dimen ws_nav_drawer_margin_5_items_middle_row_end
+dimen ws_nav_drawer_margin_5_items_middle_row_start
+dimen ws_nav_drawer_margin_5_items_top
+dimen ws_nav_drawer_margin_5_items_top_row_end
+dimen ws_nav_drawer_margin_5_items_top_row_start
+dimen ws_nav_drawer_margin_6_items_bottom
+dimen ws_nav_drawer_margin_6_items_end
+dimen ws_nav_drawer_margin_6_items_start
+dimen ws_nav_drawer_margin_6_items_top
+dimen ws_nav_drawer_margin_7_items_bottom
+dimen ws_nav_drawer_margin_7_items_middle_row_end
+dimen ws_nav_drawer_margin_7_items_middle_row_start
+dimen ws_nav_drawer_margin_7_items_top
+dimen ws_nav_drawer_margin_7_items_top_bottom_row_end
+dimen ws_nav_drawer_margin_7_items_top_bottom_row_start
+dimen ws_nav_drawer_single_page_circle_radius
+dimen ws_nav_drawer_single_page_half_icon_size
+dimen ws_nav_drawer_single_page_icon_padding
+dimen ws_nav_drawer_single_page_icon_size
+dimen ws_nav_drawer_text_guide
+dimen ws_nav_drawer_text_size
+dimen ws_peek_view_bottom_padding
+dimen ws_peek_view_icon_size
+dimen ws_peek_view_top_padding
+dimen ws_switch_size
+dimen ws_wearable_drawer_view_elevation
+dimen ws_wrv_curve_default_x_offset
 drawable abc_ab_share_pack_mtrl_alpha
 drawable abc_action_bar_item_background_material
 drawable abc_btn_borderless_material
@@ -1557,10 +1674,9 @@ drawable abc_textfield_search_activated_mtrl_alpha
 drawable abc_textfield_search_default_mtrl_alpha
 drawable abc_textfield_search_material
 drawable abc_vector_test
-drawable action
-drawable analysis
 drawable avd_hide_password
 drawable avd_show_password
+drawable background
 drawable bottom_nav_dashboard_icon
 drawable bottom_nav_manage_icon
 drawable bottom_nav_profile_icon
@@ -1579,6 +1695,11 @@ drawable design_ic_visibility
 drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
+drawable drinking
+drawable export_data
+drawable generic_confirmation
+drawable generic_confirmation_animation
+drawable grid
 drawable ic_launcher
 drawable ic_launcher_background
 drawable ic_launcher_foreground
@@ -1586,9 +1707,6 @@ drawable ic_mtrl_checked_circle
 drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
-drawable icn_chevron_down
-drawable icn_chevron_up
-drawable image
 drawable material_ic_calendar_black_24dp
 drawable material_ic_clear_black_24dp
 drawable material_ic_edit_black_24dp
@@ -1618,13 +1736,38 @@ drawable notification_template_icon_bg
 drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
-drawable predict
+drawable open_on_phone
+drawable operating_the_music
+drawable reaching_behind
 drawable round_corners
+drawable safe_driving
+drawable talking_on_the_phone
 drawable test_custom_background
-drawable tfl2_logo
-drawable tfl2_logo_dark
+drawable texting
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
+drawable view_data
+drawable ws_action_item_background
+drawable ws_action_item_icon_background
+drawable ws_full_sad
+drawable ws_ic_expand_less_white_22
+drawable ws_ic_expand_more_white_22
+drawable ws_ic_more_horiz_24dp_wht
+drawable ws_ic_more_vert_24dp_wht
+drawable ws_open_on_phone_animation
+drawable ws_switch_thumb_material_anim
+drawable ws_switch_thumb_mtrl_14w
+drawable ws_switch_thumb_mtrl_15w
+drawable ws_switch_thumb_mtrl_16w
+drawable ws_switch_thumb_mtrl_17w
+drawable ws_switch_thumb_mtrl_18w
+drawable ws_switch_track_mtrl
+fraction confirmation_overlay_margin_above_text
+fraction confirmation_overlay_margin_side
+fraction ws_action_drawer_item_first_item_top_padding
+fraction ws_action_drawer_item_last_item_bottom_padding
+fraction ws_action_drawer_item_left_padding
+fraction ws_action_drawer_item_right_padding
 id ALT
 id BOTTOM_END
 id BOTTOM_START
@@ -1706,6 +1849,7 @@ id auto
 id autoComplete
 id autoCompleteToEnd
 id autoCompleteToStart
+id back
 id barrier
 id baseline
 id beginning
@@ -1716,7 +1860,10 @@ id bottom_nav_dashborad
 id bottom_nav_profile
 id bottom_navigation
 id bounce
+id butt
 id buttonPanel
+id camera_capture_button
+id camera_container
 id cancel_action
 id cancel_button
 id cbn_item_internal_container
@@ -1773,6 +1920,7 @@ id dragLeft
 id dragRight
 id dragStart
 id dragUp
+id drinking
 id dropdown_menu
 id easeIn
 id easeInOut
@@ -1785,17 +1933,25 @@ id enterAlwaysCollapsed
 id exitUntilCollapsed
 id expand_activities_button
 id expanded_menu
+id export_all
 id fade
 id fill
+id fillCenter
+id fillEnd
+id fillStart
 id fill_horizontal
 id fill_vertical
 id filled
+id fitCenter
+id fitEnd
+id fitStart
 id fitToContents
 id fixed
 id flip
 id floating
 id forever
 id fragment_holder
+id front
 id ghost_view
 id ghost_view_holder
 id gone
@@ -1803,6 +1959,7 @@ id graph
 id graph_wrap
 id group_divider
 id groups
+id height
 id hideable
 id home
 id homeAsUp
@@ -1830,11 +1987,13 @@ id linear
 id linearLayout1
 id listMode
 id list_item
+id mainGrid
 id masked
 id media_actions
 id message
 id middle
 id mini
+id mixed
 id month_grid
 id month_navigation_bar
 id month_navigation_fragment_toggle
@@ -1863,6 +2022,7 @@ id mtrl_picker_text_input_date
 id mtrl_picker_text_input_range_end
 id mtrl_picker_text_input_range_start
 id mtrl_picker_title_text
+id multiPage
 id multiply
 id navigation_header_container
 id never
@@ -1874,6 +2034,7 @@ id notification_main_column
 id notification_main_column_container
 id off
 id on
+id operating_the_music
 id outline
 id packed
 id parallax
@@ -1889,17 +2050,21 @@ id percent
 id pin
 id position
 id postLayout
+id preview
 id progress_circular
 id progress_horizontal
 id radio
 id ratio
+id reaching_behind
 id rectangles
 id reverseSawtooth
 id right
 id right_icon
 id right_side
+id round
 id rounded
 id row_index_key
+id safe_driving
 id save_non_transition_alpha
 id save_overlay_view
 id sawtooth
@@ -1927,6 +2092,7 @@ id showCustom
 id showHome
 id showTitle
 id sin
+id singlePage
 id skipCollapsed
 id slide
 id smallLabel
@@ -1964,6 +2130,7 @@ id tag_screen_reader_focusable
 id tag_transition_group
 id tag_unhandled_key_event_manager
 id tag_unhandled_key_listeners
+id talking_on_the_phone
 id test_checkbox_android_button_tint
 id test_checkbox_app_button_tint
 id test_radiobutton_android_button_tint
@@ -1976,6 +2143,7 @@ id textSpacerNoTitle
 id textStart
 id text_input_end_icon
 id text_input_start_icon
+id texting
 id textinput_counter
 id textinput_error
 id textinput_helper_text
@@ -2004,12 +2172,50 @@ id unlabeled
 id up
 id useLogo
 id vertical
+id video
+id view_data
 id view_offset_helper
 id visible
+id wearable_support_confirmation_overlay_image
+id wearable_support_confirmation_overlay_message
+id wearable_support_overlay_confirmation
+id width
 id withText
 id withinBounds
 id wrap
 id wrap_content
+id ws_action_drawer_expand_icon
+id ws_action_drawer_guide_end
+id ws_action_drawer_guide_start
+id ws_action_drawer_item_icon
+id ws_action_drawer_item_text
+id ws_action_drawer_peek_action_icon
+id ws_action_drawer_title
+id ws_drawer_view_peek_container
+id ws_drawer_view_peek_icon
+id ws_nav_drawer_guide_bottom
+id ws_nav_drawer_guide_end
+id ws_nav_drawer_guide_middle_row_end
+id ws_nav_drawer_guide_middle_row_start
+id ws_nav_drawer_guide_start
+id ws_nav_drawer_guide_top
+id ws_nav_drawer_guide_top_bottom_row_end
+id ws_nav_drawer_guide_top_bottom_row_start
+id ws_nav_drawer_guide_top_row_end
+id ws_nav_drawer_guide_top_row_start
+id ws_nav_drawer_icon_0
+id ws_nav_drawer_icon_1
+id ws_nav_drawer_icon_2
+id ws_nav_drawer_icon_3
+id ws_nav_drawer_icon_4
+id ws_nav_drawer_icon_5
+id ws_nav_drawer_icon_6
+id ws_nav_drawer_text
+id ws_nav_drawer_text_guide
+id ws_navigation_drawer_item_icon
+id ws_navigation_drawer_item_text
+id ws_navigation_drawer_page_indicator
+id ws_navigation_drawer_view_pager
 id zero_corner_chip
 integer abc_config_activityDefaultDur
 integer abc_config_activityShortDur
@@ -2072,6 +2278,7 @@ layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_main
+layout activity_start_collecting_data
 layout cnb_horizontal_menu_item
 layout cnb_vertical_menu_item
 layout collect_data
@@ -2155,6 +2362,22 @@ layout text_view_with_line_height_from_style
 layout text_view_with_theme_line_height
 layout text_view_without_line_height
 layout tfe_pn_activity_posenet
+layout ws_action_drawer_item_view
+layout ws_action_drawer_peek_view
+layout ws_action_drawer_title_view
+layout ws_navigation_drawer_item_view
+layout ws_navigation_drawer_view
+layout ws_overlay_confirmation
+layout ws_single_page_nav_drawer_1_item
+layout ws_single_page_nav_drawer_2_item
+layout ws_single_page_nav_drawer_3_item
+layout ws_single_page_nav_drawer_4_item
+layout ws_single_page_nav_drawer_5_item
+layout ws_single_page_nav_drawer_6_item
+layout ws_single_page_nav_drawer_7_item
+layout ws_single_page_nav_drawer_peek_view
+layout ws_single_page_nav_drawer_text
+layout ws_wearable_drawer_view
 menu bottom_navigation
 mipmap ic_action_info
 mipmap ic_launcher
@@ -2189,6 +2412,7 @@ string abc_shareactionprovider_share_with
 string abc_shareactionprovider_share_with_application
 string abc_toolbar_collapse_description
 string analysis_of_activity
+string androidx_camera_default_config_provider
 string app_name
 string appbar_scrolling_view_behavior
 string bottom_sheet_behavior
@@ -2200,10 +2424,12 @@ string clear_text_end_icon_content_description
 string collect_training_data
 string dashborad
 string error_icon_content_description
+string export_data
 string exposed_dropdown_menu_content_description
 string fab_transformation_scrim_behavior
 string fab_transformation_sheet_behavior
 string hello_blank_fragment
+string hello_world
 string hide_bottom_view_on_scroll_behavior
 string icon_content_description
 string item_view_role_description
@@ -2256,6 +2482,9 @@ string search_menu_title
 string status_bar_notification_info_overflow
 string tfe_pn_camera_error
 string tfe_pn_request_permission
+string title_activity_start_collecting_data
+string ws_action_drawer_content_description
+string ws_navigation_drawer_content_description
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light
 style AndroidThemeColorAccentYellow
@@ -2484,6 +2713,7 @@ style Base_Widget_MaterialComponents_TextView
 style CardView
 style CardView_Dark
 style CardView_Light
+style ConfirmationActivity
 style EmptyTheme
 style MaterialAlertDialog_MaterialComponents
 style MaterialAlertDialog_MaterialComponents_Body_Text
@@ -2953,6 +3183,14 @@ style Widget_MaterialComponents_Toolbar_PrimarySurface
 style Widget_MaterialComponents_Toolbar_Surface
 style Widget_MaterialComponents_Tooltip
 style Widget_Support_CoordinatorLayout
+style Widget_Wear_RoundSwitch
+style Widget_Wear_WearableDrawerView
+style WsHorizontalGuideStyle
+style WsPageIndicatorViewStyle
+style WsSinglePageNavDrawerIconStyle
+style WsVerticalGuideStyle
+style WsWearableActionDrawerItemText
+style WsWearableActionDrawerTitleText
 styleable ActionBar background backgroundSplit backgroundStacked contentInsetEnd contentInsetEndWithActions contentInsetLeft contentInsetRight contentInsetStart contentInsetStartWithNavigation customNavigationLayout displayOptions divider elevation height hideOnContentScroll homeAsUpIndicator homeLayout icon indeterminateProgressStyle itemPadding logo navigationMode popupTheme progressBarPadding progressBarStyle subtitle subtitleTextStyle title titleTextStyle
 styleable ActionBarLayout android_layout_gravity
 styleable ActionMenuItemView android_minWidth
@@ -2975,12 +3213,16 @@ styleable Badge backgroundColor badgeGravity badgeTextColor horizontalOffset max
 styleable BottomAppBar backgroundTint elevation fabAlignmentMode fabAnimationMode fabCradleMargin fabCradleRoundedCornerRadius fabCradleVerticalOffset hideOnScroll paddingBottomSystemWindowInsets paddingLeftSystemWindowInsets paddingRightSystemWindowInsets
 styleable BottomNavigationView backgroundTint elevation itemBackground itemHorizontalTranslationEnabled itemIconSize itemIconTint itemRippleColor itemTextAppearanceActive itemTextAppearanceInactive itemTextColor labelVisibilityMode menu
 styleable BottomSheetBehavior_Layout android_elevation backgroundTint behavior_draggable behavior_expandedOffset behavior_fitToContents behavior_halfExpandedRatio behavior_hideable behavior_peekHeight behavior_saveFlags behavior_skipCollapsed gestureInsetBottomIgnored shapeAppearance shapeAppearanceOverlay
+styleable BoxInsetLayout_Layout boxedEdges
 styleable ButtonBarLayout allowStacking
+styleable CameraView captureMode flash lensFacing pinchToZoomEnabled scaleType
 styleable CardView android_minWidth android_minHeight cardBackgroundColor cardCornerRadius cardElevation cardMaxElevation cardPreventCornerOverlap cardUseCompatPadding contentPadding contentPaddingBottom contentPaddingLeft contentPaddingRight contentPaddingTop
 styleable Chip android_textAppearance android_textColor android_ellipsize android_maxWidth android_text android_checkable checkedIcon checkedIconEnabled checkedIconTint checkedIconVisible chipBackgroundColor chipCornerRadius chipEndPadding chipIcon chipIconEnabled chipIconSize chipIconTint chipIconVisible chipMinHeight chipMinTouchTargetSize chipStartPadding chipStrokeColor chipStrokeWidth chipSurfaceColor closeIcon closeIconEnabled closeIconEndPadding closeIconSize closeIconStartPadding closeIconTint closeIconVisible ensureMinTouchTargetSize hideMotionSpec iconEndPadding iconStartPadding rippleColor shapeAppearance shapeAppearanceOverlay showMotionSpec textEndPadding textStartPadding
 styleable ChipGroup checkedChip chipSpacing chipSpacingHorizontal chipSpacingVertical selectionRequired singleLine singleSelection
 styleable ChipMenuItem android_icon android_enabled android_id android_title android_contentDescription cnb_backgroundColor cnb_iconColor cnb_iconTintMode cnb_textColor
 styleable ChipNavigationBar cnb_addBottomInset cnb_addLeftInset cnb_addRightInset cnb_addTopInset cnb_badgeColor cnb_iconSize cnb_menuResource cnb_minExpandedWidth cnb_orientationMode cnb_radius cnb_textAppearance cnb_unselectedColor
+styleable CircledImageView android_src background_border_cap background_border_color background_border_width background_color background_radius background_radius_percent background_radius_pressed background_radius_pressed_percent background_shadow_width clip_dimen img_circle_percentage img_horizontal_offset_percentage img_padding img_tint
+styleable CircularProgressLayout backgroundColor colorSchemeColors indeterminate strokeWidth
 styleable CollapsingToolbarLayout collapsedTitleGravity collapsedTitleTextAppearance contentScrim expandedTitleGravity expandedTitleMargin expandedTitleMarginBottom expandedTitleMarginEnd expandedTitleMarginStart expandedTitleMarginTop expandedTitleTextAppearance maxLines scrimAnimationDuration scrimVisibleHeightTrigger statusBarScrim title titleEnabled toolbarId
 styleable CollapsingToolbarLayout_Layout layout_collapseMode layout_collapseParallaxMultiplier
 styleable ColorStateListItem android_color android_alpha alpha
@@ -3042,12 +3284,15 @@ styleable MotionTelltales telltales_tailColor telltales_tailScale telltales_velo
 styleable NavigationView android_background android_fitsSystemWindows android_maxWidth elevation headerLayout itemBackground itemHorizontalPadding itemIconPadding itemIconSize itemIconTint itemMaxLines itemShapeAppearance itemShapeAppearanceOverlay itemShapeFillColor itemShapeInsetBottom itemShapeInsetEnd itemShapeInsetStart itemShapeInsetTop itemTextAppearance itemTextColor menu
 styleable OnClick clickAction targetId
 styleable OnSwipe dragDirection dragScale dragThreshold limitBoundsTo maxAcceleration maxVelocity moveWhenScrollAtTop nestedScrollFlags onTouchUp touchAnchorId touchAnchorSide touchRegionId
+styleable PageIndicatorView wsPageIndicatorDotColor wsPageIndicatorDotColorSelected wsPageIndicatorDotFadeInDuration wsPageIndicatorDotFadeOutDelay wsPageIndicatorDotFadeOutDuration wsPageIndicatorDotFadeWhenIdle wsPageIndicatorDotRadius wsPageIndicatorDotRadiusSelected wsPageIndicatorDotShadowColor wsPageIndicatorDotShadowDx wsPageIndicatorDotShadowDy wsPageIndicatorDotShadowRadius wsPageIndicatorDotSpacing
 styleable PopupWindow android_popupBackground android_popupAnimationStyle overlapAnchor
 styleable PopupWindowBackgroundState state_above_anchor
+styleable PreviewView scaleType
 styleable PropertySet android_visibility android_alpha layout_constraintTag motionProgress visibilityMode
 styleable RangeSlider values
 styleable RecycleListView paddingBottomNoButtons paddingTopNoTitle
 styleable RecyclerView android_orientation android_clipToPadding android_descendantFocusability fastScrollEnabled fastScrollHorizontalThumbDrawable fastScrollHorizontalTrackDrawable fastScrollVerticalThumbDrawable fastScrollVerticalTrackDrawable layoutManager reverseLayout spanCount stackFromEnd
+styleable RoundedDrawable android_src backgroundColor clipEnabled radius
 styleable ScrimInsetsFrameLayout insetForeground
 styleable ScrollingViewBehavior_Layout behavior_overlapTop
 styleable SearchView android_focusable android_maxWidth android_inputType android_imeOptions closeIcon commitIcon defaultQueryHint goIcon iconifiedByDefault layout queryBackground queryHint searchHintIcon searchIcon submitBackground suggestionRowLayout voiceIcon
@@ -3078,6 +3323,10 @@ styleable View android_theme android_focusable paddingEnd paddingStart theme
 styleable ViewBackgroundHelper android_background backgroundTint backgroundTintMode
 styleable ViewPager2 android_orientation
 styleable ViewStubCompat android_id android_layout android_inflatedId
+styleable WearableActionDrawerView actionMenu drawerTitle showOverflowInPeek
+styleable WearableDrawerView android_background android_elevation drawerContent enableAutoPeek peekView
+styleable WearableNavigationDrawerView navigationStyle
+styleable WearableRecyclerView bezelWidth circularScrollingGestureEnabled scrollDegreesPerScreen
 xml standalone_badge
 xml standalone_badge_gravity_bottom_end
 xml standalone_badge_gravity_bottom_start

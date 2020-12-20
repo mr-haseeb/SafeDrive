@@ -29,6 +29,23 @@
                         "endColumns": "100",
                         "endOffsets": "2997"
                     }
+                },
+                {
+                    "source": "C:\\Users\\bolah\\.gradle\\caches\\transforms-2\\files-2.1\\d6cf5901260cd43e2074e62d9f3137d6\\wear-1.0.0\\res\\values-ky\\values-ky.xml",
+                    "from": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,166",
+                        "endColumns": "110,116",
+                        "endOffsets": "161,278"
+                    },
+                    "to": {
+                        "startLines": "31,32",
+                        "startColumns": "4,4",
+                        "startOffsets": "3002,3113",
+                        "endColumns": "110,116",
+                        "endOffsets": "3108,3225"
+                    }
                 }
             ]
         }

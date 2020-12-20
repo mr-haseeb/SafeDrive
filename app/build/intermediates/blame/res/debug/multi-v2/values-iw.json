@@ -14,6 +14,23 @@
                     }
                 },
                 {
+                    "source": "C:\\Users\\bolah\\.gradle\\caches\\transforms-2\\files-2.1\\d6cf5901260cd43e2074e62d9f3137d6\\wear-1.0.0\\res\\values-iw\\values-iw.xml",
+                    "from": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,170",
+                        "endColumns": "114,117",
+                        "endOffsets": "165,283"
+                    },
+                    "to": {
+                        "startLines": "31,32",
+                        "startColumns": "4,4",
+                        "startOffsets": "2943,3058",
+                        "endColumns": "114,117",
+                        "endOffsets": "3053,3171"
+                    }
+                },
+                {
                     "source": "C:\\Users\\bolah\\.gradle\\caches\\transforms-2\\files-2.1\\8976eed12a9bb5ce3b07acc4f873cd96\\core-1.2.0\\res\\values-iw\\values-iw.xml",
                     "from": {
                         "startLines": "2",

@@ -16,6 +16,10 @@
         "source": "F:\\FYP\\Code\\SafeDrive\\app\\src\\main\\res\\drawable\\round_corners.xml"
     },
     {
+        "merged": "F:\\FYP\\Code\\SafeDrive\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_export_data.png.flat",
+        "source": "F:\\FYP\\Code\\SafeDrive\\app\\src\\main\\res\\drawable-hdpi\\export_data.png"
+    },
+    {
         "merged": "F:\\FYP\\Code\\SafeDrive\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_action_info.png.flat",
         "source": "F:\\FYP\\Code\\SafeDrive\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_action_info.png"
     },
@@ -36,8 +40,8 @@
         "source": "F:\\FYP\\Code\\SafeDrive\\app\\src\\main\\res\\drawable-hdpi\\ic_launcher.png"
     },
     {
-        "merged": "F:\\FYP\\Code\\SafeDrive\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_tfl2_logo.png.flat",
-        "source": "F:\\FYP\\Code\\SafeDrive\\app\\src\\main\\res\\drawable-xxhdpi\\tfl2_logo.png"
+        "merged": "F:\\FYP\\Code\\SafeDrive\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_start_collecting_data.xml.flat",
+        "source": "F:\\FYP\\Code\\SafeDrive\\app\\src\\main\\res\\layout\\activity_start_collecting_data.xml"
     },
     {
         "merged": "F:\\FYP\\Code\\SafeDrive\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_launcher.png.flat",
@@ -48,6 +52,18 @@
         "source": "F:\\FYP\\Code\\SafeDrive\\app\\src\\main\\res\\layout\\dashborad.xml"
     },
     {
+        "merged": "F:\\FYP\\Code\\SafeDrive\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_drinking.png.flat",
+        "source": "F:\\FYP\\Code\\SafeDrive\\app\\src\\main\\res\\drawable-hdpi\\drinking.png"
+    },
+    {
+        "merged": "F:\\FYP\\Code\\SafeDrive\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_view_data.png.flat",
+        "source": "F:\\FYP\\Code\\SafeDrive\\app\\src\\main\\res\\drawable-hdpi\\view_data.png"
+    },
+    {
+        "merged": "F:\\FYP\\Code\\SafeDrive\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_operating_the_music.png.flat",
+        "source": "F:\\FYP\\Code\\SafeDrive\\app\\src\\main\\res\\drawable-hdpi\\operating_the_music.png"
+    },
+    {
         "merged": "F:\\FYP\\Code\\SafeDrive\\app\\build\\intermediates\\res\\merged\\debug\\layout_tfe_pn_activity_posenet.xml.flat",
         "source": "F:\\FYP\\Code\\SafeDrive\\app\\src\\main\\res\\layout\\tfe_pn_activity_posenet.xml"
     },
@@ -56,24 +72,24 @@
         "source": "F:\\FYP\\Code\\SafeDrive\\app\\src\\main\\res\\menu\\bottom_navigation.xml"
     },
     {
-        "merged": "F:\\FYP\\Code\\SafeDrive\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_icn_chevron_up.png.flat",
-        "source": "F:\\FYP\\Code\\SafeDrive\\app\\src\\main\\res\\drawable-xxhdpi\\icn_chevron_up.png"
-    },
-    {
         "merged": "F:\\FYP\\Code\\SafeDrive\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_bottom_nav_manage_icon.png.flat",
         "source": "F:\\FYP\\Code\\SafeDrive\\app\\src\\main\\res\\drawable-hdpi\\bottom_nav_manage_icon.png"
-    },
-    {
-        "merged": "F:\\FYP\\Code\\SafeDrive\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_predict.png.flat",
-        "source": "F:\\FYP\\Code\\SafeDrive\\app\\src\\main\\res\\drawable-hdpi\\predict.png"
     },
     {
         "merged": "F:\\FYP\\Code\\SafeDrive\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_ic_launcher_foreground.xml.flat",
         "source": "F:\\FYP\\Code\\SafeDrive\\app\\src\\main\\res\\drawable-v24\\ic_launcher_foreground.xml"
     },
     {
+        "merged": "F:\\FYP\\Code\\SafeDrive\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_grid.gif.flat",
+        "source": "F:\\FYP\\Code\\SafeDrive\\app\\src\\main\\res\\drawable-hdpi\\grid.gif"
+    },
+    {
         "merged": "F:\\FYP\\Code\\SafeDrive\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_main.xml.flat",
         "source": "F:\\FYP\\Code\\SafeDrive\\app\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "F:\\FYP\\Code\\SafeDrive\\app\\build\\intermediates\\res\\merged\\debug\\drawable_background.xml.flat",
+        "source": "F:\\FYP\\Code\\SafeDrive\\app\\src\\main\\res\\drawable\\background.xml"
     },
     {
         "merged": "F:\\FYP\\Code\\SafeDrive\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher_round.png.flat",
@@ -84,8 +100,8 @@
         "source": "F:\\FYP\\Code\\SafeDrive\\app\\src\\main\\res\\mipmap-mdpi\\ic_action_info.png"
     },
     {
-        "merged": "F:\\FYP\\Code\\SafeDrive\\app\\build\\intermediates\\res\\merged\\debug\\drawable_image.jpg.flat",
-        "source": "F:\\FYP\\Code\\SafeDrive\\app\\src\\main\\res\\drawable\\image.jpg"
+        "merged": "F:\\FYP\\Code\\SafeDrive\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_talking_on_the_phone.png.flat",
+        "source": "F:\\FYP\\Code\\SafeDrive\\app\\src\\main\\res\\drawable-hdpi\\talking_on_the_phone.png"
     },
     {
         "merged": "F:\\FYP\\Code\\SafeDrive\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher_round.png.flat",
@@ -100,12 +116,12 @@
         "source": "F:\\FYP\\Code\\SafeDrive\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_foreground.png"
     },
     {
-        "merged": "F:\\FYP\\Code\\SafeDrive\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher.png.flat",
-        "source": "F:\\FYP\\Code\\SafeDrive\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
-    },
-    {
         "merged": "F:\\FYP\\Code\\SafeDrive\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
         "source": "F:\\FYP\\Code\\SafeDrive\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "F:\\FYP\\Code\\SafeDrive\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher.png.flat",
+        "source": "F:\\FYP\\Code\\SafeDrive\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
     },
     {
         "merged": "F:\\FYP\\Code\\SafeDrive\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_collect_training_data.png.flat",
@@ -124,20 +140,24 @@
         "source": "F:\\FYP\\Code\\SafeDrive\\app\\src\\main\\res\\mipmap-xhdpi\\ic_action_info.png"
     },
     {
-        "merged": "F:\\FYP\\Code\\SafeDrive\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher_foreground.png.flat",
-        "source": "F:\\FYP\\Code\\SafeDrive\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_foreground.png"
+        "merged": "F:\\FYP\\Code\\SafeDrive\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_texting.png.flat",
+        "source": "F:\\FYP\\Code\\SafeDrive\\app\\src\\main\\res\\drawable-hdpi\\texting.png"
     },
     {
         "merged": "F:\\FYP\\Code\\SafeDrive\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher.png.flat",
         "source": "F:\\FYP\\Code\\SafeDrive\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
     },
     {
-        "merged": "F:\\FYP\\Code\\SafeDrive\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_launcher_background.xml.flat",
-        "source": "F:\\FYP\\Code\\SafeDrive\\app\\src\\main\\res\\drawable\\ic_launcher_background.xml"
+        "merged": "F:\\FYP\\Code\\SafeDrive\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher_foreground.png.flat",
+        "source": "F:\\FYP\\Code\\SafeDrive\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_foreground.png"
     },
     {
-        "merged": "F:\\FYP\\Code\\SafeDrive\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_analysis.png.flat",
-        "source": "F:\\FYP\\Code\\SafeDrive\\app\\src\\main\\res\\drawable-hdpi\\analysis.png"
+        "merged": "F:\\FYP\\Code\\SafeDrive\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_reaching_behind.png.flat",
+        "source": "F:\\FYP\\Code\\SafeDrive\\app\\src\\main\\res\\drawable-hdpi\\reaching_behind.png"
+    },
+    {
+        "merged": "F:\\FYP\\Code\\SafeDrive\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_launcher_background.xml.flat",
+        "source": "F:\\FYP\\Code\\SafeDrive\\app\\src\\main\\res\\drawable\\ic_launcher_background.xml"
     },
     {
         "merged": "F:\\FYP\\Code\\SafeDrive\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher_foreground.png.flat",
@@ -146,10 +166,6 @@
     {
         "merged": "F:\\FYP\\Code\\SafeDrive\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_launcher.png.flat",
         "source": "F:\\FYP\\Code\\SafeDrive\\app\\src\\main\\res\\drawable-mdpi\\ic_launcher.png"
-    },
-    {
-        "merged": "F:\\FYP\\Code\\SafeDrive\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_tfl2_logo_dark.png.flat",
-        "source": "F:\\FYP\\Code\\SafeDrive\\app\\src\\main\\res\\drawable-xxhdpi\\tfl2_logo_dark.png"
     },
     {
         "merged": "F:\\FYP\\Code\\SafeDrive\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher_round.png.flat",
@@ -164,16 +180,12 @@
         "source": "F:\\FYP\\Code\\SafeDrive\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "F:\\FYP\\Code\\SafeDrive\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_icn_chevron_down.png.flat",
-        "source": "F:\\FYP\\Code\\SafeDrive\\app\\src\\main\\res\\drawable-xxhdpi\\icn_chevron_down.png"
+        "merged": "F:\\FYP\\Code\\SafeDrive\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_safe_driving.png.flat",
+        "source": "F:\\FYP\\Code\\SafeDrive\\app\\src\\main\\res\\drawable-hdpi\\safe_driving.png"
     },
     {
         "merged": "F:\\FYP\\Code\\SafeDrive\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher.png.flat",
         "source": "F:\\FYP\\Code\\SafeDrive\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
-    },
-    {
-        "merged": "F:\\FYP\\Code\\SafeDrive\\app\\build\\intermediates\\res\\merged\\debug\\drawable_action.png.flat",
-        "source": "F:\\FYP\\Code\\SafeDrive\\app\\src\\main\\res\\drawable\\action.png"
     },
     {
         "merged": "F:\\FYP\\Code\\SafeDrive\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher.xml.flat",

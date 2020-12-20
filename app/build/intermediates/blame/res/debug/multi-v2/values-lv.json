@@ -14,6 +14,23 @@
                     }
                 },
                 {
+                    "source": "C:\\Users\\bolah\\.gradle\\caches\\transforms-2\\files-2.1\\d6cf5901260cd43e2074e62d9f3137d6\\wear-1.0.0\\res\\values-lv\\values-lv.xml",
+                    "from": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,168",
+                        "endColumns": "112,120",
+                        "endOffsets": "163,284"
+                    },
+                    "to": {
+                        "startLines": "31,32",
+                        "startColumns": "4,4",
+                        "startOffsets": "3172,3285",
+                        "endColumns": "112,120",
+                        "endOffsets": "3280,3401"
+                    }
+                },
+                {
                     "source": "C:\\Users\\bolah\\.gradle\\caches\\transforms-2\\files-2.1\\8976eed12a9bb5ce3b07acc4f873cd96\\core-1.2.0\\res\\values-lv\\values-lv.xml",
                     "from": {
                         "startLines": "2",

@@ -18,7 +18,7 @@
         app:cnb_unselectedColor="@color/black"
         app:cnb_radius="8dp"
         app:cnb_orientationMode="horizontal"
-        android:layout_margin="30dp"
+        android:layout_margin="0dp"
         android:elevation="8dp"
         />
 

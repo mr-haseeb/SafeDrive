@@ -5,15 +5,15 @@
         android:id="@+id/bottom_nav_dashborad"
         android:icon="@drawable/bottom_nav_dashboard_icon"
         android:title="@string/dashborad"
-        app:cnb_backgroundColor="#FFD500"/>
+        app:cnb_backgroundColor="@color/tfe_color_primary"/>
     <item
         android:id="@+id/bottom_nav_collect_data"
         android:icon="@drawable/bottom_nav_manage_icon"
         android:title="@string/manage"
-        app:cnb_backgroundColor="#FFD500"/>/>
+        app:cnb_backgroundColor="@color/tfe_color_primary"/>/>
     <item
         android:id="@+id/bottom_nav_profile"
         android:icon="@drawable/bottom_nav_profile_icon"
         android:title="@string/profile"
-        app:cnb_backgroundColor="#FFD500"/>
+        app:cnb_backgroundColor="@color/tfe_color_primary"/>
 </menu>

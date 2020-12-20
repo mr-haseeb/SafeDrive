@@ -29,6 +29,23 @@
                         "endColumns": "100",
                         "endOffsets": "3032"
                     }
+                },
+                {
+                    "source": "C:\\Users\\bolah\\.gradle\\caches\\transforms-2\\files-2.1\\d6cf5901260cd43e2074e62d9f3137d6\\wear-1.0.0\\res\\values-ml\\values-ml.xml",
+                    "from": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,163",
+                        "endColumns": "107,114",
+                        "endOffsets": "158,273"
+                    },
+                    "to": {
+                        "startLines": "31,32",
+                        "startColumns": "4,4",
+                        "startOffsets": "3037,3145",
+                        "endColumns": "107,114",
+                        "endOffsets": "3140,3255"
+                    }
                 }
             ]
         }
