@@ -53,8 +53,8 @@
 30-->F:\FYP\Code\SafeDrive\app\src\main\AndroidManifest.xml:21:9-48
 31        <activity
 31-->F:\FYP\Code\SafeDrive\app\src\main\AndroidManifest.xml:23:9-31:20
-32            android:name="com.example.safedrive.lib.StartCollectingDataActivity"
-32-->F:\FYP\Code\SafeDrive\app\src\main\AndroidManifest.xml:24:13-60
+32            android:name="com.example.safedrive.MainActivity"
+32-->F:\FYP\Code\SafeDrive\app\src\main\AndroidManifest.xml:24:13-41
 33            android:exported="true" >
 33-->F:\FYP\Code\SafeDrive\app\src\main\AndroidManifest.xml:25:13-36
 34            <intent-filter>

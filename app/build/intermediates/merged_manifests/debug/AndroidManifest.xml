@@ -29,7 +29,7 @@
         android:testOnly="true"
         android:theme="@style/AppTheme.Posenet" >
         <activity
-            android:name="com.example.safedrive.lib.StartCollectingDataActivity"
+            android:name="com.example.safedrive.MainActivity"
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

@@ -6,7 +6,7 @@
     </shared>
   </component>
   <component name="AndroidLogFilters">
-    <option name="TOOL_WINDOW_CUSTOM_FILTER" value="KEYPOINT" />
+    <option name="TOOL_WINDOW_CUSTOM_FILTER" value="buttn" />
     <option name="TOOL_WINDOW_LOG_LEVEL" value="debug" />
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
@@ -100,7 +100,7 @@
     <property name="SHOW_ALL_PROCESSES" value="false" />
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/app/src/main/res/drawable-hdpi" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../camerax-tflite-master" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Suggestions" />
     <property name="project.structure.proportion" value="0.17" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -271,9 +271,10 @@
     </state>
     <state x="200" y="96" key="#PSD/0.0.1366.728/1366.0.1024.728@0.0.1366.728" timestamp="1606463704833" />
     <state x="200" y="96" key="#PSD/0.0.1366.728@0.0.1366.728" timestamp="1608278860892" />
-    <state x="402" y="8" key="#app" timestamp="1608220820430">
+    <state x="402" y="8" key="#app" timestamp="1609332240419">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state x="402" y="8" key="#app/0.0.1366.728/1366.0.1024.728@0.0.1366.728" timestamp="1609332240419" />
     <state x="402" y="8" key="#app/0.0.1366.728@0.0.1366.728" timestamp="1608220820430" />
     <state x="413" y="119" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1606476759718">
       <screen x="0" y="0" width="1366" height="728" />
@@ -283,10 +284,11 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="137" y="19" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1608275958177" />
-    <state x="474" y="80" key="#com.intellij.ide.util.MemberChooser" timestamp="1608311531870">
+    <state x="474" y="80" key="#com.intellij.ide.util.MemberChooser" timestamp="1608485982186">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="474" y="80" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728/1366.0.1024.728@0.0.1366.728" timestamp="1608311531870" />
+    <state x="474" y="80" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1608485982186" />
     <state x="344" y="289" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1608289910155">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -296,10 +298,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="111" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728/1366.0.1024.728@0.0.1366.728" timestamp="1608383157466" />
-    <state x="462" y="14" key="#org.jetbrains.kotlin.idea.refactoring.move.moveDeclarations.ui.MoveKotlinTopLevelDeclarationsDialog" timestamp="1608292144441">
+    <state x="462" y="14" key="#org.jetbrains.kotlin.idea.refactoring.move.moveDeclarations.ui.MoveKotlinTopLevelDeclarationsDialog" timestamp="1608468768304">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="462" y="14" key="#org.jetbrains.kotlin.idea.refactoring.move.moveDeclarations.ui.MoveKotlinTopLevelDeclarationsDialog/0.0.1366.728/1366.0.1024.728@0.0.1366.728" timestamp="1608292144441" />
+    <state x="462" y="14" key="#org.jetbrains.kotlin.idea.refactoring.move.moveDeclarations.ui.MoveKotlinTopLevelDeclarationsDialog/0.0.1366.728/1366.0.1024.728@0.0.1366.728" timestamp="1608468768304" />
     <state x="429" y="201" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1608226187785">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -332,30 +334,26 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="518" y="257" width="329" height="270" key="Github.ShareDialog/0.0.1366.728/1366.0.1024.728@0.0.1366.728" timestamp="1608292853853" />
-    <state width="1323" height="402" key="GridCell.Tab.0.bottom" timestamp="1608453422504">
+    <state width="1323" height="247" key="GridCell.Tab.0.bottom" timestamp="1609332987394">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="-40" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.0.1024.728@0.0.1366.728" timestamp="1608446069804" />
+    <state width="1323" height="247" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.0.1024.728@0.0.1366.728" timestamp="1609332987394" />
     <state width="964" height="428" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.0.1024.728@1366.0.1024.728" timestamp="1606625141369" />
-    <state width="1323" height="402" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1608453422504" />
-    <state width="1323" height="402" key="GridCell.Tab.0.center" timestamp="1608453422504">
+    <state width="1323" height="247" key="GridCell.Tab.0.center" timestamp="1609332987393">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="-40" key="GridCell.Tab.0.center/0.0.1366.728/1366.0.1024.728@0.0.1366.728" timestamp="1608446069804" />
+    <state width="1323" height="247" key="GridCell.Tab.0.center/0.0.1366.728/1366.0.1024.728@0.0.1366.728" timestamp="1609332987393" />
     <state width="964" height="428" key="GridCell.Tab.0.center/0.0.1366.728/1366.0.1024.728@1366.0.1024.728" timestamp="1606625141369" />
-    <state width="1323" height="402" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1608453422504" />
-    <state width="1323" height="402" key="GridCell.Tab.0.left" timestamp="1608453422503">
+    <state width="1323" height="247" key="GridCell.Tab.0.left" timestamp="1609332987393">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="-40" key="GridCell.Tab.0.left/0.0.1366.728/1366.0.1024.728@0.0.1366.728" timestamp="1608446069803" />
+    <state width="1323" height="247" key="GridCell.Tab.0.left/0.0.1366.728/1366.0.1024.728@0.0.1366.728" timestamp="1609332987393" />
     <state width="964" height="428" key="GridCell.Tab.0.left/0.0.1366.728/1366.0.1024.728@1366.0.1024.728" timestamp="1606625141368" />
-    <state width="1323" height="402" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1608453422503" />
-    <state width="1323" height="402" key="GridCell.Tab.0.right" timestamp="1608453422504">
+    <state width="1323" height="247" key="GridCell.Tab.0.right" timestamp="1609332987393">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="-40" key="GridCell.Tab.0.right/0.0.1366.728/1366.0.1024.728@0.0.1366.728" timestamp="1608446069804" />
+    <state width="1323" height="247" key="GridCell.Tab.0.right/0.0.1366.728/1366.0.1024.728@0.0.1366.728" timestamp="1609332987393" />
     <state width="964" height="428" key="GridCell.Tab.0.right/0.0.1366.728/1366.0.1024.728@1366.0.1024.728" timestamp="1606625141369" />
-    <state width="1323" height="402" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1608453422504" />
     <state width="1323" height="222" key="GridCell.Tab.1.bottom" timestamp="1608221417655">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -416,11 +414,6 @@
           <url>dummy://kotlinDecompiled/MainActivity.decompiled.java</url>
           <line>77</line>
           <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/safedrive/fragments/dashborad/Dashborad.kt</url>
-          <line>451</line>
-          <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -12,6 +12,7 @@ MERGED from [androidx.constraintlayout:constraintlayout:2.0.0-beta8] C:\Users\bo
 MERGED from [androidx.appcompat:appcompat:1.1.0] C:\Users\bolah\.gradle\caches\transforms-2\files-2.1\8cba76ba504fc65daf2f7f8bbe423242\appcompat-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.core:core-ktx:1.1.0] C:\Users\bolah\.gradle\caches\transforms-2\files-2.1\11ecca2959c14bd56f2eef66555dec39\core-ktx-1.1.0\AndroidManifest.xml:2:1-9:12
 MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\bolah\.gradle\caches\transforms-2\files-2.1\cb6decb1a9087d43277bc576a1f54596\legacy-support-v4-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [org.tensorflow:tensorflow-lite-support:0.0.0-nightly] C:\Users\bolah\.gradle\caches\transforms-2\files-2.1\ed3c6db506a031c375fdbda56087667e\tensorflow-lite-support-0.0.0-nightly\AndroidManifest.xml:2:1-5:12
 MERGED from [org.tensorflow:tensorflow-lite:2.2.0] C:\Users\bolah\.gradle\caches\transforms-2\files-2.1\e6a46e19ce3448f4611ae1383f74b206\tensorflow-lite-2.2.0\AndroidManifest.xml:2:1-12:12
 MERGED from [org.tensorflow:tensorflow-lite-gpu:2.2.0] C:\Users\bolah\.gradle\caches\transforms-2\files-2.1\901718c7c74191075c18fde66eba77bf\tensorflow-lite-gpu-2.2.0\AndroidManifest.xml:2:1-12:12
 MERGED from [androidx.camera:camera-camera2:1.0.0-beta07] C:\Users\bolah\.gradle\caches\transforms-2\files-2.1\f7715df995258370cd64a4cf47ea990d\camera-camera2-1.0.0-beta07\AndroidManifest.xml:17:1-24:12
@@ -89,6 +90,8 @@ MERGED from [androidx.core:core-ktx:1.1.0] C:\Users\bolah\.gradle\caches\transfo
 MERGED from [androidx.core:core-ktx:1.1.0] C:\Users\bolah\.gradle\caches\transforms-2\files-2.1\11ecca2959c14bd56f2eef66555dec39\core-ktx-1.1.0\AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\bolah\.gradle\caches\transforms-2\files-2.1\cb6decb1a9087d43277bc576a1f54596\legacy-support-v4-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\bolah\.gradle\caches\transforms-2\files-2.1\cb6decb1a9087d43277bc576a1f54596\legacy-support-v4-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [org.tensorflow:tensorflow-lite-support:0.0.0-nightly] C:\Users\bolah\.gradle\caches\transforms-2\files-2.1\ed3c6db506a031c375fdbda56087667e\tensorflow-lite-support-0.0.0-nightly\AndroidManifest.xml:4:3-71
+MERGED from [org.tensorflow:tensorflow-lite-support:0.0.0-nightly] C:\Users\bolah\.gradle\caches\transforms-2\files-2.1\ed3c6db506a031c375fdbda56087667e\tensorflow-lite-support-0.0.0-nightly\AndroidManifest.xml:4:3-71
 MERGED from [org.tensorflow:tensorflow-lite:2.2.0] C:\Users\bolah\.gradle\caches\transforms-2\files-2.1\e6a46e19ce3448f4611ae1383f74b206\tensorflow-lite-2.2.0\AndroidManifest.xml:7:5-8:41
 MERGED from [org.tensorflow:tensorflow-lite:2.2.0] C:\Users\bolah\.gradle\caches\transforms-2\files-2.1\e6a46e19ce3448f4611ae1383f74b206\tensorflow-lite-2.2.0\AndroidManifest.xml:7:5-8:41
 MERGED from [org.tensorflow:tensorflow-lite-gpu:2.2.0] C:\Users\bolah\.gradle\caches\transforms-2\files-2.1\901718c7c74191075c18fde66eba77bf\tensorflow-lite-gpu-2.2.0\AndroidManifest.xml:7:5-8:41
@@ -229,12 +232,12 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\bo
 		ADDED from F:\FYP\Code\SafeDrive\app\src\main\AndroidManifest.xml:16:9-35
 	android:theme
 		ADDED from F:\FYP\Code\SafeDrive\app\src\main\AndroidManifest.xml:21:9-48
-activity#com.example.safedrive.lib.StartCollectingDataActivity
+activity#com.example.safedrive.MainActivity
 ADDED from F:\FYP\Code\SafeDrive\app\src\main\AndroidManifest.xml:23:9-31:20
 	android:exported
 		ADDED from F:\FYP\Code\SafeDrive\app\src\main\AndroidManifest.xml:25:13-36
 	android:name
-		ADDED from F:\FYP\Code\SafeDrive\app\src\main\AndroidManifest.xml:24:13-60
+		ADDED from F:\FYP\Code\SafeDrive\app\src\main\AndroidManifest.xml:24:13-41
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
 ADDED from F:\FYP\Code\SafeDrive\app\src\main\AndroidManifest.xml:26:13-30:29
 action#android.intent.action.MAIN
