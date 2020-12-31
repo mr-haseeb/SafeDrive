@@ -31,6 +31,7 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[Pixel_3a_API_30_x86]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -61,10 +62,6 @@
       </state>
     </system>
   </component>
-  <component name="FavoritesManager">
-    <favorites_list name="TFLite PoseNet Demo App" />
-    <favorites_list name="CodeIris Favorites" />
-  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -86,7 +83,6 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
@@ -136,12 +132,13 @@
       </method>
     </configuration>
     <configuration name="MainActivity" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
-      <module name="app" />
+      <module name="TFLite_PoseNet_Demo_App.app" />
       <option name="DEPLOY" value="true" />
       <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
       <option name="DEPLOY_AS_INSTANT" value="false" />
       <option name="ARTIFACT_NAME" value="" />
       <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="ALL_USERS" value="false" />
       <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
       <option name="ACTIVITY_EXTRA_FLAGS" value="" />
       <option name="MODE" value="specific_activity" />
@@ -177,22 +174,28 @@
       </Native>
       <Profilers>
         <option name="ADVANCED_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_PROFILING_ENABLED" value="false" />
         <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
         <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Sample Java Methods" />
+        <option name="STARTUP_NATIVE_MEMORY_PROFILING_ENABLED" value="false" />
+        <option name="NATIVE_MEMORY_SAMPLE_RATE_BYTES" value="2048" />
       </Profilers>
       <option name="DEEP_LINK" value="" />
       <option name="ACTIVITY_CLASS" value="org.tensorflow.lite.examples.posenet.MainActivity_1" />
+      <option name="SEARCH_ACTIVITY_IN_GLOBAL_SCOPE" value="false" />
+      <option name="SKIP_ACTIVITY_VALIDATION" value="false" />
       <method v="2">
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
       </method>
     </configuration>
     <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
-      <module name="app" />
+      <module name="TFLite_PoseNet_Demo_App.app" />
       <option name="DEPLOY" value="true" />
       <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
       <option name="DEPLOY_AS_INSTANT" value="false" />
       <option name="ARTIFACT_NAME" value="" />
       <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="ALL_USERS" value="false" />
       <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
       <option name="ACTIVITY_EXTRA_FLAGS" value="" />
       <option name="MODE" value="default_activity" />
@@ -228,11 +231,16 @@
       </Native>
       <Profilers>
         <option name="ADVANCED_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_PROFILING_ENABLED" value="false" />
         <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
         <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Sample Java Methods" />
+        <option name="STARTUP_NATIVE_MEMORY_PROFILING_ENABLED" value="false" />
+        <option name="NATIVE_MEMORY_SAMPLE_RATE_BYTES" value="2048" />
       </Profilers>
       <option name="DEEP_LINK" value="" />
       <option name="ACTIVITY_CLASS" value="" />
+      <option name="SEARCH_ACTIVITY_IN_GLOBAL_SCOPE" value="false" />
+      <option name="SKIP_ACTIVITY_VALIDATION" value="false" />
       <method v="2">
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
       </method>
@@ -269,11 +277,12 @@
     </state>
     <state x="200" y="96" key="#PSD/0.0.1366.728/1366.0.1024.728@0.0.1366.728" timestamp="1606463704833" />
     <state x="200" y="96" key="#PSD/0.0.1366.728@0.0.1366.728" timestamp="1608278860892" />
-    <state x="402" y="8" key="#app" timestamp="1609332240419">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state x="565" y="11" key="#app" timestamp="1609395857048">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="402" y="8" key="#app/0.0.1366.728/1366.0.1024.728@0.0.1366.728" timestamp="1609332240419" />
     <state x="402" y="8" key="#app/0.0.1366.728@0.0.1366.728" timestamp="1608220820430" />
+    <state x="565" y="11" key="#app/0.0.1920.1040@0.0.1920.1040" timestamp="1609395857048" />
     <state x="413" y="119" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1606476759718">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -296,10 +305,11 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="111" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728/1366.0.1024.728@0.0.1366.728" timestamp="1608383157466" />
-    <state x="462" y="14" key="#org.jetbrains.kotlin.idea.refactoring.move.moveDeclarations.ui.MoveKotlinTopLevelDeclarationsDialog" timestamp="1608468768304">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state x="649" y="20" key="#org.jetbrains.kotlin.idea.refactoring.move.moveDeclarations.ui.MoveKotlinTopLevelDeclarationsDialog" timestamp="1609396088191">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="462" y="14" key="#org.jetbrains.kotlin.idea.refactoring.move.moveDeclarations.ui.MoveKotlinTopLevelDeclarationsDialog/0.0.1366.728/1366.0.1024.728@0.0.1366.728" timestamp="1608468768304" />
+    <state x="649" y="20" key="#org.jetbrains.kotlin.idea.refactoring.move.moveDeclarations.ui.MoveKotlinTopLevelDeclarationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1609396088191" />
     <state x="429" y="201" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1608226187785">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -332,26 +342,30 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="518" y="257" width="329" height="270" key="Github.ShareDialog/0.0.1366.728/1366.0.1024.728@0.0.1366.728" timestamp="1608292853853" />
-    <state width="1323" height="247" key="GridCell.Tab.0.bottom" timestamp="1609332987394">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="1877" height="322" key="GridCell.Tab.0.bottom" timestamp="1609403266601">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1323" height="247" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.0.1024.728@0.0.1366.728" timestamp="1609332987394" />
     <state width="964" height="428" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.0.1024.728@1366.0.1024.728" timestamp="1606625141369" />
-    <state width="1323" height="247" key="GridCell.Tab.0.center" timestamp="1609332987393">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="1877" height="322" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1609403266601" />
+    <state width="1877" height="322" key="GridCell.Tab.0.center" timestamp="1609403266601">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1323" height="247" key="GridCell.Tab.0.center/0.0.1366.728/1366.0.1024.728@0.0.1366.728" timestamp="1609332987393" />
     <state width="964" height="428" key="GridCell.Tab.0.center/0.0.1366.728/1366.0.1024.728@1366.0.1024.728" timestamp="1606625141369" />
-    <state width="1323" height="247" key="GridCell.Tab.0.left" timestamp="1609332987393">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="1877" height="322" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1609403266601" />
+    <state width="1877" height="322" key="GridCell.Tab.0.left" timestamp="1609403266601">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1323" height="247" key="GridCell.Tab.0.left/0.0.1366.728/1366.0.1024.728@0.0.1366.728" timestamp="1609332987393" />
     <state width="964" height="428" key="GridCell.Tab.0.left/0.0.1366.728/1366.0.1024.728@1366.0.1024.728" timestamp="1606625141368" />
-    <state width="1323" height="247" key="GridCell.Tab.0.right" timestamp="1609332987393">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="1877" height="322" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1609403266601" />
+    <state width="1877" height="322" key="GridCell.Tab.0.right" timestamp="1609403266601">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1323" height="247" key="GridCell.Tab.0.right/0.0.1366.728/1366.0.1024.728@0.0.1366.728" timestamp="1609332987393" />
     <state width="964" height="428" key="GridCell.Tab.0.right/0.0.1366.728/1366.0.1024.728@1366.0.1024.728" timestamp="1606625141369" />
+    <state width="1877" height="322" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1609403266601" />
     <state width="1323" height="222" key="GridCell.Tab.1.bottom" timestamp="1608221417655">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

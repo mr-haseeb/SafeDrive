@@ -17,12 +17,11 @@
 package com.example.safedrive
 
 import android.os.Bundle
-import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import com.example.safedrive.fragments.CollectData.CollectData
-import com.example.safedrive.fragments.dashborad.Dashborad
 import com.example.safedrive.fragments.Profile.Profile
 import com.example.safedrive.fragments.collect_data.SelectLabel
+import com.example.safedrive.fragments.dashborad.Dashborad
 import com.example.safedrive.lib.PosenetActivity
 import com.ismaeldivita.chipnavigation.ChipNavigationBar
 
@@ -83,5 +82,18 @@ class MainActivity : AppCompatActivity() {
       }
     }
 
+
+    val intent = intent
+    val message = intent.getStringExtra("actvity")
+
+    if(message.equals("safe_drive")){
+      val bundle = Bundle()
+      bundle.putString("actvity", message)
+      val collectData = CollectData()
+      collectData.setArguments(bundle)
+    }
+
+
   }
+
 }

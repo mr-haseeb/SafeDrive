@@ -21,11 +21,12 @@ import android.view.*
 import android.widget.Toast
 import androidx.fragment.app.DialogFragment
 import androidx.fragment.app.Fragment
+import com.example.safedrive.R
+import com.example.safedrive.lib.*
+import kotlinx.android.synthetic.main.collect_data.*
 import java.lang.Math.abs
 import java.util.concurrent.Semaphore
 import java.util.concurrent.TimeUnit
-import com.example.safedrive.R
-import com.example.safedrive.lib.*
 
 
 private val CSV_HEADER = "id,class,NOSE,LEFT_EYE,RIGHT_EYE,LEFT_EAR,RIGHT_EAR," +
@@ -188,7 +189,10 @@ class CollectData : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
+        val activty = arguments!!.getString("activity")
+        textView.setText(activty)
         return inflater.inflate(R.layout.collect_data, container, false)
+
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
