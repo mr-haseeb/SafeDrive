@@ -9,6 +9,7 @@ import android.view.View
 import android.view.ViewGroup
 import com.example.safedrive.R
 import com.example.safedrive.fragments.CollectData.CollectData
+import kotlinx.android.synthetic.main.select_label.*
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -38,11 +39,10 @@ class SelectLabel : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.select_label, container, false)
-    }
 
-    fun onClick(v: View) {
-        when (v.id) {
+        val view: View = inflater.inflate(R.layout.select_label, container, false)
+
+        when (view.id) {
             R.id.safe_driving -> {
                 Log.d("buttn","safe driving")
 
@@ -52,7 +52,7 @@ class SelectLabel : Fragment() {
                 val collectData = CollectData();
 
                 collectData.setArguments(bundle)
-                getFragmentManager()?.beginTransaction()?.replace(R.id.surfaceView,collectData)?.commit()
+                getFragmentManager()?.beginTransaction()?.replace(R.id.fragment_holder,collectData)?.commit()
 
 
             }
@@ -63,7 +63,7 @@ class SelectLabel : Fragment() {
                 val collectData = CollectData();
 
                 collectData.setArguments(bundle)
-                getFragmentManager()?.beginTransaction()?.replace(R.id.surfaceView,collectData)?.commit()
+                getFragmentManager()?.beginTransaction()?.replace(R.id.fragment_holder,collectData)?.commit()
 
             }
             R.id.reaching_behind -> {
@@ -74,7 +74,7 @@ class SelectLabel : Fragment() {
                 val collectData = CollectData();
 
                 collectData.setArguments(bundle)
-                getFragmentManager()?.beginTransaction()?.replace(R.id.surfaceView,collectData)?.commit()
+                getFragmentManager()?.beginTransaction()?.replace(R.id.fragment_holder,collectData)?.commit()
 
             }
             R.id.drinking -> {
@@ -84,7 +84,7 @@ class SelectLabel : Fragment() {
                 val collectData = CollectData();
 
                 collectData.setArguments(bundle)
-                getFragmentManager()?.beginTransaction()?.replace(R.id.surfaceView,collectData)?.commit()
+                getFragmentManager()?.beginTransaction()?.replace(R.id.fragment_holder,collectData)?.commit()
 
 
 
@@ -98,7 +98,7 @@ class SelectLabel : Fragment() {
                 val collectData = CollectData();
 
                 collectData.setArguments(bundle)
-                getFragmentManager()?.beginTransaction()?.replace(R.id.surfaceView,collectData)?.commit()
+                getFragmentManager()?.beginTransaction()?.replace(R.id.fragment_holder,collectData)?.commit()
 
             }
             R.id.talking_on_the_phone -> {
@@ -108,7 +108,89 @@ class SelectLabel : Fragment() {
                 val collectData = CollectData();
 
                 collectData.setArguments(bundle)
-                getFragmentManager()?.beginTransaction()?.replace(R.id.surfaceView,collectData)?.commit()
+                getFragmentManager()?.beginTransaction()?.replace(R.id.fragment_holder,collectData)?.commit()
+            }
+            R.id.export_all -> {
+            }
+            R.id.view_data -> {
+            }
+
+            else -> {
+            }
+        }
+
+
+        return view
+    }
+
+    fun onClick(v: View) {
+        when (v.id) {
+            R.id.safe_driving -> {
+                Log.d("buttn","safe driving")
+
+                val bundle = Bundle()
+
+                bundle.putString("activity","safe_driving")
+                val collectData = CollectData();
+
+                collectData.setArguments(bundle)
+                getFragmentManager()?.beginTransaction()?.replace(R.id.fragment_holder,collectData)?.commit()
+
+
+            }
+            R.id.texting -> {
+                val bundle = Bundle()
+
+                bundle.putString("activity","texting")
+                val collectData = CollectData();
+
+                collectData.setArguments(bundle)
+                getFragmentManager()?.beginTransaction()?.replace(R.id.fragment_holder,collectData)?.commit()
+
+            }
+            R.id.reaching_behind -> {
+
+                val bundle = Bundle()
+
+                bundle.putString("activity","reaching_behind")
+                val collectData = CollectData();
+
+                collectData.setArguments(bundle)
+                getFragmentManager()?.beginTransaction()?.replace(R.id.fragment_holder,collectData)?.commit()
+
+            }
+            R.id.drinking -> {
+                val bundle = Bundle()
+
+                bundle.putString("activity","drinking")
+                val collectData = CollectData();
+
+                collectData.setArguments(bundle)
+                getFragmentManager()?.beginTransaction()?.replace(R.id.fragment_holder,collectData)?.commit()
+
+
+
+            }
+
+            R.id.operating_the_music -> {
+
+                val bundle = Bundle()
+
+                bundle.putString("activity","operating_the_music")
+                val collectData = CollectData();
+
+                collectData.setArguments(bundle)
+                getFragmentManager()?.beginTransaction()?.replace(R.id.fragment_holder,collectData)?.commit()
+
+            }
+            R.id.talking_on_the_phone -> {
+                val bundle = Bundle()
+
+                bundle.putString("activity","talking_ont_the_phone")
+                val collectData = CollectData();
+
+                collectData.setArguments(bundle)
+                getFragmentManager()?.beginTransaction()?.replace(R.id.fragment_holder,collectData)?.commit()
             }
             R.id.export_all -> {
             }
@@ -133,11 +215,11 @@ class SelectLabel : Fragment() {
         // TODO: Rename and change types and number of parameters
         @JvmStatic
         fun newInstance(param1: String, param2: String) =
-            SelectLabel().apply {
-                arguments = Bundle().apply {
-                    putString(ARG_PARAM1, param1)
-                    putString(ARG_PARAM2, param2)
-                }
+                SelectLabel().apply {
+                    arguments = Bundle().apply {
+                        putString(ARG_PARAM1, param1)
+                        putString(ARG_PARAM2, param2)
+                    }
             }
     }
 }
