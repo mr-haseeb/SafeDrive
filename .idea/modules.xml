@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/TFLite_PoseNet_Demo_App.iml" filepath="$PROJECT_DIR$/.idea/modules/TFLite_PoseNet_Demo_App.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/TFLite_PoseNet_Demo_App.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/TFLite_PoseNet_Demo_App.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/app.iml" group="safedrive/app" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/safedrive.iml" filepath="$PROJECT_DIR$/.idea/modules/safedrive.iml" group="safedrive" />
     </modules>
   </component>
 </project>
