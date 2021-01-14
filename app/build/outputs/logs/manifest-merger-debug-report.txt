@@ -205,7 +205,7 @@ ADDED from F:\FYP\Code\SafeDrive\app\src\main\AndroidManifest.xml:12:5-64
 	android:name
 		ADDED from F:\FYP\Code\SafeDrive\app\src\main\AndroidManifest.xml:12:19-61
 application
-ADDED from F:\FYP\Code\SafeDrive\app\src\main\AndroidManifest.xml:16:5-33:19
+ADDED from F:\FYP\Code\SafeDrive\app\src\main\AndroidManifest.xml:15:5-33:19
 MERGED from [com.google.android.material:material:1.2.1] C:\Users\bolah\.gradle\caches\transforms-2\files-2.1\222e6848c3a72805600daf989273ba7b\material-1.2.1\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.2.1] C:\Users\bolah\.gradle\caches\transforms-2\files-2.1\222e6848c3a72805600daf989273ba7b\material-1.2.1\AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.0-beta8] C:\Users\bolah\.gradle\caches\transforms-2\files-2.1\9dbdd2665ff923e1fd8cd2ab3a5bc21f\constraintlayout-2.0.0-beta8\AndroidManifest.xml:9:5-20
@@ -221,21 +221,25 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\bo
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.2.0] C:\Users\bolah\.gradle\caches\transforms-2\files-2.1\8976eed12a9bb5ce3b07acc4f873cd96\core-1.2.0\AndroidManifest.xml:24:18-86
 	android:supportsRtl
-		ADDED from F:\FYP\Code\SafeDrive\app\src\main\AndroidManifest.xml:21:9-35
+		ADDED from F:\FYP\Code\SafeDrive\app\src\main\AndroidManifest.xml:20:9-35
 	android:label
-		ADDED from F:\FYP\Code\SafeDrive\app\src\main\AndroidManifest.xml:19:9-41
+		ADDED from F:\FYP\Code\SafeDrive\app\src\main\AndroidManifest.xml:18:9-41
 	android:roundIcon
-		ADDED from F:\FYP\Code\SafeDrive\app\src\main\AndroidManifest.xml:20:9-54
+		ADDED from F:\FYP\Code\SafeDrive\app\src\main\AndroidManifest.xml:19:9-54
 	android:icon
-		ADDED from F:\FYP\Code\SafeDrive\app\src\main\AndroidManifest.xml:18:9-43
+		ADDED from F:\FYP\Code\SafeDrive\app\src\main\AndroidManifest.xml:17:9-43
 	android:allowBackup
-		ADDED from F:\FYP\Code\SafeDrive\app\src\main\AndroidManifest.xml:17:9-35
+		ADDED from F:\FYP\Code\SafeDrive\app\src\main\AndroidManifest.xml:16:9-35
 	android:theme
-		ADDED from F:\FYP\Code\SafeDrive\app\src\main\AndroidManifest.xml:22:9-48
-activity#com.example.safedrive.components.collect_data.SelectLabel
-ADDED from F:\FYP\Code\SafeDrive\app\src\main\AndroidManifest.xml:23:9-82
+		ADDED from F:\FYP\Code\SafeDrive\app\src\main\AndroidManifest.xml:21:9-48
+activity#com.example.safedrive.activities.camera
+ADDED from F:\FYP\Code\SafeDrive\app\src\main\AndroidManifest.xml:22:9-64
 	android:name
-		ADDED from F:\FYP\Code\SafeDrive\app\src\main\AndroidManifest.xml:23:19-70
+		ADDED from F:\FYP\Code\SafeDrive\app\src\main\AndroidManifest.xml:22:19-52
+activity#com.example.safedrive.nav_components.collect_data.SelectLabel
+ADDED from F:\FYP\Code\SafeDrive\app\src\main\AndroidManifest.xml:23:9-77
+	android:name
+		ADDED from F:\FYP\Code\SafeDrive\app\src\main\AndroidManifest.xml:23:19-74
 activity#com.example.safedrive.MainActivity
 ADDED from F:\FYP\Code\SafeDrive\app\src\main\AndroidManifest.xml:24:9-32:20
 	android:exported

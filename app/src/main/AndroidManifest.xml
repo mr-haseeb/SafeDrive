@@ -10,7 +10,6 @@
     <uses-feature android:name="android.hardware.camera" />
     <uses-feature android:name="android.hardware.camera.autofocus" />
     <uses-feature android:name="android.hardware.camera.any" />
-
     <uses-permission android:name="android.permission.CAMERA" />
 
     <application
@@ -20,7 +19,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme.Posenet">
-        <activity android:name=".components.collect_data.SelectLabel"></activity>
+        <activity android:name=".activities.camera"></activity>
+        <activity android:name=".nav_components.collect_data.SelectLabel" />
         <activity
             android:name=".MainActivity"
             android:exported="true">

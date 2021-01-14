@@ -19,22 +19,24 @@ package com.example.safedrive
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import com.example.safedrive.components.CollectData.CollectData
-import com.example.safedrive.components.Profile.Profile
-import com.example.safedrive.components.collect_data.SelectLabel
-import com.example.safedrive.components.dashborad.Dashborad
+import com.example.safedrive.activities.camera
+import com.example.safedrive.nav_components.CollectData.CollectData
+import com.example.safedrive.nav_components.Profile.Profile
+import com.example.safedrive.nav_components.collect_data.SelectLabel
+import com.example.safedrive.nav_components.dashborad.Dashborad
+
 import com.example.safedrive.lib.PosenetActivity
 import com.ismaeldivita.chipnavigation.ChipNavigationBar
-import kotlinx.android.synthetic.main.collect_data.*
 
 
 class MainActivity : AppCompatActivity() {
 
   val dashborad = Dashborad()
-//  val collect_data = CollectData()
+  //  val collect_data = CollectData()
   val profile = Profile()
   val posenetActivity = PosenetActivity()
   val selectLabel=SelectLabel();
+  val collectData=CollectData();
 
   override fun onCreate(savedInstanceState: Bundle?) {
     super.onCreate(savedInstanceState)
@@ -54,9 +56,9 @@ class MainActivity : AppCompatActivity() {
       collectData(message)
     }else{
 //       Default Selected Fragment
-    supportFragmentManager.beginTransaction()
-      .replace(R.id.fragment_holder, dashborad)
-      .commit()
+      supportFragmentManager.beginTransaction()
+        .replace(R.id.fragment_holder, dashborad)
+        .commit()
     }
 
 
@@ -81,17 +83,26 @@ class MainActivity : AppCompatActivity() {
 
           // Respond to navigation item 2 click
 
-          val intent = Intent(this@MainActivity, SelectLabel::class.java)
-          startActivity(intent)
+//          val intent = Intent(this@MainActivity, SelectLabel::class.java)
+//          val intent = Intent(this@MainActivity, test::class.java)
+//          val intent = Intent(this@MainActivity, SelectLabel::class.java)
+//          startActivity(intent)
+          supportFragmentManager.beginTransaction()
+            // id of container and object of fragment class
+            .replace(R.id.fragment_holder, collectData)
+            .commit()
+
           true
         }
         R.id.bottom_nav_profile -> {
 
-          supportFragmentManager.beginTransaction()
-            // id of container and object of fragment class
-            .replace(R.id.fragment_holder, profile)
-            .commit()
+//          supportFragmentManager.beginTransaction()
+//            // id of container and object of fragment class
+//            .replace(R.id.fragment_holder, profile)
+//            .commit()
 
+          val intent = Intent(this@MainActivity, camera::class.java)
+          startActivity(intent)
           true
 
         }
@@ -106,18 +117,18 @@ class MainActivity : AppCompatActivity() {
   }
   fun collectData(activity:String){
 
-    if(activity.equals("safe_drive")){
-      val bundle = Bundle()
-      bundle.putString("actvity", activity)
-      val collectData = CollectData()
-      collectData.setArguments(bundle)
-
-      supportFragmentManager.beginTransaction()
-        // id of container and object of fragment class
-        .replace(R.id.fragment_holder, collectData)
-        .commit()
-
-    }
+//    if(activity.equals("safe_drive")){
+//      val bundle = Bundle()
+//      bundle.putString("actvity", activity)
+//      val collectData = CollectData()
+//      collectData.setArguments(bundle)
+//
+//      supportFragmentManager.beginTransaction()
+//        // id of container and object of fragment class
+//        .replace(R.id.fragment_holder, collectData)
+//        .commit()
+//
+//    }
 
 
   }
