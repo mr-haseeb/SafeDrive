@@ -120,8 +120,9 @@
                     >
 
                     <ImageView
-                        android:layout_width="24dp"
-                        android:layout_height="24dp"
+                        android:id="@+id/view_data"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
                         android:src="@drawable/career"
                         android:layout_marginTop="18dp"/>
 

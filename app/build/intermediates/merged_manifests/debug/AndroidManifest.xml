@@ -28,6 +28,7 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme.Posenet" >
+        <activity android:name="com.example.safedrive.activities.ViewData" />
         <activity android:name="com.example.safedrive.activities.camera" />
         <activity android:name="com.example.safedrive.nav_components.collect_data.SelectLabel" />
         <activity

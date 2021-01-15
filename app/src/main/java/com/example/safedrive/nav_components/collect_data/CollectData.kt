@@ -5,6 +5,7 @@ import android.app.AlertDialog
 import android.app.Dialog
 import android.content.Context
 import android.content.pm.PackageManager
+import android.database.Cursor
 import android.graphics.*
 import android.hardware.camera2.*
 import android.media.Image
@@ -18,14 +19,18 @@ import android.util.Log
 import android.util.Size
 import android.util.SparseIntArray
 import android.view.*
-import android.widget.*
+import android.widget.AdapterView
+import android.widget.ArrayAdapter
+import android.widget.Spinner
+import android.widget.Toast
 import androidx.fragment.app.DialogFragment
 import androidx.fragment.app.Fragment
 import com.example.safedrive.R
-import com.example.safedrive.sqlite.DatabaseHelper
 import com.example.safedrive.lib.*
+import com.example.safedrive.sqlite.DatabaseHelper
 import kotlinx.android.synthetic.main.collect_data.*
 import java.lang.Math.abs
+import java.lang.Math.log
 import java.util.concurrent.Semaphore
 import java.util.concurrent.TimeUnit
 
@@ -60,6 +65,10 @@ class CollectData : Fragment() {
         Pair(BodyPart.RIGHT_HIP, BodyPart.RIGHT_KNEE),
         Pair(BodyPart.RIGHT_KNEE, BodyPart.RIGHT_ANKLE)
     )
+
+    private var myDb: DatabaseHelper? = null
+
+//    val myDb = DatabaseHelper(this.activity)
 
     /** Threshold for confidence score. */
     private val minConfidence = 0.5
@@ -135,6 +144,58 @@ class CollectData : Fragment() {
     private var surfaceHolder: SurfaceHolder? = null
 
 
+    // body
+
+        var noise_x :Float= 0.0F
+        var noise_y:Float=0.0F
+        var left_eye_x :Float=0.0F
+    var left_eye_y :Float=0.0F
+    var right_eye_x :Float=0.0F
+    var right_eye_y :Float=0.0F
+    var left_ear_x:Float=0.0F
+        var left_ear_y:Float=0.0F
+
+        var right_ear_x:Float=0.0F
+        var right_ear_y:Float=0.0F
+
+        var left_shoulder_x:Float=0.0F
+        var left_shoulder_y:Float=0.0F
+
+        var right_shoulder_x:Float=0.0F
+        var right_shoulder_y:Float=0.0F
+
+        var left_elbow_x:Float=0.0F
+        var left_elbow_y:Float=0.0F
+
+        var right_elbow_x:Float=0.0F
+        var right_elbow_y:Float=0.0F
+
+    var left_wrist_x:Float=0.0F
+    var left_wrist_y:Float=0.0F
+
+    var right_wrist_x:Float=0.0F
+    var right_wrist_y:Float=0.0F
+
+    var left_hip_x:Float=0.0F
+    var left_hip_y:Float=0.0F
+
+    var right_hip_x:Float=0.0F
+    var right_hip_y:Float=0.0F
+
+    var left_knee_x:Float=0.0F
+    var left_knee_y:Float=0.0F
+
+    var right_knee_x:Float=0.0F
+    var right_knee_y:Float=0.0F
+
+    var left_ankle_x:Float=0.0F
+    var left_ankle_y:Float=0.0F
+
+    var right_ankle_x:Float=0.0F
+    var right_ankle_y:Float=0.0F
+
+
+
     // Check Buttons Value
 
 
@@ -182,9 +243,6 @@ class CollectData : Fragment() {
             request: CaptureRequest,
             result: TotalCaptureResult
         ) {
-
-
-
         }
     }
 
@@ -203,7 +261,8 @@ class CollectData : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        val myDb = DatabaseHelper(this.activity)
+
+        myDb= DatabaseHelper(context)
 
         val v = inflater.inflate(R.layout.collect_data, container, false)
 //        start.setOnClickListener(this)
@@ -263,6 +322,10 @@ class CollectData : Fragment() {
     }
 
 
+    override fun onAttach(context: Context) {
+        super.onAttach(context)
+        myDb = DatabaseHelper(activity)
+    }
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
@@ -280,28 +343,36 @@ class CollectData : Fragment() {
 
             START=true
             showToast("start button")
-
+            Log.d("start","start")
         }
 
         stop.setOnClickListener{
             STOP=true
             START=false
             SAVE=false
+
             showToast("stop button")
+            Log.d("stop","stop")
+//            stopCollectingData()
         }
 
-        save.setOnClickListener{
+        view_all.setOnClickListener{
             STOP=false
             START=false
             SAVE=true
-
+            Log.d("save","save")
             showToast("saving data")
+            viewAllCollectedData()
+//            saveCollectingData()
         }
-        discard.setOnClickListener{
+        delete_table.setOnClickListener{
             SAVE=false
             STOP=false
             DISCARD=true
+            Log.d("discard","discard")
             showToast("discard button")
+//            discardCollectingData()
+
         }
 
 
@@ -322,6 +393,194 @@ class CollectData : Fragment() {
 //        }
 
 
+    }
+
+    var isInserted :Boolean = false
+
+    private fun startcollectingData(person:Person){
+
+        if((!STOP && !SAVE && START)) {
+
+
+            //        myDb.insertData(person.keypointList.toList())
+//            Log.d("keypointstart",person.keyPoints.toString())
+
+
+            for (keyPoint in person.keyPoints) {
+            if (keyPoint.score > minConfidence) {
+
+//                keyPoint.bodyPart.Ct
+                if(keyPoint.bodyPart.toString().contains("NOSE")){
+
+                     noise_x=keyPoint.position.x.toFloat()
+                     noise_y=keyPoint.position.y.toFloat()
+
+//                    Log.d("i",keyPoint.position.x.toFloat().toString())
+//                    Log.d("noise",noise_x.toString()+noise_y.toString())
+                }
+                if(keyPoint.bodyPart.toString().contains("LEFT_EYE")){
+                   left_eye_x=keyPoint.position.x.toFloat()
+                    Log.d("lll",left_eye_x.toString())
+                     left_eye_y=keyPoint.position.y.toFloat()
+                }
+                if(keyPoint.bodyPart.toString().contains("RIGHT_EYE")){
+                     right_eye_x=keyPoint.position.x.toFloat()
+                     right_eye_y=keyPoint.position.y.toFloat()
+                }
+                if(keyPoint.bodyPart.toString().contains("LEFT_EAR")){
+                     left_ear_x=keyPoint.position.x.toFloat()
+                     left_ear_y=keyPoint.position.y.toFloat()
+                }
+                if(keyPoint.bodyPart.toString().contains("RIGHT_EAR")){
+                     right_ear_x=keyPoint.position.x.toFloat()
+                     right_ear_y=keyPoint.position.y.toFloat()
+                }
+                if(keyPoint.bodyPart.toString().contains("LEFT_SHOULDER")){
+                     left_shoulder_x=keyPoint.position.x.toFloat()
+                     right_shoulder_y=keyPoint.position.y.toFloat()
+                }
+                if(keyPoint.bodyPart.toString().contains("RIGHT_SHOULDER")){
+                     right_shoulder_x=keyPoint.position.x.toFloat()
+                     right_shoulder_y=keyPoint.position.y.toFloat()
+
+                }
+                if(keyPoint.bodyPart.toString().contains("LEFT_ELBOW")){
+
+                     left_elbow_x=keyPoint.position.x.toFloat()
+                     left_elbow_y=keyPoint.position.y.toFloat()
+                }
+                if(keyPoint.bodyPart.toString().contains("RIGHT_ELBOW")){
+                     right_elbow_x=keyPoint.position.x.toFloat()
+                     right_elbow_y=keyPoint.position.y.toFloat()
+                }
+                if(keyPoint.bodyPart.toString().contains("LEFT_WRIST")){
+                     left_wrist_x=keyPoint.position.x.toFloat()
+                     left_wrist_y=keyPoint.position.y.toFloat()
+                }
+                if(keyPoint.bodyPart.toString().contains("RIGHT_WRIST")){
+                     right_wrist_x=keyPoint.position.x.toFloat()
+                     right_wrist_y=keyPoint.position.y.toFloat()
+                }
+                if(keyPoint.bodyPart.toString().contains("LEFT_HIP")){
+                     left_hip_x=keyPoint.position.x.toFloat()
+                     left_hip_y=keyPoint.position.y.toFloat()
+                }
+                if(keyPoint.bodyPart.toString().contains("RIGHT_HIP")){
+
+                     right_hip_x=keyPoint.position.x.toFloat()
+                     right_hip_y=keyPoint.position.y.toFloat()
+
+                }
+                if(keyPoint.bodyPart.toString().contains("LEFT_KNEE")){
+                     left_knee_x=keyPoint.position.x.toFloat()
+                     left_knee_y=keyPoint.position.y.toFloat()
+                }
+                if(keyPoint.bodyPart.toString().contains("RIGHT_KNEE")){
+                     right_knee_x=keyPoint.position.x.toFloat()
+                     right_knee_y=keyPoint.position.y.toFloat()
+                }
+                if(keyPoint.bodyPart.toString().contains("LEFT_ANKLE")){
+                     left_ankle_x=keyPoint.position.x.toFloat()
+                     left_ankle_y=keyPoint.position.y.toFloat()
+                }
+                if(keyPoint.bodyPart.toString().contains("RIGHT_ANKLE")){
+                     right_ankle_x=keyPoint.position.x.toFloat()
+                     right_ankle_y=keyPoint.position.y.toFloat()
+                }
+
+//                Log.d("key",keyPoint.bodyPart.name)
+
+
+               isInserted  = myDb?.insertData(textView.text.toString(),noise_x,noise_y,left_eye_x,left_eye_y,right_eye_x,right_eye_y,left_ear_x,left_ear_y,right_ear_x,right_ear_y,left_shoulder_x,left_shoulder_y,right_shoulder_x,right_shoulder_y,left_elbow_x,left_elbow_y,right_elbow_x,right_elbow_y,left_wrist_x,left_wrist_y,right_wrist_x,left_wrist_y,left_hip_x,left_hip_y,right_hip_x,right_hip_y,left_knee_x,left_knee_y,right_knee_x,right_knee_y,left_ankle_x,left_ankle_y,right_ankle_x,right_ankle_y,keyPoint.score)!!
+
+                if(isInserted){
+                    Log.d("save","data_save")
+                }
+                else{
+                    Log.d("save","data not saved")
+                }
+                }
+//                Log.d("noise",isInserted.toString())
+//
+//                Log.d("keypointstart",
+//                    "" + keyPoint.bodyPart + " " + keyPoint.position.x.toFloat()
+//                        .toString() + ", " + keyPoint.position.y.toFloat()
+////                        .toString() + " " + keyPoint.score
+//                 );
+//                Log.d("KEYPOINT",
+//                    "Body Part : " + keyPoint.bodyPart + ", Keypoint Location : (" + keyPoint.position.x.toFloat()
+//                        .toString() + ", " + keyPoint.position.y.toFloat()
+//                        .toString() + "), Confidence" + keyPoint.score
+//                );
+            }
+            }
+
+
+
+        }
+
+
+
+
+
+    private fun stopCollectingData(person: Person) {
+
+
+
+
+        if((STOP && !SAVE && !START)) {
+            //        myDb.insertData(person.keypointList.toList())
+            Log.d("keypointstop",person.keyPoints.toString())
+
+
+        }
+    }
+    private fun viewAllCollectedData() {
+
+        if((!STOP && SAVE && !START)) {
+            //        myDb.insertData(person.keypointList.toList())
+//            Log.d("keypointsave",person.keyPoints.toString())
+
+            val res: Cursor? = myDb?.getAllData()
+            if (res != null) {
+                if (res.count == 0) {
+                    showMessage("Error", "Nothing Found")
+                    return
+                }
+
+                val buffer = StringBuffer()
+                while (res.moveToNext()) {
+                    buffer.append("Id : " + res.getString(0) + "\n")
+                    buffer.append("NOISE_X : " + res.getString(1) + "\n")
+                    buffer.append("NOSE_Y : " + res.getString(2) + "\n")
+//                buffer.append("Id : "+res.getString(3)+"\n")
+
+                    showMessage("Data", buffer.toString())
+                }
+            }
+
+
+        }
+    }
+    public fun showMessage(title:String,message: String){
+        val builder=AlertDialog.Builder(this.activity)
+        builder.setCancelable(true)
+        builder.setTitle(title)
+        builder.setMessage(message)
+
+    }
+
+    private fun discardCollectingData(person: Person) {
+
+
+        if((!STOP && !SAVE && DISCARD)) {
+            //        myDb.insertData(person.keypointList.toList())
+            myDb?.deleteAll()
+            Log.d("keypointsdiscard",person.keyPoints.toString())
+
+
+
+        }
     }
 
 
@@ -398,7 +657,7 @@ class CollectData : Fragment() {
      * Sets up member variables related to camera.
      */
     private fun setUpCameraOutputs() {
-        val activity = activity
+       val  activity = activity
         val manager = activity!!.getSystemService(Context.CAMERA_SERVICE) as CameraManager
         try {
             for (cameraId in manager.cameraIdList) {
@@ -782,6 +1041,10 @@ class CollectData : Fragment() {
 
         // Perform inference.
         val person = posenet.estimateSinglePose(scaledBitmap)
+        startcollectingData(person)
+        stopCollectingData(person)
+//        saveCollectingData(person)
+        discardCollectingData(person)
 
 //        showToast(person.keyPoints.toString())
 //        showToast(person.score.toString())

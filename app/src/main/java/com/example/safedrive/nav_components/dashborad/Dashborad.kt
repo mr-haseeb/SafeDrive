@@ -1,10 +1,13 @@
 package com.example.safedrive.nav_components.dashborad
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.*
 import androidx.fragment.app.Fragment
 import com.example.safedrive.R
+import com.example.safedrive.activities.ViewData
 import com.example.safedrive.sqlite.DatabaseHelper
+import kotlinx.android.synthetic.main.dashborad.*
 
 
 // TODO: Rename parameter arguments, choose names that match
@@ -76,11 +79,17 @@ class Dashborad : Fragment() {
 //
 //            override fun onNothingSelected(adapterView: AdapterView<*>?) {}
 //        }
+
+
         return v
     }
 
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        view_data.setOnClickListener { val intent = Intent(activity, ViewData::class.java)
+            startActivity(intent)
+        }
+
         super.onViewCreated(view, savedInstanceState)
     }
 
