@@ -1949,7 +1949,6 @@ id decelerateAndComplete
 id decor_content_parent
 id default_activity_button
 id delete_all_data
-id delete_table
 id deltaRelative
 id design_bottom_sheet
 id design_menu_item_action_area
@@ -1982,6 +1981,7 @@ id exitUntilCollapsed
 id expand_activities_button
 id expanded_menu
 id export_all
+id export_data
 id fade
 id fill
 id fillCenter
@@ -2097,6 +2097,7 @@ id pathRelative
 id peekHeight
 id percent
 id pin
+id posenet
 id position
 id postLayout
 id progress_circular
@@ -2193,6 +2194,7 @@ id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
 id textView
+id textView2
 id text_input_end_icon
 id text_input_start_icon
 id texting
@@ -2332,6 +2334,7 @@ layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_camera
 layout activity_main
+layout activity_prediction
 layout activity_select_label
 layout activity_view_data
 layout cnb_horizontal_menu_item

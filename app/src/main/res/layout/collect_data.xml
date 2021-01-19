@@ -15,12 +15,6 @@
             android:id="@+id/stop"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
-        <Button android:text="view_all"
-            android:id="@+id/view_all"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
-
-
 
 
         <Spinner
@@ -40,13 +34,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="TextView" />
-    <Button
-        android:id="@+id/delete_table"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="delete_table"
-        android:layout_marginLeft="0dp"
-        android:layout_marginTop="40dp"/>
 
 </FrameLayout>
 

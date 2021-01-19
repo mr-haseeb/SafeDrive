@@ -160,6 +160,10 @@
         "source": "F:\\FYP\\Code\\SafeDrive\\app\\src\\main\\res\\font\\googlesans_medium.ttf"
     },
     {
+        "merged": "F:\\FYP\\Code\\SafeDrive\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_prediction.xml.flat",
+        "source": "F:\\FYP\\Code\\SafeDrive\\app\\src\\main\\res\\layout\\activity_prediction.xml"
+    },
+    {
         "merged": "F:\\FYP\\Code\\SafeDrive\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
         "source": "F:\\FYP\\Code\\SafeDrive\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
     },

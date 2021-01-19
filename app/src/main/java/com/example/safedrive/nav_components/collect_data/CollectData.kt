@@ -356,24 +356,24 @@ class CollectData : Fragment() {
 //            stopCollectingData()
         }
 
-        view_all.setOnClickListener{
-            STOP=false
-            START=false
-            SAVE=true
-            Log.d("save","save")
-            showToast("saving data")
-            viewAllCollectedData()
-//            saveCollectingData()
-        }
-        delete_table.setOnClickListener{
-            SAVE=false
-            STOP=false
-            DISCARD=true
-            Log.d("discard","discard")
-            showToast("discard button")
-//            discardCollectingData()
-
-        }
+//        view_all.setOnClickListener{
+//            STOP=false
+//            START=false
+//            SAVE=true
+//            Log.d("save","save")
+//            showToast("saving data")
+//            viewAllCollectedData()
+////            saveCollectingData()
+//        }
+//        delete_table.setOnClickListener{
+//            SAVE=false
+//            STOP=false
+//            DISCARD=true
+//            Log.d("discard","discard")
+//            showToast("discard button")
+////            discardCollectingData()
+//
+//        }
 
 
 
@@ -1049,36 +1049,36 @@ class CollectData : Fragment() {
 //        showToast(person.keyPoints.toString())
 //        showToast(person.score.toString())
 
-        if(  !SAVE && !STOP && START ){
-            // mean
-            showToast("Start Collecting Data")
+//        if(  !SAVE && !STOP && START ){
+//            // mean
+//            showToast("Start Collecting Data")
 
 //            Thread {
 ////                Thread.sleep(10000)
 //                getActivity()?.runOnUiThread(Runnable {  showToast("Start Collecting Data") })
 //            }.start()
 
-        }
-        if(  !START && !SAVE && STOP){
-            showToast("Stop Collecting Data")
-//            Thread {
+//        }
+//        if(  !START && !SAVE && STOP){
+//            showToast("Stop Collecting Data")
+////            Thread {
+//////                Thread.sleep(10000)
+////                getActivity()?.runOnUiThread(Runnable { showToast("Stop Collecting Data") })
+////            }.start()
+//
+//        }
+//        if(DISCARD)
+//        {
+//            showToast("Discard last collecting data")
+////            Thread {
 ////                Thread.sleep(10000)
-//                getActivity()?.runOnUiThread(Runnable { showToast("Stop Collecting Data") })
-//            }.start()
-
-        }
-        if(DISCARD)
-        {
-            showToast("Discard last collecting data")
-//            Thread {
-//                Thread.sleep(10000)
-//                getActivity()?.runOnUiThread(Runnable {   showToast("Discard last collecting data") })
-//            }.start()
-
-        }
-        if(SAVE){
-            showToast("Data has been save")
-        }
+////                getActivity()?.runOnUiThread(Runnable {   showToast("Discard last collecting data") })
+////            }.start()
+//
+//        }
+//        if(SAVE){
+//            showToast("Data has been save")
+//        }
 
 
 

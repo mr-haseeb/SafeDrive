@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.view.*
 import androidx.fragment.app.Fragment
 import com.example.safedrive.R
+import com.example.safedrive.activities.Prediction
 import com.example.safedrive.activities.ViewData
 import com.example.safedrive.sqlite.DatabaseHelper
 import kotlinx.android.synthetic.main.dashborad.*
@@ -89,6 +90,12 @@ class Dashborad : Fragment() {
         view_data.setOnClickListener { val intent = Intent(activity, ViewData::class.java)
             startActivity(intent)
         }
+
+        posenet.setOnClickListener { val intent = Intent(activity, Prediction::class.java)
+            startActivity(intent)
+        }
+
+
 
         super.onViewCreated(view, savedInstanceState)
     }

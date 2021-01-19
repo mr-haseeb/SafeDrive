@@ -86,6 +86,7 @@
                     >
 
                     <ImageView
+                        android:id="@+id/posenet"
                         android:layout_width="24dp"
                         android:layout_height="24dp"
                         android:src="@drawable/suggestion"

@@ -1,17 +1,20 @@
 package com.example.safedrive.activities
 
 import android.app.AlertDialog
+import android.content.pm.PackageManager
 import android.database.Cursor
 import android.os.Bundle
 import android.util.Log
-import android.view.Display
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.app.ActivityCompat
+import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.safedrive.R
 import com.example.safedrive.sqlite.DatabaseHelper
 import com.example.safedrive.sqlite.Model
 import kotlinx.android.synthetic.main.activity_view_data.*
+import java.util.jar.Manifest
 
 class ViewData : AppCompatActivity() {
     private var myDb: DatabaseHelper? = null
@@ -31,62 +34,68 @@ class ViewData : AppCompatActivity() {
         recyclerView.setLayoutManager(LinearLayoutManager(this))
 //        recyclerView.setOrientation(LinearLayoutManager.VERTICAL)
         val myadapter=MyAdapter(dataholder)
+        myadapter.notifyDataSetChanged()
         recyclerView.setAdapter(myadapter)
 
 
 
-        val cursor: Cursor? = myDb?.getAllData()
-        if (cursor != null) {
-            Log.i("data",cursor.getString(0).toString())
-        }
+
+
+        val cursor: Cursor = DatabaseHelper(this).getAllData()
+//        val cursor: Cursor? = myDb?
+
+//        if (cursor != null) {
+//            Log.i("data",cursor.getString(1).toString())
+//        }
 
         if (cursor != null) {
             while (cursor.moveToNext()) {
 
-                    val obj = Model(cursor.getString(1), cursor.getString(2), cursor.getString(3),cursor.getString(4), cursor.getString(5), cursor.getString(6),
+                    val obj = Model(cursor.getString(0),cursor.getString(1), cursor.getString(2), cursor.getString(3),cursor.getString(4), cursor.getString(5), cursor.getString(6),
                         cursor.getString(7), cursor.getString(8), cursor.getString(9),cursor.getString(10), cursor.getString(11), cursor.getString(12)
                     ,cursor.getString(13), cursor.getString(14), cursor.getString(15),cursor.getString(16), cursor.getString(17), cursor.getString(18)
                     ,cursor.getString(19), cursor.getString(20), cursor.getString(21),cursor.getString(22), cursor.getString(23), cursor.getString(24)
                     ,cursor.getString(25), cursor.getString(26), cursor.getString(27),cursor.getString(28), cursor.getString(29), cursor.getString(30)
-                    ,cursor.getString(31), cursor.getString(32), cursor.getString(33),cursor.getString(34), cursor.getString(35), cursor.getString(36),
-                        cursor.getString(37))
+                    ,cursor.getString(31), cursor.getString(32), cursor.getString(33),cursor.getString(34), cursor.getString(35), cursor.getString(36))
 
                     dataholder.add(obj)
 
 
+            }
+
+        }
+
+
+        delete_all_data.setOnClickListener{
+            val cursor: Unit = DatabaseHelper(this).deleteAll()
+            Toast.makeText(this, "Data Delete", Toast.LENGTH_SHORT).show()
+        }
+
+        view_all.setOnClickListener{
+            val res: Cursor = DatabaseHelper(this).getAllData()
+            if (res != null) {
+                if (res.count == 0) {
+                    showMessage("Error", "Nothing Found")
+                    return@setOnClickListener
+                }
+
+                val buffer = StringBuffer()
+                while (res.moveToNext()) {
+                    buffer.append("Id : " + res.getString(0) + "\n")
+                    buffer.append("NOISE_X : " + res.getString(1) + "\n")
+                    buffer.append("NOSE_Y : " + res.getString(2) + "\n")
+//                buffer.append("Id : "+res.getString(3)+"\n")
+
+                    showMessage("Data", buffer.toString())
+                }
 
             }
 
 
         }
 
-
-        delete_all_data.setOnClickListener{
-            myDb?.deleteAll()
-            Toast.makeText(this, "Data Delete", Toast.LENGTH_SHORT).show()
-        }
-
-        view_all.setOnClickListener{
-//            val res: Cursor? = myDb?.getAllData()
-//            if (res != null) {
-//                if (res.count == 0) {
-//                    showMessage("Error", "Nothing Found")
-//                    return@setOnClickListener
-//                }
-//
-//                val buffer = StringBuffer()
-//                while (res.moveToNext()) {
-//                    buffer.append("Id : " + res.getString(0) + "\n")
-//                    buffer.append("NOISE_X : " + res.getString(1) + "\n")
-//                    buffer.append("NOSE_Y : " + res.getString(2) + "\n")
-////                buffer.append("Id : "+res.getString(3)+"\n")
-//
-//                    showMessage("Data", buffer.toString())
-//                }
-//
-//            }
-
-
+        export_data.setOnClickListener{
+            val cursor: Unit = DatabaseHelper(this).exportDB()
         }
 
 

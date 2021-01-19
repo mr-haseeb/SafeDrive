@@ -5,7 +5,11 @@ import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
+import android.os.Environment;
 import android.util.Log;
+
+import java.io.File;
+import java.io.FileWriter;
 
 public class DatabaseHelper extends SQLiteOpenHelper {
     // Database Version
@@ -277,5 +281,36 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         db.execSQL("delete from "+ TABLE_NAME);
         db.close();
 
+    }
+
+    public void exportDB() {
+        SQLiteDatabase db = this.getWritableDatabase();
+
+        File exportDir = new File(Environment.getExternalStorageDirectory(), "");
+        if (!exportDir.exists())
+        {
+            exportDir.mkdirs();
+        }
+
+        File file = new File(exportDir, "data.csv");
+        try
+        {
+            file.createNewFile();
+            CSVWriter csvWrite = new CSVWriter(new FileWriter(file));
+            Cursor curCSV = db.rawQuery("SELECT * FROM contacts",null);
+            csvWrite.writeNext(curCSV.getColumnNames());
+            while(curCSV.moveToNext())
+            {
+                //Which column you want to exprort
+                String arrStr[] ={curCSV.getString(0),curCSV.getString(1), curCSV.getString(2)};
+                csvWrite.writeNext(arrStr);
+            }
+            csvWrite.close();
+            curCSV.close();
+        }
+        catch(Exception sqlEx)
+        {
+            Log.e("DataBaseHelper", sqlEx.getMessage(), sqlEx);
+        }
     }
 }

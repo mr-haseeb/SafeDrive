@@ -28,55 +28,64 @@
 16-->F:\FYP\Code\SafeDrive\app\src\main\AndroidManifest.xml:12:5-64
 16-->F:\FYP\Code\SafeDrive\app\src\main\AndroidManifest.xml:12:19-61
 17
-18    <uses-permission android:name="android.permission.CAMERA" />
-18-->F:\FYP\Code\SafeDrive\app\src\main\AndroidManifest.xml:8:5-65
-18-->F:\FYP\Code\SafeDrive\app\src\main\AndroidManifest.xml:8:22-62
-19
-20    <application
-20-->F:\FYP\Code\SafeDrive\app\src\main\AndroidManifest.xml:16:5-35:19
-21        android:allowBackup="true"
-21-->F:\FYP\Code\SafeDrive\app\src\main\AndroidManifest.xml:17:9-35
-22        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-22-->[androidx.core:core:1.2.0] C:\Users\bolah\.gradle\caches\transforms-2\files-2.1\8976eed12a9bb5ce3b07acc4f873cd96\core-1.2.0\AndroidManifest.xml:24:18-86
-23        android:debuggable="true"
-24        android:extractNativeLibs="false"
-25        android:icon="@mipmap/ic_launcher"
-25-->F:\FYP\Code\SafeDrive\app\src\main\AndroidManifest.xml:18:9-43
-26        android:label="@string/app_name"
-26-->F:\FYP\Code\SafeDrive\app\src\main\AndroidManifest.xml:19:9-41
-27        android:roundIcon="@mipmap/ic_launcher_round"
-27-->F:\FYP\Code\SafeDrive\app\src\main\AndroidManifest.xml:20:9-54
-28        android:supportsRtl="true"
-28-->F:\FYP\Code\SafeDrive\app\src\main\AndroidManifest.xml:21:9-35
-29        android:testOnly="true"
-30        android:theme="@style/AppTheme.Posenet" >
-30-->F:\FYP\Code\SafeDrive\app\src\main\AndroidManifest.xml:22:9-48
-31        <activity android:name="com.example.safedrive.activities.ViewData" />
-31-->F:\FYP\Code\SafeDrive\app\src\main\AndroidManifest.xml:23:9-66
-31-->F:\FYP\Code\SafeDrive\app\src\main\AndroidManifest.xml:23:19-54
-32        <activity android:name="com.example.safedrive.activities.camera" />
-32-->F:\FYP\Code\SafeDrive\app\src\main\AndroidManifest.xml:24:9-55
-32-->F:\FYP\Code\SafeDrive\app\src\main\AndroidManifest.xml:24:19-52
-33        <activity android:name="com.example.safedrive.nav_components.collect_data.SelectLabel" />
-33-->F:\FYP\Code\SafeDrive\app\src\main\AndroidManifest.xml:25:9-77
-33-->F:\FYP\Code\SafeDrive\app\src\main\AndroidManifest.xml:25:19-74
-34        <activity
-34-->F:\FYP\Code\SafeDrive\app\src\main\AndroidManifest.xml:26:9-34:20
-35            android:name="com.example.safedrive.MainActivity"
-35-->F:\FYP\Code\SafeDrive\app\src\main\AndroidManifest.xml:27:13-41
-36            android:exported="true" >
-36-->F:\FYP\Code\SafeDrive\app\src\main\AndroidManifest.xml:28:13-36
-37            <intent-filter>
-37-->F:\FYP\Code\SafeDrive\app\src\main\AndroidManifest.xml:29:13-33:29
-38                <action android:name="android.intent.action.MAIN" />
-38-->F:\FYP\Code\SafeDrive\app\src\main\AndroidManifest.xml:30:17-69
-38-->F:\FYP\Code\SafeDrive\app\src\main\AndroidManifest.xml:30:25-66
-39
-40                <category android:name="android.intent.category.LAUNCHER" />
-40-->F:\FYP\Code\SafeDrive\app\src\main\AndroidManifest.xml:32:17-77
-40-->F:\FYP\Code\SafeDrive\app\src\main\AndroidManifest.xml:32:27-74
-41            </intent-filter>
-42        </activity>
-43    </application>
-44
-45</manifest>
+18    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+18-->F:\FYP\Code\SafeDrive\app\src\main\AndroidManifest.xml:14:5-81
+18-->F:\FYP\Code\SafeDrive\app\src\main\AndroidManifest.xml:14:22-78
+19    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+19-->F:\FYP\Code\SafeDrive\app\src\main\AndroidManifest.xml:15:5-80
+19-->F:\FYP\Code\SafeDrive\app\src\main\AndroidManifest.xml:15:22-77
+20    <uses-permission android:name="android.permission.CAMERA" />
+20-->F:\FYP\Code\SafeDrive\app\src\main\AndroidManifest.xml:8:5-65
+20-->F:\FYP\Code\SafeDrive\app\src\main\AndroidManifest.xml:8:22-62
+21
+22    <application
+22-->F:\FYP\Code\SafeDrive\app\src\main\AndroidManifest.xml:18:5-38:19
+23        android:allowBackup="true"
+23-->F:\FYP\Code\SafeDrive\app\src\main\AndroidManifest.xml:19:9-35
+24        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+24-->[androidx.core:core:1.2.0] C:\Users\bolah\.gradle\caches\transforms-2\files-2.1\8976eed12a9bb5ce3b07acc4f873cd96\core-1.2.0\AndroidManifest.xml:24:18-86
+25        android:debuggable="true"
+26        android:extractNativeLibs="false"
+27        android:icon="@mipmap/ic_launcher"
+27-->F:\FYP\Code\SafeDrive\app\src\main\AndroidManifest.xml:20:9-43
+28        android:label="@string/app_name"
+28-->F:\FYP\Code\SafeDrive\app\src\main\AndroidManifest.xml:21:9-41
+29        android:roundIcon="@mipmap/ic_launcher_round"
+29-->F:\FYP\Code\SafeDrive\app\src\main\AndroidManifest.xml:22:9-54
+30        android:supportsRtl="true"
+30-->F:\FYP\Code\SafeDrive\app\src\main\AndroidManifest.xml:23:9-35
+31        android:testOnly="true"
+32        android:theme="@style/AppTheme.Posenet" >
+32-->F:\FYP\Code\SafeDrive\app\src\main\AndroidManifest.xml:24:9-48
+33        <activity android:name="com.example.safedrive.activities.Prediction" />
+33-->F:\FYP\Code\SafeDrive\app\src\main\AndroidManifest.xml:25:9-68
+33-->F:\FYP\Code\SafeDrive\app\src\main\AndroidManifest.xml:25:19-56
+34        <activity android:name="com.example.safedrive.activities.ViewData" />
+34-->F:\FYP\Code\SafeDrive\app\src\main\AndroidManifest.xml:26:9-57
+34-->F:\FYP\Code\SafeDrive\app\src\main\AndroidManifest.xml:26:19-54
+35        <activity android:name="com.example.safedrive.activities.camera" />
+35-->F:\FYP\Code\SafeDrive\app\src\main\AndroidManifest.xml:27:9-55
+35-->F:\FYP\Code\SafeDrive\app\src\main\AndroidManifest.xml:27:19-52
+36        <activity android:name="com.example.safedrive.nav_components.collect_data.SelectLabel" />
+36-->F:\FYP\Code\SafeDrive\app\src\main\AndroidManifest.xml:28:9-77
+36-->F:\FYP\Code\SafeDrive\app\src\main\AndroidManifest.xml:28:19-74
+37        <activity
+37-->F:\FYP\Code\SafeDrive\app\src\main\AndroidManifest.xml:29:9-37:20
+38            android:name="com.example.safedrive.MainActivity"
+38-->F:\FYP\Code\SafeDrive\app\src\main\AndroidManifest.xml:30:13-41
+39            android:exported="true" >
+39-->F:\FYP\Code\SafeDrive\app\src\main\AndroidManifest.xml:31:13-36
+40            <intent-filter>
+40-->F:\FYP\Code\SafeDrive\app\src\main\AndroidManifest.xml:32:13-36:29
+41                <action android:name="android.intent.action.MAIN" />
+41-->F:\FYP\Code\SafeDrive\app\src\main\AndroidManifest.xml:33:17-69
+41-->F:\FYP\Code\SafeDrive\app\src\main\AndroidManifest.xml:33:25-66
+42
+43                <category android:name="android.intent.category.LAUNCHER" />
+43-->F:\FYP\Code\SafeDrive\app\src\main\AndroidManifest.xml:35:17-77
+43-->F:\FYP\Code\SafeDrive\app\src\main\AndroidManifest.xml:35:27-74
+44            </intent-filter>
+45        </activity>
+46    </application>
+47
+48</manifest>
