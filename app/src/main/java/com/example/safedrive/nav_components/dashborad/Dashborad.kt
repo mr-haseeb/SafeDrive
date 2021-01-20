@@ -7,6 +7,9 @@ import androidx.fragment.app.Fragment
 import com.example.safedrive.R
 import com.example.safedrive.activities.Prediction
 import com.example.safedrive.activities.ViewData
+import com.example.safedrive.activities.cnn_tflite.CnnTflite
+import com.example.safedrive.activities.driveralert.FaceTrackerActivity
+import com.example.safedrive.activities.driveralert.MainActivity
 import com.example.safedrive.sqlite.DatabaseHelper
 import kotlinx.android.synthetic.main.dashborad.*
 
@@ -94,6 +97,14 @@ class Dashborad : Fragment() {
         posenet.setOnClickListener { val intent = Intent(activity, Prediction::class.java)
             startActivity(intent)
         }
+        driveralert.setOnClickListener { val intent = Intent(activity, MainActivity::class.java)
+            startActivity(intent)
+        }
+
+        cnn.setOnClickListener { val intent = Intent(activity, CnnTflite::class.java)
+            startActivity(intent)
+        }
+
 
 
 

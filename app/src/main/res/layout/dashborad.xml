@@ -51,6 +51,7 @@
                     >
 
                     <ImageView
+                        android:id="@+id/cnn"
                         android:layout_width="24dp"
                         android:layout_height="24dp"
                         android:src="@drawable/idea"
@@ -156,6 +157,7 @@
                     >
 
                     <ImageView
+                        android:id="@+id/driveralert"
                         android:layout_width="24dp"
                         android:layout_height="24dp"
                         android:src="@drawable/medical"
