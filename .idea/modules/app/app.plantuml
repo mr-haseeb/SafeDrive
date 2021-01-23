@@ -215,8 +215,16 @@ title __APP's Class Diagram__\n
   
 
   namespace com.example.safedrive {
-    namespace nav_components.CollectData {
-      class com.example.safedrive.nav_components.CollectData.CollectDataKt {
+    namespace nav_components.dashborad {
+      class com.example.safedrive.nav_components.dashborad.Dashborad {
+      }
+    }
+  }
+  
+
+  namespace com.example.safedrive {
+    namespace nav_components.dashborad {
+      class com.example.safedrive.nav_components.dashborad.DashboradKt {
       }
     }
   }
@@ -277,6 +285,7 @@ title __APP's Class Diagram__\n
   com.example.safedrive.nav_components.CollectData.CollectData -up-|> androidx.fragment.app.Fragment
   com.example.safedrive.nav_components.CollectData.CollectData o-- com.example.safedrive.sqlite.DatabaseHelper : myDb
   com.example.safedrive.nav_components.CollectData.CollectData o-- com.example.safedrive.lib.Posenet : posenet
+  com.example.safedrive.nav_components.dashborad.Dashborad -up-|> androidx.fragment.app.Fragment
   com.example.safedrive.sqlite.DatabaseHelper -up-|> android.database.sqlite.SQLiteOpenHelper
 
 

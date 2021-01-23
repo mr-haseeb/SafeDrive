@@ -1,5 +1,6 @@
 package com.example.safedrive.nav_components.dashborad
 
+import android.content.ComponentName
 import android.content.Intent
 import android.os.Bundle
 import android.view.*
@@ -101,12 +102,20 @@ class Dashborad : Fragment() {
             startActivity(intent)
         }
 
-        cnn.setOnClickListener { val intent = Intent(activity, CnnTflite::class.java)
+//        cnn.setOnClickListener { val intent = Intent(activity, CnnTflite::class.java)
+//            startActivity(intent)
+//        }
+        cnn.setOnClickListener {
+            val intent =
+                Intent(Intent.ACTION_MAIN)
+            intent.component = ComponentName(
+                "org.tensorflow.demo",
+                "org.tensorflow.demo.ClassifierActivity"
+            )
             startActivity(intent)
+
+
         }
-
-
-
 
         super.onViewCreated(view, savedInstanceState)
     }

@@ -51,10 +51,9 @@
         android:testOnly="true"
         android:theme="@style/AppTheme.Posenet" >
         <activity android:name="com.example.safedrive.activities.cnn_tflite.CnnTflite" />
-        <activity android:name="com.example.safedrive.activities.Prediction" />
-        <activity android:name="com.example.safedrive.activities.ViewData" />
         <activity android:name="com.example.safedrive.activities.camera" />
         <activity android:name="com.example.safedrive.activities.driveralert.MainActivity" />
+        <activity android:name="com.example.safedrive.activities.ViewData" />
         <activity android:name="com.example.safedrive.activities.driveralert.FaceTrackerActivity" />
         <activity android:name="com.example.safedrive.nav_components.collect_data.SelectLabel" /> <!-- <activity -->
         <!-- android:name=".activities.driveralert.monitor_menu" -->

@@ -1,6 +1,6 @@
 @startuml
 
-title __Collect Data Class Diagram__\n
+title __ACTIVITIES's Class Diagram__\n
 
   namespace com.example.safedrive {
     namespace activities {

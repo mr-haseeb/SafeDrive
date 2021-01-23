@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from F:\FYP\Code\SafeDrive\app\src\main\AndroidManifest.xml:2:1-47:12
-INJECTED from F:\FYP\Code\SafeDrive\app\src\main\AndroidManifest.xml:2:1-47:12
-INJECTED from F:\FYP\Code\SafeDrive\app\src\main\AndroidManifest.xml:2:1-47:12
-INJECTED from F:\FYP\Code\SafeDrive\app\src\main\AndroidManifest.xml:2:1-47:12
+ADDED from F:\FYP\Code\SafeDrive\app\src\main\AndroidManifest.xml:2:1-46:12
+INJECTED from F:\FYP\Code\SafeDrive\app\src\main\AndroidManifest.xml:2:1-46:12
+INJECTED from F:\FYP\Code\SafeDrive\app\src\main\AndroidManifest.xml:2:1-46:12
+INJECTED from F:\FYP\Code\SafeDrive\app\src\main\AndroidManifest.xml:2:1-46:12
 MERGED from [com.ismaeldivita.chipnavigation:chip-navigation-bar:1.3.4] C:\Users\bolah\.gradle\caches\transforms-2\files-2.1\41f6b5fd20ad001c6705cd03cea1d1bb\chip-navigation-bar-1.3.4\AndroidManifest.xml:2:1-11:12
 MERGED from [com.google.android.material:material:1.2.1] C:\Users\bolah\.gradle\caches\transforms-2\files-2.1\222e6848c3a72805600daf989273ba7b\material-1.2.1\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.camera:camera-view:1.0.0-alpha20] C:\Users\bolah\.gradle\caches\transforms-2\files-2.1\d55d8dff80d437914678d6f5a34d33aa\jetified-camera-view-1.0.0-alpha20\AndroidManifest.xml:17:1-24:12
@@ -108,20 +108,20 @@ MERGED from [androidx.print:print:1.0.0] C:\Users\bolah\.gradle\caches\transform
 MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\bolah\.gradle\caches\transforms-2\files-2.1\25f39401474222ef694b949c8d976c8a\interpolator-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] C:\Users\bolah\.gradle\caches\transforms-2\files-2.1\8f4a7819a410821187883e551a1789a7\lifecycle-viewmodel-2.1.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.annotation:annotation-experimental:1.0.0] C:\Users\bolah\.gradle\caches\transforms-2\files-2.1\1e0c619578e9acf85b364b7a58bd6b37\annotation-experimental-1.0.0\AndroidManifest.xml:17:1-24:12
-INJECTED from F:\FYP\Code\SafeDrive\app\src\main\AndroidManifest.xml:2:1-47:12
-INJECTED from F:\FYP\Code\SafeDrive\app\src\main\AndroidManifest.xml:2:1-47:12
-INJECTED from F:\FYP\Code\SafeDrive\app\src\main\AndroidManifest.xml:2:1-47:12
+INJECTED from F:\FYP\Code\SafeDrive\app\src\main\AndroidManifest.xml:2:1-46:12
+INJECTED from F:\FYP\Code\SafeDrive\app\src\main\AndroidManifest.xml:2:1-46:12
+INJECTED from F:\FYP\Code\SafeDrive\app\src\main\AndroidManifest.xml:2:1-46:12
 	package
 		ADDED from F:\FYP\Code\SafeDrive\app\src\main\AndroidManifest.xml:3:5-36
 		INJECTED from F:\FYP\Code\SafeDrive\app\src\main\AndroidManifest.xml
 		INJECTED from F:\FYP\Code\SafeDrive\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from F:\FYP\Code\SafeDrive\app\src\main\AndroidManifest.xml
-		ADDED from F:\FYP\Code\SafeDrive\app\src\main\AndroidManifest.xml:2:1-47:12
+		ADDED from F:\FYP\Code\SafeDrive\app\src\main\AndroidManifest.xml:2:1-46:12
 		INJECTED from F:\FYP\Code\SafeDrive\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from F:\FYP\Code\SafeDrive\app\src\main\AndroidManifest.xml
-		ADDED from F:\FYP\Code\SafeDrive\app\src\main\AndroidManifest.xml:2:1-47:12
+		ADDED from F:\FYP\Code\SafeDrive\app\src\main\AndroidManifest.xml:2:1-46:12
 		INJECTED from F:\FYP\Code\SafeDrive\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from F:\FYP\Code\SafeDrive\app\src\main\AndroidManifest.xml:2:11-69
@@ -388,7 +388,7 @@ ADDED from F:\FYP\Code\SafeDrive\app\src\main\AndroidManifest.xml:15:5-80
 	android:name
 		ADDED from F:\FYP\Code\SafeDrive\app\src\main\AndroidManifest.xml:15:22-77
 application
-ADDED from F:\FYP\Code\SafeDrive\app\src\main\AndroidManifest.xml:18:5-45:19
+ADDED from F:\FYP\Code\SafeDrive\app\src\main\AndroidManifest.xml:18:5-44:19
 MERGED from [com.google.android.material:material:1.2.1] C:\Users\bolah\.gradle\caches\transforms-2\files-2.1\222e6848c3a72805600daf989273ba7b\material-1.2.1\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.2.1] C:\Users\bolah\.gradle\caches\transforms-2\files-2.1\222e6848c3a72805600daf989273ba7b\material-1.2.1\AndroidManifest.xml:22:5-20
 MERGED from [com.github.bloder:magic:1.1] C:\Users\bolah\.gradle\caches\transforms-2\files-2.1\01e928ea167cb0694260259e2c1a1547\magic-1.1\AndroidManifest.xml:11:5-15:19
@@ -503,54 +503,50 @@ activity#com.example.safedrive.activities.cnn_tflite.CnnTflite
 ADDED from F:\FYP\Code\SafeDrive\app\src\main\AndroidManifest.xml:25:9-78
 	android:name
 		ADDED from F:\FYP\Code\SafeDrive\app\src\main\AndroidManifest.xml:25:19-66
-activity#com.example.safedrive.activities.Prediction
-ADDED from F:\FYP\Code\SafeDrive\app\src\main\AndroidManifest.xml:26:9-59
-	android:name
-		ADDED from F:\FYP\Code\SafeDrive\app\src\main\AndroidManifest.xml:26:19-56
-activity#com.example.safedrive.activities.ViewData
-ADDED from F:\FYP\Code\SafeDrive\app\src\main\AndroidManifest.xml:27:9-57
-	android:name
-		ADDED from F:\FYP\Code\SafeDrive\app\src\main\AndroidManifest.xml:27:19-54
 activity#com.example.safedrive.activities.camera
-ADDED from F:\FYP\Code\SafeDrive\app\src\main\AndroidManifest.xml:28:9-55
+ADDED from F:\FYP\Code\SafeDrive\app\src\main\AndroidManifest.xml:26:9-55
 	android:name
-		ADDED from F:\FYP\Code\SafeDrive\app\src\main\AndroidManifest.xml:28:19-52
+		ADDED from F:\FYP\Code\SafeDrive\app\src\main\AndroidManifest.xml:26:19-52
 activity#com.example.safedrive.activities.driveralert.MainActivity
-ADDED from F:\FYP\Code\SafeDrive\app\src\main\AndroidManifest.xml:29:9-73
+ADDED from F:\FYP\Code\SafeDrive\app\src\main\AndroidManifest.xml:27:9-73
 	android:name
-		ADDED from F:\FYP\Code\SafeDrive\app\src\main\AndroidManifest.xml:29:19-70
+		ADDED from F:\FYP\Code\SafeDrive\app\src\main\AndroidManifest.xml:27:19-70
+activity#com.example.safedrive.activities.ViewData
+ADDED from F:\FYP\Code\SafeDrive\app\src\main\AndroidManifest.xml:28:9-57
+	android:name
+		ADDED from F:\FYP\Code\SafeDrive\app\src\main\AndroidManifest.xml:28:19-54
 activity#com.example.safedrive.activities.driveralert.FaceTrackerActivity
-ADDED from F:\FYP\Code\SafeDrive\app\src\main\AndroidManifest.xml:30:9-80
+ADDED from F:\FYP\Code\SafeDrive\app\src\main\AndroidManifest.xml:29:9-80
 	android:name
-		ADDED from F:\FYP\Code\SafeDrive\app\src\main\AndroidManifest.xml:30:19-77
+		ADDED from F:\FYP\Code\SafeDrive\app\src\main\AndroidManifest.xml:29:19-77
 activity#com.example.safedrive.nav_components.collect_data.SelectLabel
-ADDED from F:\FYP\Code\SafeDrive\app\src\main\AndroidManifest.xml:31:9-77
+ADDED from F:\FYP\Code\SafeDrive\app\src\main\AndroidManifest.xml:30:9-77
 	android:name
-		ADDED from F:\FYP\Code\SafeDrive\app\src\main\AndroidManifest.xml:31:19-74
+		ADDED from F:\FYP\Code\SafeDrive\app\src\main\AndroidManifest.xml:30:19-74
 activity#com.example.safedrive.activities.driveralert.end
-ADDED from F:\FYP\Code\SafeDrive\app\src\main\AndroidManifest.xml:34:9-64
+ADDED from F:\FYP\Code\SafeDrive\app\src\main\AndroidManifest.xml:33:9-64
 	android:name
-		ADDED from F:\FYP\Code\SafeDrive\app\src\main\AndroidManifest.xml:34:19-61
+		ADDED from F:\FYP\Code\SafeDrive\app\src\main\AndroidManifest.xml:33:19-61
 activity#com.example.safedrive.MainActivity
-ADDED from F:\FYP\Code\SafeDrive\app\src\main\AndroidManifest.xml:35:9-60
+ADDED from F:\FYP\Code\SafeDrive\app\src\main\AndroidManifest.xml:34:9-60
 	android:name
-		ADDED from F:\FYP\Code\SafeDrive\app\src\main\AndroidManifest.xml:35:19-47
+		ADDED from F:\FYP\Code\SafeDrive\app\src\main\AndroidManifest.xml:34:19-47
 activity#com.example.safedrive.IntroActivity
-ADDED from F:\FYP\Code\SafeDrive\app\src\main\AndroidManifest.xml:36:9-44:20
+ADDED from F:\FYP\Code\SafeDrive\app\src\main\AndroidManifest.xml:35:9-43:20
 	android:exported
-		ADDED from F:\FYP\Code\SafeDrive\app\src\main\AndroidManifest.xml:38:13-36
+		ADDED from F:\FYP\Code\SafeDrive\app\src\main\AndroidManifest.xml:37:13-36
 	android:name
-		ADDED from F:\FYP\Code\SafeDrive\app\src\main\AndroidManifest.xml:37:13-42
+		ADDED from F:\FYP\Code\SafeDrive\app\src\main\AndroidManifest.xml:36:13-42
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from F:\FYP\Code\SafeDrive\app\src\main\AndroidManifest.xml:39:13-43:29
+ADDED from F:\FYP\Code\SafeDrive\app\src\main\AndroidManifest.xml:38:13-42:29
 action#android.intent.action.MAIN
-ADDED from F:\FYP\Code\SafeDrive\app\src\main\AndroidManifest.xml:40:17-69
+ADDED from F:\FYP\Code\SafeDrive\app\src\main\AndroidManifest.xml:39:17-69
 	android:name
-		ADDED from F:\FYP\Code\SafeDrive\app\src\main\AndroidManifest.xml:40:25-66
+		ADDED from F:\FYP\Code\SafeDrive\app\src\main\AndroidManifest.xml:39:25-66
 category#android.intent.category.LAUNCHER
-ADDED from F:\FYP\Code\SafeDrive\app\src\main\AndroidManifest.xml:42:17-77
+ADDED from F:\FYP\Code\SafeDrive\app\src\main\AndroidManifest.xml:41:17-77
 	android:name
-		ADDED from F:\FYP\Code\SafeDrive\app\src\main\AndroidManifest.xml:42:27-74
+		ADDED from F:\FYP\Code\SafeDrive\app\src\main\AndroidManifest.xml:41:27-74
 receiver#com.google.android.gms.cast.framework.media.MediaIntentReceiver
 ADDED from [com.google.android.gms:play-services-cast-framework:9.4.0] C:\Users\bolah\.gradle\caches\transforms-2\files-2.1\a90f0d081b1d18f0323215f5f95bb789\jetified-play-services-cast-framework-9.4.0\AndroidManifest.xml:6:9-100
 	android:name
