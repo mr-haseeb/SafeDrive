@@ -1,0 +1,216 @@
+@startuml
+
+title __SQLITE's Class Diagram__\n
+
+  namespace com.example.safedrive {
+    namespace sqlite {
+      class com.example.safedrive.sqlite.CSVWriter {
+          {static} + DEFAULT_ESCAPE_CHARACTER : char
+          {static} + DEFAULT_LINE_END : String
+          {static} + DEFAULT_QUOTE_CHARACTER : char
+          {static} + DEFAULT_SEPARATOR : char
+          {static} + NO_ESCAPE_CHARACTER : char
+          {static} + NO_QUOTE_CHARACTER : char
+          - escapechar : char
+          - lineEnd : String
+          - pw : PrintWriter
+          - quotechar : char
+          - separator : char
+          + CSVWriter()
+          + CSVWriter()
+          + close()
+          + flush()
+          + writeNext()
+      }
+    }
+  }
+  
+
+  namespace com.example.safedrive {
+    namespace sqlite {
+      class com.example.safedrive.sqlite.DatabaseHelper {
+          {static} - COL_1 : String
+          {static} - COL_10 : String
+          {static} - COL_11 : String
+          {static} - COL_12 : String
+          {static} - COL_13 : String
+          {static} - COL_14 : String
+          {static} - COL_15 : String
+          {static} - COL_16 : String
+          {static} - COL_17 : String
+          {static} - COL_18 : String
+          {static} - COL_19 : String
+          {static} - COL_2 : String
+          {static} - COL_20 : String
+          {static} - COL_21 : String
+          {static} - COL_22 : String
+          {static} - COL_23 : String
+          {static} - COL_24 : String
+          {static} - COL_25 : String
+          {static} - COL_26 : String
+          {static} - COL_27 : String
+          {static} - COL_28 : String
+          {static} - COL_29 : String
+          {static} - COL_3 : String
+          {static} - COL_30 : String
+          {static} - COL_31 : String
+          {static} - COL_32 : String
+          {static} - COL_33 : String
+          {static} - COL_34 : String
+          {static} - COL_35 : String
+          {static} - COL_36 : String
+          {static} - COL_37 : String
+          {static} - COL_4 : String
+          {static} - COL_5 : String
+          {static} - COL_6 : String
+          {static} - COL_7 : String
+          {static} - COL_8 : String
+          {static} - COL_9 : String
+          {static} - DATABASE_NAME : String
+          {static} - DATABASE_VERSION : int
+          {static} - TABLE_NAME : String
+          + DatabaseHelper()
+          + deleteAll()
+          + deleteData()
+          + exportDB()
+          + getAllData()
+          + insertData()
+          + onCreate()
+          + onUpgrade()
+          + updateData()
+      }
+    }
+  }
+  
+
+  namespace com.example.safedrive {
+    namespace sqlite {
+      class com.example.safedrive.sqlite.Model {
+          ~ clas : String
+          ~ id : String
+          ~ left_ankle_x : String
+          ~ left_ankle_y : String
+          ~ left_ear_x : String
+          ~ left_ear_y : String
+          ~ left_elbow_x : String
+          ~ left_elbow_y : String
+          ~ left_eye_x : String
+          ~ left_eye_y : String
+          ~ left_hip_x : String
+          ~ left_hip_y : String
+          ~ left_knee_x : String
+          ~ left_knee_y : String
+          ~ left_shoulder_x : String
+          ~ left_shoulder_y : String
+          ~ left_wrist_x : String
+          ~ left_wrist_y : String
+          ~ nose_x : String
+          ~ nose_y : String
+          ~ right_ankle_x : String
+          ~ right_ankle_y : String
+          ~ right_ear_x : String
+          ~ right_ear_y : String
+          ~ right_elbow_x : String
+          ~ right_elbow_y : String
+          ~ right_eye_x : String
+          ~ right_eye_y : String
+          ~ right_hip_x : String
+          ~ right_hip_y : String
+          ~ right_knee_x : String
+          ~ right_knee_y : String
+          ~ right_shoulder_x : String
+          ~ right_shoulder_y : String
+          ~ right_wrist_x : String
+          ~ right_wrist_y : String
+          ~ score : String
+          + Model()
+          + getClas()
+          + getId()
+          + getLeft_ankle_x()
+          + getLeft_ankle_y()
+          + getLeft_ear_x()
+          + getLeft_ear_y()
+          + getLeft_elbow_x()
+          + getLeft_elbow_y()
+          + getLeft_eye_x()
+          + getLeft_eye_y()
+          + getLeft_hip_x()
+          + getLeft_hip_y()
+          + getLeft_knee_x()
+          + getLeft_knee_y()
+          + getLeft_shoulder_x()
+          + getLeft_shoulder_y()
+          + getLeft_wrist_x()
+          + getLeft_wrist_y()
+          + getNose_x()
+          + getNose_y()
+          + getRight_ankle_x()
+          + getRight_ankle_y()
+          + getRight_ear_x()
+          + getRight_ear_y()
+          + getRight_elbow_x()
+          + getRight_elbow_y()
+          + getRight_eye_x()
+          + getRight_eye_y()
+          + getRight_hip_x()
+          + getRight_hip_y()
+          + getRight_knee_x()
+          + getRight_knee_y()
+          + getRight_shoulder_x()
+          + getRight_shoulder_y()
+          + getRight_wrist_x()
+          + getRight_wrist_y()
+          + getScore()
+          + setClas()
+          + setId()
+          + setLeft_ankle_x()
+          + setLeft_ankle_y()
+          + setLeft_ear_x()
+          + setLeft_ear_y()
+          + setLeft_elbow_x()
+          + setLeft_elbow_y()
+          + setLeft_eye_x()
+          + setLeft_eye_y()
+          + setLeft_hip_x()
+          + setLeft_hip_y()
+          + setLeft_knee_x()
+          + setLeft_knee_y()
+          + setLeft_shoulder_x()
+          + setLeft_shoulder_y()
+          + setLeft_wrist_x()
+          + setLeft_wrist_y()
+          + setNose_x()
+          + setNose_y()
+          + setRight_ankle_x()
+          + setRight_ankle_y()
+          + setRight_ear_x()
+          + setRight_ear_y()
+          + setRight_elbow_x()
+          + setRight_elbow_y()
+          + setRight_eye_x()
+          + setRight_eye_y()
+          + setRight_hip_x()
+          + setRight_hip_y()
+          + setRight_knee_x()
+          + setRight_knee_y()
+          + setRight_shoulder_x()
+          + setRight_shoulder_y()
+          + setRight_wrist_x()
+          + setRight_wrist_y()
+          + setScore()
+      }
+    }
+  }
+  
+
+  com.example.safedrive.sqlite.DatabaseHelper -up-|> android.database.sqlite.SQLiteOpenHelper
+
+
+right footer
+
+
+PlantUML diagram generated by SketchIt! (https://bitbucket.org/pmesmeur/sketch.it)
+For more information about this tool, please contact philippe.mesmeur@gmail.com
+endfooter
+
+@enduml

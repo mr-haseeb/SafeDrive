@@ -1,0 +1,259 @@
+@startuml
+
+title __COLLECT_DATA's Class Diagram__\n
+
+  namespace com.example.safedrive {
+    namespace nav_components.CollectData {
+      class com.example.safedrive.nav_components.CollectData.CollectData {
+          {static} + Companion : Companion
+          - DISCARD : boolean
+          {static} - FRAGMENT_DIALOG : String
+          {static} - ORIENTATIONS : SparseIntArray
+          - PREVIEW_HEIGHT : int
+          - PREVIEW_WIDTH : int
+          - SAVE : boolean
+          - START : boolean
+          - STOP : boolean
+          {static} - TAG : String
+          - _$_findViewCache : HashMap
+          - backgroundHandler : Handler
+          - backgroundThread : HandlerThread
+          - bodyJoints : List
+          - cameraDevice : CameraDevice
+          - cameraId : String
+          - cameraOpenCloseLock : Semaphore
+          - captureSession : CameraCaptureSession
+          - circleRadius : float
+          - flashSupported : boolean
+          - frameCounter : int
+          - imageReader : ImageReader
+          - isInserted : boolean
+          - left_ankle_x : float
+          - left_ankle_y : float
+          - left_ear_x : float
+          - left_ear_y : float
+          - left_elbow_x : float
+          - left_elbow_y : float
+          - left_eye_x : float
+          - left_eye_y : float
+          - left_hip_x : float
+          - left_hip_y : float
+          - left_knee_x : float
+          - left_knee_y : float
+          - left_shoulder_x : float
+          - left_shoulder_y : float
+          - left_wrist_x : float
+          - left_wrist_y : float
+          - minConfidence : double
+          - noise_x : float
+          - noise_y : float
+          - paint : Paint
+          - previewHeight : int
+          - previewRequest : CaptureRequest
+          - previewRequestBuilder : Builder
+          - previewSize : Size
+          - previewWidth : int
+          - rgbBytes : int[]
+          - right_ankle_x : float
+          - right_ankle_y : float
+          - right_ear_x : float
+          - right_ear_y : float
+          - right_elbow_x : float
+          - right_elbow_y : float
+          - right_eye_x : float
+          - right_eye_y : float
+          - right_hip_x : float
+          - right_hip_y : float
+          - right_knee_x : float
+          - right_knee_y : float
+          - right_shoulder_x : float
+          - right_shoulder_y : float
+          - right_wrist_x : float
+          - right_wrist_y : float
+          - sensorOrientation : Integer
+          - surfaceHolder : SurfaceHolder
+          - surfaceView : SurfaceView
+          - yuvBytes : byte[][]
+          + CollectData()
+          + _$_clearFindViewByIdCache()
+          + _$_findCachedViewById()
+          {static} + access$getRgbBytes$p()
+          {static} + access$getSAVE$p()
+          {static} + access$getSTART$p()
+          {static} + access$getSTOP$p()
+          {static} + access$setBackgroundHandler$p()
+          {static} + access$setPreviewHeight$p()
+          {static} + access$setPreviewRequestBuilder$p()
+          {static} + access$setPreviewWidth$p()
+          {static} + access$setRgbBytes$p()
+          {static} + access$setYuvBytes$p()
+          + getLeft_ankle_x()
+          + getLeft_ankle_y()
+          + getLeft_ear_x()
+          + getLeft_ear_y()
+          + getLeft_elbow_x()
+          + getLeft_elbow_y()
+          + getLeft_eye_x()
+          + getLeft_eye_y()
+          + getLeft_hip_x()
+          + getLeft_hip_y()
+          + getLeft_knee_x()
+          + getLeft_knee_y()
+          + getLeft_shoulder_x()
+          + getLeft_shoulder_y()
+          + getLeft_wrist_x()
+          + getLeft_wrist_y()
+          + getNoise_x()
+          + getNoise_y()
+          + getRight_ankle_x()
+          + getRight_ankle_y()
+          + getRight_ear_x()
+          + getRight_ear_y()
+          + getRight_elbow_x()
+          + getRight_elbow_y()
+          + getRight_eye_x()
+          + getRight_eye_y()
+          + getRight_hip_x()
+          + getRight_hip_y()
+          + getRight_knee_x()
+          + getRight_knee_y()
+          + getRight_shoulder_x()
+          + getRight_shoulder_y()
+          + getRight_wrist_x()
+          + getRight_wrist_y()
+          + isInserted()
+          + onAttach()
+          + onCreateView()
+          + onDestroy()
+          + onDestroyView()
+          + onPause()
+          + onRequestPermissionsResult()
+          + onResume()
+          + onStart()
+          + onViewCreated()
+          + setInserted()
+          + setLeft_ankle_x()
+          + setLeft_ankle_y()
+          + setLeft_ear_x()
+          + setLeft_ear_y()
+          + setLeft_elbow_x()
+          + setLeft_elbow_y()
+          + setLeft_eye_x()
+          + setLeft_eye_y()
+          + setLeft_hip_x()
+          + setLeft_hip_y()
+          + setLeft_knee_x()
+          + setLeft_knee_y()
+          + setLeft_shoulder_x()
+          + setLeft_shoulder_y()
+          + setLeft_wrist_x()
+          + setLeft_wrist_y()
+          + setNoise_x()
+          + setNoise_y()
+          + setRight_ankle_x()
+          + setRight_ankle_y()
+          + setRight_ear_x()
+          + setRight_ear_y()
+          + setRight_elbow_x()
+          + setRight_elbow_y()
+          + setRight_eye_x()
+          + setRight_eye_y()
+          + setRight_hip_x()
+          + setRight_hip_y()
+          + setRight_knee_x()
+          + setRight_knee_y()
+          + setRight_shoulder_x()
+          + setRight_shoulder_y()
+          + setRight_wrist_x()
+          + setRight_wrist_y()
+          + showMessage()
+          - allPermissionsGranted()
+          - closeCamera()
+          - createCameraPreviewSession()
+          - cropBitmap()
+          - discardCollectingData()
+          - draw()
+          - fillBytes()
+          - openCamera()
+          - processImage()
+          - requestCameraPermission()
+          - setAutoFlash()
+          - setPaint()
+          - setUpCameraOutputs()
+          - showToast()
+          - startBackgroundThread()
+          - startcollectingData()
+          - stopBackgroundThread()
+          - stopCollectingData()
+          - viewAllCollectedData()
+      }
+    }
+  }
+  
+
+  namespace com.example.safedrive {
+    namespace nav_components.CollectData {
+      class com.example.safedrive.nav_components.CollectData.CollectData.Companion {
+          + Companion()
+          - Companion()
+      }
+    }
+  }
+  
+
+  namespace com.example.safedrive {
+    namespace nav_components.CollectData {
+      class com.example.safedrive.nav_components.CollectData.CollectData.ErrorDialog {
+          {static} + Companion : Companion
+          {static} - ARG_MESSAGE : String
+          - _$_findViewCache : HashMap
+          + _$_clearFindViewByIdCache()
+          + _$_findCachedViewById()
+          {static} + newInstance()
+          + onCreateDialog()
+          + onDestroyView()
+      }
+    }
+  }
+  
+
+  namespace com.example.safedrive {
+    namespace nav_components.CollectData {
+      class com.example.safedrive.nav_components.CollectData.CollectData.ErrorDialog.Companion {
+          + Companion()
+          + newInstance()
+          {static} - ARG_MESSAGE$annotations()
+          - Companion()
+      }
+    }
+  }
+  
+
+  namespace com.example.safedrive {
+    namespace nav_components.CollectData {
+      class com.example.safedrive.nav_components.CollectData.CollectDataKt {
+          {static} - ARG_PARAM1 : String
+          {static} - ARG_PARAM2 : String
+          {static} - CSV_HEADER : String
+      }
+    }
+  }
+  
+
+  com.example.safedrive.nav_components.CollectData.CollectData -up-|> androidx.fragment.app.Fragment
+  com.example.safedrive.nav_components.CollectData.CollectData o-- com.example.safedrive.sqlite.DatabaseHelper : myDb
+  com.example.safedrive.nav_components.CollectData.CollectData o-- com.example.safedrive.lib.Posenet : posenet
+  com.example.safedrive.nav_components.CollectData.CollectData +-down- com.example.safedrive.nav_components.CollectData.CollectData.Companion
+  com.example.safedrive.nav_components.CollectData.CollectData +-down- com.example.safedrive.nav_components.CollectData.CollectData.ErrorDialog
+  com.example.safedrive.nav_components.CollectData.CollectData.ErrorDialog -up-|> androidx.fragment.app.DialogFragment
+  com.example.safedrive.nav_components.CollectData.CollectData.ErrorDialog +-down- com.example.safedrive.nav_components.CollectData.CollectData.ErrorDialog.Companion
+
+
+right footer
+
+
+PlantUML diagram generated by SketchIt! (https://bitbucket.org/pmesmeur/sketch.it)
+For more information about this tool, please contact philippe.mesmeur@gmail.com
+endfooter
+
+@enduml

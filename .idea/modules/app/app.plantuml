@@ -1,0 +1,290 @@
+@startuml
+
+title __APP's Class Diagram__\n
+
+  namespace com.example.safedrive {
+    class com.example.safedrive.BuildConfig {
+    }
+  }
+  
+
+  namespace com.example.safedrive {
+    class com.example.safedrive.IntroActivity {
+    }
+  }
+  
+
+  namespace com.example.safedrive {
+    class com.example.safedrive.IntroViewPagerAdapter {
+    }
+  }
+  
+
+  namespace com.example.safedrive {
+    class com.example.safedrive.ScreenItem {
+    }
+  }
+  
+
+  namespace com.example.safedrive {
+    namespace activities {
+      class com.example.safedrive.activities.MyAdapter {
+      }
+    }
+  }
+  
+
+  namespace com.example.safedrive {
+    namespace activities {
+      namespace driveralert {
+        class com.example.safedrive.activities.driveralert.BlankFragment {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.example.safedrive {
+    namespace activities {
+      namespace driveralert {
+        class com.example.safedrive.activities.driveralert.CameraSourcePreview {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.example.safedrive {
+    namespace activities {
+      namespace driveralert {
+        class com.example.safedrive.activities.driveralert.FaceGraphic {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.example.safedrive {
+    namespace activities {
+      namespace driveralert {
+        class com.example.safedrive.activities.driveralert.FaceTrackerActivity {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.example.safedrive {
+    namespace activities {
+      namespace driveralert {
+        class com.example.safedrive.activities.driveralert.GraphicOverlay {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.example.safedrive {
+    namespace activities {
+      namespace driveralert {
+        class com.example.safedrive.activities.driveralert.MainActivity {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.example.safedrive {
+    namespace activities {
+      namespace driveralert {
+        class com.example.safedrive.activities.driveralert.MyPreferences {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.example.safedrive {
+    namespace activities {
+      namespace driveralert {
+        class com.example.safedrive.activities.driveralert.contactus {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.example.safedrive {
+    namespace activities {
+      namespace driveralert {
+        class com.example.safedrive.activities.driveralert.end {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.example.safedrive {
+    namespace activities {
+      namespace driveralert {
+        class com.example.safedrive.activities.driveralert.help {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.example.safedrive {
+    namespace activities {
+      namespace driveralert {
+        class com.example.safedrive.activities.driveralert.monitor_menu {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.example.safedrive {
+    namespace activities {
+      namespace driveralert {
+        class com.example.safedrive.activities.driveralert.page_1 {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.example.safedrive {
+    namespace activities {
+      namespace driveralert {
+        class com.example.safedrive.activities.driveralert.page_2 {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.example.safedrive {
+    namespace activities {
+      namespace driveralert {
+        class com.example.safedrive.activities.driveralert.page_3 {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.example.safedrive {
+    namespace activities {
+      namespace driveralert {
+        namespace ui.camera {
+          class com.example.safedrive.activities.driveralert.ui.camera.CameraSourcePreview {
+          }
+        }
+      }
+    }
+  }
+  
+
+  namespace com.example.safedrive {
+    namespace activities {
+      namespace driveralert {
+        namespace ui.camera {
+          class com.example.safedrive.activities.driveralert.ui.camera.GraphicOverlay {
+          }
+        }
+      }
+    }
+  }
+  
+
+  namespace com.example.safedrive {
+    namespace lib {
+      class com.example.safedrive.lib.Prediction {
+      }
+    }
+  }
+  
+
+  namespace com.example.safedrive {
+    namespace nav_components.CollectData {
+      class com.example.safedrive.nav_components.CollectData.CollectData {
+      }
+    }
+  }
+  
+
+  namespace com.example.safedrive {
+    namespace nav_components.CollectData {
+      class com.example.safedrive.nav_components.CollectData.CollectDataKt {
+      }
+    }
+  }
+  
+
+  namespace com.example.safedrive {
+    namespace sqlite {
+      class com.example.safedrive.sqlite.CSVWriter {
+      }
+    }
+  }
+  
+
+  namespace com.example.safedrive {
+    namespace sqlite {
+      class com.example.safedrive.sqlite.DatabaseHelper {
+      }
+    }
+  }
+  
+
+  namespace com.example.safedrive {
+    namespace sqlite {
+      class com.example.safedrive.sqlite.Model {
+      }
+    }
+  }
+  
+
+  com.example.safedrive.IntroActivity -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.safedrive.IntroActivity o-- com.example.safedrive.IntroViewPagerAdapter : introViewPagerAdapter
+  com.example.safedrive.IntroViewPagerAdapter -up-|> androidx.viewpager.widget.PagerAdapter
+  com.example.safedrive.activities.MyAdapter -up-|> androidx.recyclerview.widget.RecyclerView.Adapter
+  com.example.safedrive.activities.driveralert.BlankFragment -up-|> androidx.fragment.app.Fragment
+  com.example.safedrive.activities.driveralert.BlankFragment o-- com.example.safedrive.activities.driveralert.BlankFragment.OnFragmentInteractionListener : mListener
+  com.example.safedrive.activities.driveralert.CameraSourcePreview -up-|> android.view.ViewGroup
+  com.example.safedrive.activities.driveralert.CameraSourcePreview o-- com.example.safedrive.activities.driveralert.GraphicOverlay : mOverlay
+  com.example.safedrive.activities.driveralert.FaceGraphic -up-|> com.example.safedrive.activities.driveralert.GraphicOverlay.Graphic
+  com.example.safedrive.activities.driveralert.FaceTrackerActivity -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.safedrive.activities.driveralert.FaceTrackerActivity o-- com.example.safedrive.activities.driveralert.GraphicOverlay : mGraphicOverlay
+  com.example.safedrive.activities.driveralert.FaceTrackerActivity o-- com.example.safedrive.activities.driveralert.CameraSourcePreview : mPreview
+  com.example.safedrive.activities.driveralert.GraphicOverlay -up-|> android.view.View
+  com.example.safedrive.activities.driveralert.MainActivity -up-|> androidx.fragment.app.FragmentActivity
+  com.example.safedrive.activities.driveralert.contactus -up-|> androidx.fragment.app.Fragment
+  com.example.safedrive.activities.driveralert.end -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.safedrive.activities.driveralert.help -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.safedrive.activities.driveralert.help o-- com.example.safedrive.activities.driveralert.help.SectionsPagerAdapter : mSectionsPagerAdapter
+  com.example.safedrive.activities.driveralert.monitor_menu -up-|> androidx.fragment.app.Fragment
+  com.example.safedrive.activities.driveralert.page_1 -up-|> androidx.fragment.app.Fragment
+  com.example.safedrive.activities.driveralert.page_1 o-- com.example.safedrive.activities.driveralert.page_1.OnFragmentInteractionListener : mListener
+  com.example.safedrive.activities.driveralert.page_2 -up-|> androidx.fragment.app.Fragment
+  com.example.safedrive.activities.driveralert.page_2 o-- com.example.safedrive.activities.driveralert.page_2.OnFragmentInteractionListener : mListener
+  com.example.safedrive.activities.driveralert.page_3 -up-|> androidx.fragment.app.Fragment
+  com.example.safedrive.activities.driveralert.page_3 o-- com.example.safedrive.activities.driveralert.page_3.OnFragmentInteractionListener : mListener
+  com.example.safedrive.activities.driveralert.ui.camera.CameraSourcePreview -up-|> android.view.ViewGroup
+  com.example.safedrive.activities.driveralert.ui.camera.CameraSourcePreview o-- com.example.safedrive.activities.driveralert.GraphicOverlay : mOverlay
+  com.example.safedrive.activities.driveralert.ui.camera.GraphicOverlay -up-|> android.view.View
+  com.example.safedrive.nav_components.CollectData.CollectData -up-|> androidx.fragment.app.Fragment
+  com.example.safedrive.nav_components.CollectData.CollectData o-- com.example.safedrive.sqlite.DatabaseHelper : myDb
+  com.example.safedrive.nav_components.CollectData.CollectData o-- com.example.safedrive.lib.Posenet : posenet
+  com.example.safedrive.sqlite.DatabaseHelper -up-|> android.database.sqlite.SQLiteOpenHelper
+
+
+right footer
+
+
+PlantUML diagram generated by SketchIt! (https://bitbucket.org/pmesmeur/sketch.it)
+For more information about this tool, please contact philippe.mesmeur@gmail.com
+endfooter
+
+@enduml

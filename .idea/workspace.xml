@@ -11,43 +11,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="89b03061-1386-4764-90cc-20a04c71eff7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/safedrive/IntroActivity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/safedrive/IntroViewPagerAdapter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/safedrive/ScreenItem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/img1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/img2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/img3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_intro.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/app/app.plantuml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/build/generated/source/buildConfig/debug/com/example/safedrive/safedrive.plantuml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/safedrive/activities/activities.plantuml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/safedrive/activities/driveralert/driveralert.plantuml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/safedrive/activities/driveralert/ui/camera/camera.plantuml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/safedrive/lib/lib.plantuml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/safedrive/nav_components/collect_data/collect_data.plantuml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/safedrive/safedrive.plantuml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/safedrive/sqlite/sqlite.plantuml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/safedrive.plantuml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/app/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/app/app.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/debug.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/debug.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/single/debug.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/single/debug.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/bundle_manifest/debug/bundle-manifest/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/bundle_manifest/debug/bundle-manifest/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/compile_and_runtime_not_namespaced_r_class_jar/debug/R.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/compile-file-map.properties" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/compile-file-map.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merger.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merger.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/instant_app_manifest/debug/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/instant_app_manifest/debug/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/manifest_merge_blame_file/debug/manifest-merger-blame-debug-report.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/manifest_merge_blame_file/debug/manifest-merger-blame-debug-report.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_manifests/debug/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_manifests/debug/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/processed_res/debug/out/output.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/processed_res/debug/out/resources-debug.ap_" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/processed_res/debug/out/resources-debug.ap_" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/runtime_symbol_list/debug/R.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/symbol_list_with_package_name/debug/package-aware-r.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/outputs/logs/manifest-merger-debug-report.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/outputs/logs/manifest-merger-debug-report.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="R9WMB0VE8MJ" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -104,7 +86,7 @@
     <property name="SHOW_ALL_PROCESSES" value="false" />
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/app/src/main/res/drawable" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/src/main/res/drawable" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/src/main/res/layout" />
     <property name="project.structure.last.edited" value="Suggestions" />
     <property name="project.structure.proportion" value="0.17" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -133,11 +115,11 @@
       <recent name="com.example.safedrive.activites" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="F:\FYP\Code\SafeDrive\app\src\main\res\drawable-hdpi" />
       <recent name="F:\FYP\Code\SafeDrive\app\src\main\res\layout" />
+      <recent name="F:\FYP\Code\SafeDrive\app\src\main\res\drawable" />
+      <recent name="F:\FYP\Code\SafeDrive\app\src\main\res\drawable-hdpi" />
       <recent name="F:\FYP\Code\SafeDrive\app\src\main\java\com\example\safedrive" />
       <recent name="F:\FYP\Code\SafeDrive\app\src\main\java\com\example\safedrive\activities\cnn_tflite" />
-      <recent name="F:\FYP\Code\SafeDrive\app\src\main\assets" />
     </key>
     <key name="android.template.-1286346373">
       <recent name="org.tensorflow.lite.examples.posenet.fragments" />
@@ -292,10 +274,11 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="275" y="22" key="#Inspections/0.0.1366.728@0.0.1366.728" timestamp="1608276686670" />
-    <state x="200" y="96" key="#PSD" timestamp="1608278860892">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state x="1424" y="96" key="#PSD" timestamp="1611388673998">
+      <screen x="1366" y="0" width="1024" height="728" />
     </state>
     <state x="200" y="96" key="#PSD/0.0.1366.728/1366.0.1024.728@0.0.1366.728" timestamp="1606463704833" />
+    <state x="1424" y="96" key="#PSD/0.0.1366.728/1366.0.1024.728@1366.0.1024.728" timestamp="1611388673998" />
     <state x="200" y="96" key="#PSD/0.0.1366.728@0.0.1366.728" timestamp="1608278860892" />
     <state x="565" y="11" key="#app" timestamp="1609395857048">
       <screen x="0" y="0" width="1920" height="1040" />
@@ -360,10 +343,11 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="538" y="129" key="AndroidProcessChooserDialog/0.0.1366.728@0.0.1366.728" timestamp="1608221390917" />
-    <state x="463" y="105" key="FileChooserDialogImpl" timestamp="1611146903991">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state x="1713" y="105" key="FileChooserDialogImpl" timestamp="1611390647762">
+      <screen x="1366" y="0" width="1024" height="728" />
     </state>
     <state x="463" y="105" key="FileChooserDialogImpl/0.0.1366.728/1366.0.1024.728@0.0.1366.728" timestamp="1611127467957" />
+    <state x="1713" y="105" key="FileChooserDialogImpl/0.0.1366.728/1366.0.1024.728@1366.0.1024.728" timestamp="1611390647762" />
     <state x="463" y="105" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1611146903991" />
     <state x="518" y="257" width="329" height="270" key="Github.ShareDialog" timestamp="1608292853853">
       <screen x="0" y="0" width="1366" height="728" />
@@ -417,9 +401,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="275" y="22" key="PlantUMLSettings/0.0.1366.728@0.0.1366.728" timestamp="1608226834826" />
-    <state x="290" y="20" width="998" height="708" key="SettingsEditor" timestamp="1608265720032">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state x="1474" y="20" width="916" height="708" key="SettingsEditor" timestamp="1611388753045">
+      <screen x="1366" y="0" width="1024" height="728" />
     </state>
+    <state x="1474" y="20" width="916" height="708" key="SettingsEditor/0.0.1366.728/1366.0.1024.728@1366.0.1024.728" timestamp="1611388753045" />
     <state x="290" y="20" width="998" height="708" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1608265720032" />
     <state x="1740" y="142" key="chooseDestDirectoryDialog" timestamp="1611382604263">
       <screen x="1366" y="0" width="1024" height="728" />
