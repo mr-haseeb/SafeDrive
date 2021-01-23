@@ -20,7 +20,11 @@
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.CAMERA" />
 
-    <!-- Include required permissions for Google Mobile Ads to run -->
+    <queries>
+        <intent>
+            <action android:name="androidx.camera.extensions.action.VENDOR_ACTION" />
+        </intent>
+    </queries> <!-- Include required permissions for Google Mobile Ads to run -->
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- Permissions required for GCM -->
     <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
@@ -34,12 +38,6 @@
         android:protectionLevel="signature" />
 
     <uses-permission android:name="com.example.safedrive.permission.C2D_MESSAGE" />
-
-    <queries>
-        <intent>
-            <action android:name="androidx.camera.extensions.action.VENDOR_ACTION" />
-        </intent>
-    </queries>
 
     <application
         android:allowBackup="true"
@@ -62,8 +60,10 @@
         <!-- android:name=".activities.driveralert.monitor_menu" -->
         <!-- android:screenOrientation="portrait" /> -->
         <activity android:name="com.example.safedrive.activities.driveralert.end" />
+        <activity android:name="com.example.safedrive.MainActivity" >
+        </activity>
         <activity
-            android:name="com.example.safedrive.MainActivity"
+            android:name="com.example.safedrive.IntroActivity"
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -75,7 +75,11 @@
         <receiver android:name="com.google.android.gms.cast.framework.media.MediaIntentReceiver" />
 
         <service android:name="com.google.android.gms.cast.framework.media.MediaNotificationService" />
-        <service android:name="com.google.android.gms.cast.framework.ReconnectionService" /> <!-- Include the AdActivity and InAppPurchaseActivity configChanges and themes. -->
+        <service android:name="com.google.android.gms.cast.framework.ReconnectionService" />
+
+        <uses-library
+            android:name="androidx.camera.extensions.impl"
+            android:required="false" /> <!-- Include the AdActivity and InAppPurchaseActivity configChanges and themes. -->
         <activity
             android:name="com.google.android.gms.ads.AdActivity"
             android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
@@ -198,10 +202,6 @@ Service handling Google Sign-In user revocation. For apps that do not integrate 
         <meta-data
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
-
-        <uses-library
-            android:name="androidx.camera.extensions.impl"
-            android:required="false" />
     </application>
 
 </manifest>

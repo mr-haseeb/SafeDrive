@@ -1,0 +1,140 @@
+ example safedrive activities driveralert 
+
+content Intent 
+ Bundle 
+
+Layout Inflater 
+View 
+View Group 
+widget Seek  
+widget Text View 
+
+androidx fragment  Fragment 
+
+ example safedrive  
+
+Date Format 
+util Date 
+
+  bloder magic Magic Button 
+
+monitor menu Fragment 
+  Magic Button  
+  Seek   
+  Text View  
+  String   "Haseeb's project" 
+  String   "senstivity" 
+   Override 
+  View  Create View Layout Inflater inflater  View Group container  Bundle saved Instance State 
+ View root 
+ root inflater inflate  layout activity monitor menu container 
+   Magic Button  root find View     magic button 
+   Seek  root find View     seek Bar2 
+   Text View root find View     View21 
+   Progress   
+
+   Text   second" 
+
+   Progress   
+
+   Text   second" 
+
+   Progress   
+
+   Text  seconds" 
+
+   Progress   
+
+   Text   seconds" 
+
+   Progress   
+
+   Text   seconds" 
+
+   Progress   
+
+   Text   seconds" 
+
+   Progress   
+
+   Text  seconds" 
+
+   Progress   
+
+   Text   seconds" 
+
+ 
+
+   Text   seconds" 
+
+    Seek  Change Listener Seek   Seek  Change Listener 
+ Override 
+   Stop Tracking Touch Seek  seek  
+
+
+
+ Override 
+   Start Tracking Touch Seek  seek  
+
+
+
+ Override 
+   Progress Changed Seek  seek   progress 
+   from User 
+    Progress   
+
+   Text   second" 
+
+    Progress   
+
+   Text   second" 
+
+    Progress   
+
+   Text  seconds" 
+
+    Progress   
+
+   Text   seconds" 
+
+    Progress   
+
+   Text   seconds" 
+
+    Progress   
+
+   Text   seconds" 
+
+    Progress   
+
+   Text  seconds" 
+
+    Progress   
+
+   Text   seconds" 
+
+  
+
+   Text   seconds" 
+
+
+
+
+
+
+     Magic Button Click Listener View  Click Listener 
+  Override 
+  Click View  
+   Intent  Intent root  Context Face Tracker Activity 
+     Extra   ""+s  Progress 
+     Extra    Date Format  Date Time Instance format Date 
+     Flags Intent FLAG ACTIVITY CLEAR  
+   start Activity  
+    Activity finish 
+
+
+
+ root 
+
+
+

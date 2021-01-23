@@ -1,0 +1,216 @@
+ example safedrive 
+
+annotation Suppress Lint 
+content Intent 
+content Shared Preferences 
+
+ Bundle 
+View 
+Window 
+Window Manager 
+animation Animation 
+animation Animation Utils 
+widget Button 
+widget Text View 
+
+androidx appcompat   Compat Activity 
+androidx viewpager widget View Pager 
+
+ google material tabs  Layout 
+
+util Array List 
+util List 
+
+Intro Activity  Compat Activity 
+
+  View Pager screen Pager 
+  Intro View Pager Adapter intro View Pager Adapter 
+   Layout  Indicator 
+  Button  Next 
+  position  
+  Button   Started 
+  Animation  Anim 
+  Text View  Skip 
+
+
+   Suppress Lint "Wrong View Cast" 
+   Override 
+   Create Bundle saved Instance State 
+  Create saved Instance State 
+
+  make  activity  full screen 
+
+ request Window Feature Window FEATURE  TITLE 
+  Window  Flags Window Manager Layout Params FLAG FULLSCREEN 
+   Window Manager Layout Params FLAG FULLSCREEN 
+
+
+  when activity  about   launch  need  check  openened before   
+
+  restore Pref Data 
+
+ Intent main Activity Intent  Application Context Main Activity 
+ start Activity main Activity 
+ finish 
+
+
+
+
+  Content View  layout activity intro 
+
+  hide  action  
+
+  Support Action  hide 
+
+   views 
+  Next find View      next 
+   Started find View       started 
+  Indicator find View      indicator 
+  Anim Animation Utils load Animation  Application Context  anim button animation 
+  Skip find View      skip 
+
+  fill list screen 
+
+ List Screen Item   List Array List 
+  List  Screen Item "Posent Activity Detection" "Detect Activity using body keypoints  Real time"  drawable img1 
+  List  Screen Item "CNN  Basesd  Detection" "CNN model  detect Activity  Frame  images Stream"  drawable img2 
+  List  Screen Item "Eye Drowziness  "Will Detect   Close  Open  Alert Driver  Alaram"  drawable img3 
+
+  setup viewpager 
+ screen Pager  find View     screen viewpager 
+ intro View Pager Adapter Intro View Pager Adapter  List 
+ screen Pager  Adapter intro View Pager Adapter 
+
+  setup tablayout with viewpager 
+
+  Indicator setup With View Pager screen Pager 
+
+  next button click Listner 
+
+  Next   Click Listener View  Click Listener 
+  Override 
+  Click View  
+
+   position screen Pager  Current Item 
+    position  List size 
+
+  position++ 
+  screen Pager  Current Item position 
+
+
+
+
+    position   List size     when  rech   last screen 
+
+   TODO  show  GETSTARTED Button  hide  indicator   next button 
+
+  loadd Last Screen 
+
+
+
+
+
+
+
+
+
+  tablayout  change listener 
+
+
+  Indicator    Selected Listener  Layout Base   Selected Listener 
+  Override 
+   Selected  Layout   
+
+      Position   List size   
+
+  loadd Last Screen 
+
+
+
+
+
+
+  Override 
+   Unselected  Layout   
+
+
+
+  Override 
+   Reselected  Layout   
+
+
+
+
+
+
+   Started button click listener 
+
+   Started   Click Listener View  Click Listener 
+  Override 
+  Click View  
+
+
+   open main activity 
+
+   Intent main Activity Intent  Application Context Main Activity 
+   start Activity main Activity 
+    also  need  save  value  storage  next time when  user    
+     could know that   already checked  intro screen activity 
+     going   shared preferences  that process 
+   save Prefs Data 
+   finish 
+
+
+
+
+
+
+  skip button click listener 
+
+  Skip   Click Listener View  Click Listener 
+  Override 
+  Click View  
+   screen Pager  Current Item  List size 
+
+
+
+
+
+
+
+  restore Pref Data 
+
+
+ Shared Preferences pref  Application Context  Shared Preferences  Prefs" MODE PRIVATE 
+ Boolean  Intro Activity Opnend Before pref  Boolean  Intro Opnend" 
+   Intro Activity Opnend Before 
+
+
+
+
+
+  save Prefs Data 
+
+ Shared Preferences pref  Application Context  Shared Preferences  Prefs" MODE PRIVATE 
+ Shared Preferences Editor editor pref 
+ editor  Boolean  Intro Opnend" 
+ editor commit 
+
+
+
+
+   show  GETSTARTED Button  hide  indicator   next button 
+  loadd Last Screen 
+
+  Next  Visibility View INVISIBLE 
+   Started  Visibility View VISIBLE 
+  Skip  Visibility View INVISIBLE 
+  Indicator  Visibility View INVISIBLE 
+  TODO    animation  getstarted button 
+  setup animation 
+   Started  Animation  Anim 
+
+
+
+
+

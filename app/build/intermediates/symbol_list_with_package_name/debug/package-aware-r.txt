@@ -1212,9 +1212,13 @@ color error_color_material_dark
 color error_color_material_light
 color foreground_material_dark
 color foreground_material_light
+color gradient_end_color
+color gradient_start_color
 color gray
 color highlighted_text_material_dark
 color highlighted_text_material_light
+color intro_description_color
+color intro_title_color
 color lightWhite
 color material_blue_grey_800
 color material_blue_grey_900
@@ -1325,6 +1329,7 @@ color switch_thumb_material_dark
 color switch_thumb_material_light
 color switch_thumb_normal_material_dark
 color switch_thumb_normal_material_light
+color tab_indicator_gray
 color test_mtrl_calendar_day
 color test_mtrl_calendar_day_selected
 color tfe_color_accent
@@ -1897,6 +1902,7 @@ drawable btn_checkbox_checked_mtrl
 drawable btn_checkbox_checked_to_unchecked_mtrl_animation
 drawable btn_checkbox_unchecked_mtrl
 drawable btn_checkbox_unchecked_to_checked_mtrl_animation
+drawable btn_gradient_style
 drawable btn_radio_off_mtrl
 drawable btn_radio_off_to_on_mtrl_animation
 drawable btn_radio_on_mtrl
@@ -2008,6 +2014,7 @@ drawable grid
 drawable gym
 drawable ic_action_help
 drawable ic_action_name
+drawable ic_arrow_forward_black_24dp
 drawable ic_audiotrack_dark
 drawable ic_audiotrack_light
 drawable ic_dialog_alert
@@ -2203,6 +2210,12 @@ drawable ic_vol_type_speaker_light
 drawable ic_vol_type_tv_dark
 drawable ic_vol_type_tv_light
 drawable idea
+drawable img1
+drawable img2
+drawable img3
+drawable indicator_default
+drawable indicator_selected
+drawable indicator_selector
 drawable l
 drawable magic_button_bg
 drawable material_ic_calendar_black_24dp
@@ -2481,7 +2494,9 @@ id bottom_nav_dashborad
 id bottom_nav_profile
 id bottom_navigation
 id bounce
+id btn_get_started
 id btn_icon
+id btn_next
 id btn_text
 id butt
 id button
@@ -2630,6 +2645,7 @@ id graph_wrap
 id grayscale
 id group_divider
 id groups
+id guideline
 id height
 id help_page
 id hideable
@@ -2665,6 +2681,9 @@ id intent_activity
 id intent_data
 id intent_data_id
 id intent_extra_data
+id intro_description
+id intro_img
+id intro_title
 id invisible
 id italic
 id item_touch_helper_previous_elevation
@@ -2844,6 +2863,7 @@ id sawtooth
 id scale
 id score
 id screen
+id screen_viewpager
 id scroll
 id scrollIndicatorDown
 id scrollIndicatorUp
@@ -2906,6 +2926,7 @@ id subtitle_view
 id surfaceView
 id tabMode
 id tab_host
+id tab_indicator
 id tag_accessibility_actions
 id tag_accessibility_clickable_spans
 id tag_accessibility_heading
@@ -2990,6 +3011,7 @@ id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
 id triangle
+id tv_skip
 id unchecked
 id uniform
 id unlabeled
@@ -3118,6 +3140,7 @@ layout activity_cnn_tflite
 layout activity_contactus
 layout activity_end
 layout activity_help
+layout activity_intro
 layout activity_main
 layout activity_monitor_menu
 layout activity_prediction
@@ -3157,6 +3180,7 @@ layout fragment_help
 layout fragment_page_1
 layout fragment_page_2
 layout fragment_page_3
+layout layout_screen
 layout magic_button
 layout main
 layout mr_cast_dialog

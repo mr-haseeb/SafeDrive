@@ -1,0 +1,67 @@
+ example safedrive 
+
+content Context 
+Layout Inflater 
+View 
+View Group 
+widget Image View 
+widget Text View 
+
+androidx annotation  Null 
+androidx viewpager widget Pager Adapter 
+
+util List 
+
+Intro View Pager Adapter Pager Adapter 
+
+ Context  Context 
+ List Screen Item   List Screen 
+
+  Intro View Pager Adapter Context  Context  List Screen Item   List Screen 
+  Context  Context 
+  List Screen  List Screen 
+
+
+
+    Null 
+   Override 
+  Object instantiate Item   Null View Group container  position 
+
+ Layout Inflater inflater  Layout Inflater   Context  System Service Context LAYOUT INFLATER SERVICE 
+ View layout Screen inflater inflate  layout layout screen null 
+
+ Image View  Slide layout Screen find View     intro  
+ Text View title layout Screen find View     intro title 
+ Text View description layout Screen find View     intro description 
+
+ title  Text  List Screen  position   Title 
+ description  Text  List Screen  position   Description 
+  Slide  Image Resource  List Screen  position   Screen  
+
+ container  View layout Screen 
+
+ layout Screen 
+
+
+
+
+
+
+
+   Override 
+   Count 
+  List Screen size 
+
+
+   Override 
+   View From Object   Null View  Null Object  
+   
+
+
+   Override 
+  destroy Item   Null View Group container  position  Null Object object 
+
+ container remove View  View object 
+
+
+

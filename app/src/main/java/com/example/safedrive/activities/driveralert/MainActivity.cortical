@@ -1,0 +1,48 @@
+ example safedrive activities driveralert 
+
+content Context 
+content Dialog Interface 
+ Bundle 
+
+Menu 
+Menu Item 
+widget Button 
+widget Frame Layout 
+widget Toast 
+androidx appcompat  Alert Dialog 
+androidx appcompat widget Toolbar 
+androidx core Gravity Compat 
+androidx drawerlayout widget Drawer Layout 
+androidx fragment  Fragment Activity 
+androidx multidex Multi  
+
+ example safedrive  
+
+
+Main Activity Fragment Activity 
+  Frame Layout frame 
+  Button agree disagree 
+   Override 
+   Create Bundle saved Instance State 
+  Create saved Instance State 
+  Content View  layout content main 
+ Toolbar toolbar  Toolbar  find View     toolbar 
+ frame  Frame Layout find View     frame 
+  Support Fragment Manager begin Transaction replace   frame monitor menu  commit 
+
+ Toast make Text  Application Context "Drowziness detection start"  Toast LENGTH SHORT  show 
+
+
+
+   Override 
+  attach Base Context Context Base 
+ attach Base Context Base 
+ Multi  install 
+
+
+
+
+
+
+
+
