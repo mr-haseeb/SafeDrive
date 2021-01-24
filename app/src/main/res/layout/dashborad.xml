@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/black"
+    android:background="#FFFFFF"
     tools:context=".MainActivity">
 
 
@@ -20,7 +20,7 @@
             android:text="Safe Drive Dashborad"
             android:fontFamily="@font/googlesans_bold"
             android:textSize="24sp"
-            android:textColor="@color/white"
+            android:textColor="@color/intro_title_color"
             android:layout_margin="20dp"/>
 
 
@@ -40,7 +40,7 @@
                 android:layout_height="170dp"
                 app:cardCornerRadius="12dp"
                 app:cardElevation="5dp"
-                app:cardBackgroundColor="@color/gray"
+                app:cardBackgroundColor="#FFFFFF"
                 android:layout_margin="10dp">
 
                 <LinearLayout
@@ -52,9 +52,9 @@
 
                     <ImageView
                         android:id="@+id/cnn"
-                        android:layout_width="24dp"
-                        android:layout_height="24dp"
-                        android:src="@drawable/idea"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/img2"
                         android:layout_marginTop="18dp"/>
 
                     <TextView
@@ -63,7 +63,7 @@
                         android:text="CNN MODEL"
                         android:fontFamily="@font/googlesans_bold"
                         android:textSize="18sp"
-                        android:textColor="@color/white"
+                        android:textColor="@color/intro_title_color"
                         android:layout_marginTop="20dp"/>
 
                 </LinearLayout>
@@ -76,7 +76,7 @@
                 android:layout_height="170dp"
                 app:cardCornerRadius="12dp"
                 app:cardElevation="5dp"
-                app:cardBackgroundColor="@color/gray"
+                app:cardBackgroundColor="#FFFFFF"
                 android:layout_margin="10dp">
 
                 <LinearLayout
@@ -88,9 +88,9 @@
 
                     <ImageView
                         android:id="@+id/posenet"
-                        android:layout_width="24dp"
-                        android:layout_height="24dp"
-                        android:src="@drawable/suggestion"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/posenet"
                         android:layout_marginTop="18dp"/>
 
                     <TextView
@@ -99,7 +99,7 @@
                         android:text="POSE NET"
                         android:fontFamily="@font/googlesans_bold"
                         android:textSize="18sp"
-                        android:textColor="@color/white"
+                        android:textColor="@color/intro_title_color"
                         android:layout_marginTop="20dp"/>
 
                 </LinearLayout>
@@ -111,7 +111,7 @@
                 android:layout_height="170dp"
                 app:cardCornerRadius="12dp"
                 app:cardElevation="5dp"
-                app:cardBackgroundColor="@color/gray"
+                app:cardBackgroundColor="#FFFFFF"
                 android:layout_margin="10dp">
 
                 <LinearLayout
@@ -134,7 +134,7 @@
                         android:text="View Data"
                         android:fontFamily="@font/googlesans_bold"
                         android:textSize="18sp"
-                        android:textColor="@color/white"
+                        android:textColor="@color/intro_title_color"
                         android:layout_marginTop="20dp"/>
 
                 </LinearLayout>
@@ -146,7 +146,7 @@
                 android:layout_height="170dp"
                 app:cardCornerRadius="12dp"
                 app:cardElevation="5dp"
-                app:cardBackgroundColor="@color/gray"
+                app:cardBackgroundColor="#FFFFFF"
                 android:layout_margin="10dp">
 
                 <LinearLayout
@@ -158,30 +158,33 @@
 
                     <ImageView
                         android:id="@+id/driveralert"
-                        android:layout_width="24dp"
-                        android:layout_height="24dp"
-                        android:src="@drawable/medical"
-                        android:layout_marginTop="18dp"/>
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_marginTop="18dp"
+                        android:src="@drawable/drowsy" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Medical"
+                        android:text="Drowsiness"
                         android:fontFamily="@font/googlesans_bold"
                         android:textSize="18sp"
-                        android:textColor="@color/white"
+                        android:textColor="@color/intro_title_color"
                         android:layout_marginTop="20dp"/>
 
                 </LinearLayout>
 
             </androidx.cardview.widget.CardView>
 
+
+
+
             <androidx.cardview.widget.CardView
                 android:layout_width="170dp"
                 android:layout_height="170dp"
                 app:cardCornerRadius="12dp"
                 app:cardElevation="5dp"
-                app:cardBackgroundColor="@color/gray"
+                app:cardBackgroundColor="#FFFFFF"
                 android:layout_margin="10dp">
 
                 <LinearLayout
@@ -192,77 +195,9 @@
                     >
 
                     <ImageView
-                        android:layout_width="24dp"
-                        android:layout_height="24dp"
-                        android:src="@drawable/food"
-                        android:layout_marginTop="18dp"/>
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Food"
-                        android:fontFamily="@font/googlesans_bold"
-                        android:textSize="18sp"
-                        android:textColor="@color/white"
-                        android:layout_marginTop="20dp"/>
-
-                </LinearLayout>
-
-            </androidx.cardview.widget.CardView>
-
-            <androidx.cardview.widget.CardView
-                android:layout_width="170dp"
-                android:layout_height="170dp"
-                app:cardCornerRadius="12dp"
-                app:cardElevation="5dp"
-                app:cardBackgroundColor="@color/gray"
-                android:layout_margin="10dp">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical"
-                    android:gravity="center"
-                    >
-
-                    <ImageView
-                        android:layout_width="24dp"
-                        android:layout_height="24dp"
-                        android:src="@drawable/gym"
-                        android:layout_marginTop="18dp"/>
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Gym"
-                        android:fontFamily="@font/googlesans_bold"
-                        android:textSize="18sp"
-                        android:textColor="@color/white"
-                        android:layout_marginTop="20dp"/>
-
-                </LinearLayout>
-
-            </androidx.cardview.widget.CardView>
-
-            <androidx.cardview.widget.CardView
-                android:layout_width="170dp"
-                android:layout_height="170dp"
-                app:cardCornerRadius="12dp"
-                app:cardElevation="5dp"
-                app:cardBackgroundColor="@color/gray"
-                android:layout_margin="10dp">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical"
-                    android:gravity="center"
-                    >
-
-                    <ImageView
-                        android:layout_width="24dp"
-                        android:layout_height="24dp"
-                        android:src="@drawable/settings"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/help"
                         android:layout_marginTop="18dp"/>
 
                     <TextView
@@ -271,7 +206,7 @@
                         android:text="Settings"
                         android:fontFamily="@font/googlesans_bold"
                         android:textSize="18sp"
-                        android:textColor="@color/white"
+                        android:textColor="@color/intro_title_color"
                         android:layout_marginTop="20dp"/>
 
                 </LinearLayout>
@@ -283,7 +218,7 @@
                 android:layout_height="170dp"
                 app:cardCornerRadius="12dp"
                 app:cardElevation="5dp"
-                app:cardBackgroundColor="@color/gray"
+                app:cardBackgroundColor="#FFFFFF"
                 android:layout_margin="10dp">
 
                 <LinearLayout
@@ -294,18 +229,18 @@
                     >
 
                     <ImageView
-                        android:layout_width="24dp"
-                        android:layout_height="24dp"
-                        android:src="@drawable/trash"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/delete"
                         android:layout_marginTop="18dp"/>
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Delete"
+                        android:text="Delete Data"
                         android:fontFamily="@font/googlesans_bold"
                         android:textSize="18sp"
-                        android:textColor="@color/white"
+                        android:textColor="@color/intro_title_color"
                         android:layout_marginTop="20dp"/>
 
                 </LinearLayout>

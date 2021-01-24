@@ -96,14 +96,14 @@ class MainActivity : AppCompatActivity() {
         }
         R.id.bottom_nav_profile -> {
 
-//          supportFragmentManager.beginTransaction()
-//            // id of container and object of fragment class
-//            .replace(R.id.fragment_holder, profile)
-//            .commit()
+          supportFragmentManager.beginTransaction()
+            // id of container and object of fragment class
+            .replace(R.id.fragment_holder, profile)
+            .commit()
 
-          val intent = Intent(this@MainActivity, camera::class.java)
-          startActivity(intent)
-          true
+//          val intent = Intent(this@MainActivity, camera::class.java)
+//          startActivity(intent)
+//          true
 
         }
         else -> false

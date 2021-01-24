@@ -73,8 +73,8 @@ public class IntroActivity extends AppCompatActivity {
 
         final List<ScreenItem> mList = new ArrayList<>();
         mList.add(new ScreenItem("Posent Activity Detection","Detect Activity using body keypoints in Real time",R.drawable.img1));
-        mList.add(new ScreenItem("CNN  Basesd  Detection","CNN model to detect Activity in Frame of images Stream",R.drawable.img2));
-        mList.add(new ScreenItem("Eye Drowziness ","Will Detect Eye is Close or Open and Alert Driver by Alaram",R.drawable.img3));
+        mList.add(new ScreenItem("CNN  Based  Detection","CNN model to detect Activity in Frame of images Stream",R.drawable.img2));
+        mList.add(new ScreenItem("Eye Drowsiness ","Will Detect Eye is Close or Open and Alert Driver by Alarm",R.drawable.img3));
 
         // setup viewpager
         screenPager =findViewById(R.id.screen_viewpager);

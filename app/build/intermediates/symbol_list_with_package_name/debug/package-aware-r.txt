@@ -1907,6 +1907,7 @@ drawable btn_radio_off_mtrl
 drawable btn_radio_off_to_on_mtrl_animation
 drawable btn_radio_on_mtrl
 drawable btn_radio_on_to_off_mtrl_animation
+drawable button_states
 drawable capture0
 drawable capture1
 drawable capture20
@@ -1999,6 +2000,7 @@ drawable common_plus_signin_btn_text_light_disabled
 drawable common_plus_signin_btn_text_light_focused
 drawable common_plus_signin_btn_text_light_normal
 drawable common_plus_signin_btn_text_light_pressed
+drawable delete
 drawable design_bottom_navigation_item_background
 drawable design_fab_background
 drawable design_ic_visibility
@@ -2006,12 +2008,14 @@ drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
 drawable drinking
+drawable drowsy
 drawable export_data
 drawable food
 drawable generic_confirmation
 drawable generic_confirmation_animation
 drawable grid
 drawable gym
+drawable help
 drawable ic_action_help
 drawable ic_action_name
 drawable ic_arrow_forward_black_24dp
@@ -2274,6 +2278,7 @@ drawable open_on_phone
 drawable operating_the_music
 drawable places_ic_clear
 drawable places_ic_search
+drawable posenet
 drawable powered_by_google_dark
 drawable powered_by_google_light
 drawable quantum_ic_art_track_grey600_48
@@ -3783,6 +3788,7 @@ style ShapeAppearance_MaterialComponents_SmallComponent
 style ShapeAppearance_MaterialComponents_Test
 style ShapeAppearance_MaterialComponents_Tooltip
 style ShapeAppearanceOverlay
+style ShapeAppearanceOverlay_App_rounded
 style ShapeAppearanceOverlay_BottomLeftDifferentCornerSize
 style ShapeAppearanceOverlay_BottomRightCut
 style ShapeAppearanceOverlay_Cut
