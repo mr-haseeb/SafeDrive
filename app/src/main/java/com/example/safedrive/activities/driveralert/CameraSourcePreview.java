@@ -10,7 +10,7 @@ import android.view.ViewGroup;
 
 import com.google.android.gms.common.images.Size;
 import com.google.android.gms.vision.CameraSource;
-
+//import com.google.gms.*;
 import java.io.IOException;
 
 public class CameraSourcePreview extends ViewGroup {

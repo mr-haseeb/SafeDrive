@@ -3,42 +3,45 @@ apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
 
 apply plugin: 'kotlin-android-extensions'
+//apply plugin: 'com.google.gms.google-services'
+//apply plugin: 'com.android.application'
+apply plugin: 'com.google.gms.google-services'
+
+
 
 android {
-  compileSdkVersion 30
-  buildToolsVersion "29.0.0"
-  defaultConfig {
-    applicationId "com.example.safedrive"
-    minSdkVersion 23
-    targetSdkVersion 30
-    versionCode 1
-    versionName "1.0"
-    testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
-  }
-  buildTypes {
-    release {
-      minifyEnabled false
-      proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+    compileSdkVersion 30
+    buildToolsVersion "29.0.0"
+    defaultConfig {
+        applicationId "com.example.safedrive"
+        minSdkVersion 23
+        targetSdkVersion 30
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
-  }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
 
 
+    aaptOptions {
+        noCompress "tflite"
+    }
+    lintOptions {
+        checkReleaseBuilds false
+        // Or, if you prefer, you can continue to check for errors in release builds,
+        // but continue the build even when errors are found:
+        abortOnError false
+    }
 
-
-  aaptOptions {
-    noCompress "tflite"
-  }
-  lintOptions {
-    checkReleaseBuilds false
-    // Or, if you prefer, you can continue to check for errors in release builds,
-    // but continue the build even when errors are found:
-    abortOnError false
-  }
-
-  compileOptions {
-    sourceCompatibility JavaVersion.VERSION_1_8
-    targetCompatibility JavaVersion.VERSION_1_8
-  }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
 
 }
 
@@ -50,67 +53,79 @@ android {
 
 dependencies {
 
-  implementation fileTree(dir: 'libs', include: ['*.jar'])
-  implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
-  implementation 'androidx.appcompat:appcompat:1.1.0'
-  implementation 'androidx.core:core-ktx:1.1.0'
-  implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'androidx.core:core-ktx:1.1.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
 
-  implementation 'androidx.camera:camera-core:1.0.0-alpha04'
-  implementation 'androidx.camera:camera-camera2:1.0.0-alpha04'
+    implementation 'androidx.camera:camera-core:1.0.0-alpha04'
+    implementation 'androidx.camera:camera-camera2:1.0.0-alpha04'
 
-  implementation fileTree(dir: 'libs', include: ['*.jar'])
-  implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
-  implementation 'androidx.appcompat:appcompat:1.1.0'
-  implementation 'androidx.core:core-ktx:1.1.0'
-  implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'androidx.core:core-ktx:1.1.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
-  implementation 'com.google.android.material:material:1.2.1'
+    implementation 'com.google.android.material:material:1.2.1'
     implementation 'androidx.wear:wear:1.0.0'
     implementation 'androidx.drawerlayout:drawerlayout:1.0.0'
-  implementation 'androidx.coordinatorlayout:coordinatorlayout:1.1.0'
-  testImplementation 'junit:junit:4.12'
-  androidTestImplementation 'androidx.test:runner:1.2.0'
-  androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+    implementation 'androidx.coordinatorlayout:coordinatorlayout:1.1.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test:runner:1.2.0'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
 
-  implementation fileTree(dir: 'libs', include: ['*.jar'])
-  implementation 'androidx.appcompat:appcompat:1.1.0'
-  implementation 'androidx.core:core-ktx:1.1.0'
-  testImplementation 'junit:junit:4.12'
-  androidTestImplementation 'androidx.test:runner:1.2.0'
-  androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
-  implementation 'org.tensorflow:tensorflow-lite:2.2.0'
-  implementation 'org.tensorflow:tensorflow-lite-gpu:2.2.0'
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'androidx.core:core-ktx:1.1.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test:runner:1.2.0'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+    implementation 'org.tensorflow:tensorflow-lite:2.2.0'
+    implementation 'org.tensorflow:tensorflow-lite-gpu:2.2.0'
 
 
-  //Chip Navigation
-  implementation 'com.ismaeldivita.chipnavigation:chip-navigation-bar:1.3.4'
+    //Chip Navigation
+    implementation 'com.ismaeldivita.chipnavigation:chip-navigation-bar:1.3.4'
 
-  // CameraX core library using the camera2 implementation
-  def camerax_version = "1.0.0-rc01"
-  // The following line is optional, as the core library is included indirectly by camera-camera2
-  implementation "androidx.camera:camera-core:${camerax_version}"
-  implementation "androidx.camera:camera-camera2:${camerax_version}"
-  // If you want to additionally use the CameraX Lifecycle library
-  implementation "androidx.camera:camera-lifecycle:${camerax_version}"
-  // If you want to additionally use the CameraX View class
-  implementation "androidx.camera:camera-view:1.0.0-alpha20"
-  // If you want to additionally use the CameraX Extensions library
-  implementation "androidx.camera:camera-extensions:1.0.0-alpha20"
+    // CameraX core library using the camera2 implementation
+    def camerax_version = "1.0.0-rc01"
+    // The following line is optional, as the core library is included indirectly by camera-camera2
+    implementation "androidx.camera:camera-core:${camerax_version}"
+    implementation "androidx.camera:camera-camera2:${camerax_version}"
+    // If you want to additionally use the CameraX Lifecycle library
+    implementation "androidx.camera:camera-lifecycle:${camerax_version}"
+    // If you want to additionally use the CameraX View class
+    implementation "androidx.camera:camera-view:1.0.0-alpha20"
+    // If you want to additionally use the CameraX Extensions library
+    implementation "androidx.camera:camera-extensions:1.0.0-alpha20"
 //  'org.tensorflow:tensorflow-lite:2.0.0'
-  // Import tflite dependencies
+    // Import tflite dependencies
 //  implementation 'org.tensorflow:tensorflow-lite:0.0.0-nightly'
-  implementation 'org.tensorflow:tensorflow-lite:2.0.0'
-  // The GPU delegate library is optional. Depend on it as needed.
-  implementation 'org.tensorflow:tensorflow-lite-gpu:0.0.0-nightly'
-  implementation 'org.tensorflow:tensorflow-lite-support:0.0.0-nightly'
+    implementation 'org.tensorflow:tensorflow-lite:2.0.0'
+    // The GPU delegate library is optional. Depend on it as needed.
+    implementation 'org.tensorflow:tensorflow-lite-gpu:0.0.0-nightly'
+    implementation 'org.tensorflow:tensorflow-lite-support:0.0.0-nightly'
 
 //  implementation fileTree(dir: 'libs', include: ['*.jar'])
 //  testImplementation 'junit:junit:4.12'
-  implementation 'com.android.support:appcompat-v7:23.4.0'
-  implementation 'com.android.support:design:23.4.0'
-  implementation 'com.github.bloder:magic:1.1'
-  implementation 'com.google.android.gms:play-services:9.4.0'
-  implementation 'com.android.support:multidex:1.0.0'
+    //noinspection GradleCompatible
+    implementation 'com.android.support:appcompat-v7:23.4.0'
+    //noinspection GradleCompatible
+    implementation 'com.android.support:design:23.4.0'
+    implementation 'com.github.bloder:magic:1.1'
+    implementation 'com.google.android.gms:play-services:9.4.0'
+    implementation 'com.android.support:multidex:1.0.0'
+//
+    implementation 'com.squareup.picasso:picasso:2.71828'
+    implementation 'com.google.firebase:firebase-database:9.4.0'
+    implementation 'com.google.firebase:firebase-auth:9.4.0'
+    // Import the Firebase BoM
+//  implementation platform('com.google.firebase:firebase-bom:26.3.0')
+//
+    // Add the dependency for the Firebase SDK for Google Analytics
+    // When using the BoM, don't specify versions in Firebase dependencies
+//  implementation 'com.google.firebase:firebase-analytics-ktx'
 
 }

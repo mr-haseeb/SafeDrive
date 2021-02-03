@@ -1,42 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@color/lightWhite"
-    android:id="@+id/fragment_holder">
-
-    <com.ismaeldivita.chipnavigation.ChipNavigationBar
-        android:id="@+id/bottom_navigation"
+    android:layout_height="match_parent">
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:cnb_menuResource="@menu/bottom_navigation"
-        android:layout_alignParentBottom="true"
-        android:background="@drawable/round_corners"
-        app:cnb_unselectedColor="@color/black"
-        app:cnb_radius="8dp"
-        app:cnb_orientationMode="horizontal"
-        android:layout_margin="0dp"
-        android:elevation="8dp"
-        />
-
-    <!--name is for default first fragment-->
-<!-- we use Framelayout to hold fragment  -->
-
-<!--<FrameLayout-->
-<!--    android:id="@+id/fragment_holder"-->
-<!--    android:layout_width="match_parent"-->
-<!--    android:layout_height="match_parent"-->
-<!--    android:layout_above="@id/bottom_navigation"/>-->
-
-<!--<com.google.android.material.bottomnavigation.BottomNavigationView-->
-<!--    android:id="@+id/bottom_navigation"-->
-<!--    android:layout_width="match_parent"-->
-<!--    android:layout_height="wrap_content"-->
-<!--    android:layout_alignParentBottom="true"-->
-<!--    app:menu="@menu/bottom_navigation"-->
-<!--    android:background="?android:attr/windowBackground"/>-->
-
-</RelativeLayout>
+        android:layout_height="match_parent"
+        android:stretchColumns="1">
+     <TextView
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:text="hello"/>
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "604273159703",
+    "firebase_url": "https://safedrive-4e365-default-rtdb.firebaseio.com",
+    "project_id": "safedrive-4e365",
+    "storage_bucket": "safedrive-4e365.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:604273159703:android:919ef5ed17fa308d9eb652",
+        "android_client_info": {
+          "package_name": "com.example.safedrive"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "604273159703-tp0uvs6bnmsnv7tsel7oktq0gip4uau9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBolK08IAxmq2K0naAWDRss5cMdjqqd_y8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "604273159703-tp0uvs6bnmsnv7tsel7oktq0gip4uau9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

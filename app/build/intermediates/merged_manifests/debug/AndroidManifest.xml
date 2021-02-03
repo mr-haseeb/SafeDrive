@@ -49,17 +49,22 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme.Posenet" >
+        <activity android:name="com.example.safedrive.nav_components.Profile.EditProfileActivity" />
+        <activity android:name="com.example.safedrive.ResetPasswordActivity" />
+        <activity android:name="com.example.safedrive.SignInActivity" />
+        <activity android:name="com.example.safedrive.SignUpActivity" />
+        <activity android:name="com.example.safedrive.HomeActivity" />
         <activity android:name="com.example.safedrive.activities.cnn_tflite.CnnTflite" />
         <activity android:name="com.example.safedrive.activities.camera" />
         <activity android:name="com.example.safedrive.activities.driveralert.MainActivity" />
         <activity android:name="com.example.safedrive.activities.ViewData" />
         <activity android:name="com.example.safedrive.activities.driveralert.FaceTrackerActivity" />
+        <activity android:name="com.example.safedrive.activities.Prediction" />
         <activity android:name="com.example.safedrive.nav_components.collect_data.SelectLabel" /> <!-- <activity -->
         <!-- android:name=".activities.driveralert.monitor_menu" -->
         <!-- android:screenOrientation="portrait" /> -->
         <activity android:name="com.example.safedrive.activities.driveralert.end" />
-        <activity android:name="com.example.safedrive.MainActivity" >
-        </activity>
+        <activity android:name="com.example.safedrive.MainActivity" />
         <activity
             android:name="com.example.safedrive.IntroActivity"
             android:exported="true" >
@@ -200,6 +205,11 @@ Service handling Google Sign-In user revocation. For apps that do not integrate 
         <meta-data
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
+
+        <provider
+            android:name="com.squareup.picasso.PicassoProvider"
+            android:authorities="com.example.safedrive.com.squareup.picasso"
+            android:exported="false" />
     </application>
 
 </manifest>

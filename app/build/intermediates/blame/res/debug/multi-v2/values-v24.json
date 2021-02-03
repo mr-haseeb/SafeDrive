@@ -4,7 +4,7 @@
             "outputFile": "F:\\FYP\\Code\\SafeDrive\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v24\\values-v24.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\bolah\\.gradle\\caches\\transforms-2\\files-2.1\\8cba76ba504fc65daf2f7f8bbe423242\\appcompat-1.1.0\\res\\values-v24\\values-v24.xml",
+                    "source": "C:\\Users\\bolah\\.gradle\\caches\\transforms-2\\files-2.1\\53f1519e8fced62ed20695759e6b9f4e\\appcompat-1.1.0\\res\\values-v24\\values-v24.xml",
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",
@@ -14,7 +14,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\bolah\\.gradle\\caches\\transforms-2\\files-2.1\\2fedb52eeb484732b93b7bd20cfc4340\\media-1.0.0\\res\\values-v24\\values-v24.xml",
+                    "source": "C:\\Users\\bolah\\.gradle\\caches\\transforms-2\\files-2.1\\16143a85851f1ed3758e3f852c04b8ea\\media-1.0.0\\res\\values-v24\\values-v24.xml",
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",
@@ -31,7 +31,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\bolah\\.gradle\\caches\\transforms-2\\files-2.1\\d6cf5901260cd43e2074e62d9f3137d6\\wear-1.0.0\\res\\values-v24\\values-v24.xml",
+                    "source": "C:\\Users\\bolah\\.gradle\\caches\\transforms-2\\files-2.1\\0d1a133b0c1a786dc8a4ccb3c00eb683\\wear-1.0.0\\res\\values-v24\\values-v24.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
