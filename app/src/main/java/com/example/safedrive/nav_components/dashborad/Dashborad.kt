@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.view.*
 import androidx.fragment.app.Fragment
 import com.example.safedrive.R
+import com.example.safedrive.activities.AppGuide
 import com.example.safedrive.activities.Prediction
 import com.example.safedrive.activities.ViewData
 import com.example.safedrive.activities.cnn_tflite.CnnTflite
@@ -115,6 +116,10 @@ class Dashborad : Fragment() {
             startActivity(intent)
 
 
+        }
+        help.setOnClickListener{
+            val intent=Intent(activity,AppGuide::class.java)
+            startActivity(intent)
         }
 
         super.onViewCreated(view, savedInstanceState)

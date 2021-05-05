@@ -3,6 +3,7 @@
     <CLASSES>
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/2bc3e853518da0e2ca3fd6e51e477172/jetified-magic-1.1/jars/classes.jar!/" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/2bc3e853518da0e2ca3fd6e51e477172/jetified-magic-1.1/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/2bc3e853518da0e2ca3fd6e51e477172/jetified-magic-1.1/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.bloder/magic/1.1/b70d327d28bf391a798ee1ca2456755443c2b117/magic-1.1-javadoc.jar!/" />

@@ -1,20 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "F:\\FYP\\Code\\SafeDrive\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-round-v23\\values-round-v23.xml",
+            "outputFile": "U:\\FYP\\Code\\SafeDrive\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-round-v23\\values-round-v23.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\bolah\\.gradle\\caches\\transforms-2\\files-2.1\\0d1a133b0c1a786dc8a4ccb3c00eb683\\wear-1.0.0\\res\\values-round-v23\\values-round-v23.xml",
-                    "from": {
-                        "startLines": "2,3,4",
-                        "startColumns": "4,4,4",
-                        "startOffsets": "55,118,204",
-                        "endColumns": "62,85,79",
-                        "endOffsets": "113,199,279"
-                    }
-                },
-                {
-                    "source": "F:\\FYP\\Code\\SafeDrive\\app\\src\\main\\res\\values-round\\strings.xml",
+                    "source": "U:\\FYP\\Code\\SafeDrive\\app\\src\\main\\res\\values-round\\strings.xml",
                     "from": {
                         "startLines": "1",
                         "startColumns": "4",
@@ -28,6 +18,16 @@
                         "startOffsets": "284",
                         "endColumns": "58",
                         "endOffsets": "338"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\mrhas\\.gradle\\caches\\transforms-2\\files-2.1\\0d1a133b0c1a786dc8a4ccb3c00eb683\\wear-1.0.0\\res\\values-round-v23\\values-round-v23.xml",
+                    "from": {
+                        "startLines": "2,3,4",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "55,118,204",
+                        "endColumns": "62,85,79",
+                        "endOffsets": "113,199,279"
                     }
                 }
             ]

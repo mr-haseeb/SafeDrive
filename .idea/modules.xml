@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/app.iml" group="safedrive/app" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/safedrive.iml" filepath="$PROJECT_DIR$/.idea/modules/safedrive.iml" group="safedrive" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/tfmobile/tfmobile.iml" filepath="$PROJECT_DIR$/.idea/modules/tfmobile/tfmobile.iml" group="safedrive/tfmobile" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/safedrive.iml" filepath="$PROJECT_DIR$/.idea/modules/safedrive.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/safedrive.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/safedrive.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/tfmobile/safedrive.tfmobile.iml" filepath="$PROJECT_DIR$/.idea/modules/tfmobile/safedrive.tfmobile.iml" />
     </modules>
   </component>
 </project>

@@ -1,0 +1,277 @@
+@startuml
+
+title __DEMO's Class Diagram__\n
+
+  namespace org.tensorflow.demo {
+    class org.tensorflow.demo.AutoFitTextureView {
+        - ratioHeight : int
+        - ratioWidth : int
+        + AutoFitTextureView()
+        + AutoFitTextureView()
+        + AutoFitTextureView()
+        + setAspectRatio()
+        # onMeasure()
+    }
+  }
+  
+
+  namespace org.tensorflow.demo {
+    abstract class org.tensorflow.demo.CameraActivity {
+        {static} - LOGGER : Logger
+        {static} - PERMISSIONS_REQUEST : int
+        {static} - PERMISSION_CAMERA : String
+        {static} - PERMISSION_STORAGE : String
+        - debug : boolean
+        - handler : Handler
+        - handlerThread : HandlerThread
+        + addCallback()
+        + isDebug()
+        + onDestroy()
+        + onKeyDown()
+        + onPause()
+        + onRequestPermissionsResult()
+        + onResume()
+        + onSetDebug()
+        + onStart()
+        + onStop()
+        + requestRender()
+        # fillBytes()
+        {abstract} # getDesiredPreviewFrameSize()
+        {abstract} # getLayoutId()
+        # onCreate()
+        {abstract} # onPreviewSizeChosen()
+        # runInBackground()
+        # setFragment()
+        - hasPermission()
+        - requestPermission()
+    }
+  }
+  
+
+  namespace org.tensorflow.demo {
+    class org.tensorflow.demo.CameraConnectionFragment {
+        {static} - FRAGMENT_DIALOG : String
+        {static} - LOGGER : Logger
+        {static} - MINIMUM_PREVIEW_SIZE : int
+        {static} - ORIENTATIONS : SparseIntArray
+        - backgroundHandler : Handler
+        - backgroundThread : HandlerThread
+        - cameraDevice : CameraDevice
+        - cameraId : String
+        - cameraOpenCloseLock : Semaphore
+        - captureCallback : CaptureCallback
+        - captureSession : CameraCaptureSession
+        - imageListener : OnImageAvailableListener
+        - inputSize : Size
+        - layout : int
+        - previewReader : ImageReader
+        - previewRequest : CaptureRequest
+        - previewRequestBuilder : Builder
+        - previewSize : Size
+        - sensorOrientation : Integer
+        - stateCallback : StateCallback
+        - surfaceTextureListener : SurfaceTextureListener
+        {static} + newInstance()
+        + onActivityCreated()
+        + onCreateView()
+        + onPause()
+        + onResume()
+        + onViewCreated()
+        - CameraConnectionFragment()
+        {static} - chooseOptimalSize()
+        - closeCamera()
+        - configureTransform()
+        - createCameraPreviewSession()
+        - openCamera()
+        - setUpCameraOutputs()
+        - showToast()
+        - startBackgroundThread()
+        - stopBackgroundThread()
+    }
+  }
+  
+
+  namespace org.tensorflow.demo {
+    class org.tensorflow.demo.CameraConnectionFragment.CompareSizesByArea {
+        + compare()
+    }
+  }
+  
+
+  namespace org.tensorflow.demo {
+    interface org.tensorflow.demo.CameraConnectionFragment.ConnectionCallback {
+        {abstract} + onPreviewSizeChosen()
+    }
+  }
+  
+
+  namespace org.tensorflow.demo {
+    class org.tensorflow.demo.CameraConnectionFragment.ErrorDialog {
+        {static} - ARG_MESSAGE : String
+        {static} + newInstance()
+        + onCreateDialog()
+    }
+  }
+  
+
+  namespace org.tensorflow.demo {
+    interface org.tensorflow.demo.Classifier {
+        {abstract} + close()
+        {abstract} + enableStatLogging()
+        {abstract} + getStatString()
+        {abstract} + recognizeImage()
+    }
+  }
+  
+
+  namespace org.tensorflow.demo {
+    class org.tensorflow.demo.Classifier.Recognition {
+        - confidence : Float
+        - id : String
+        - location : RectF
+        - title : String
+        + Recognition()
+        + getConfidence()
+        + getId()
+        + getLocation()
+        + getTitle()
+        + setLocation()
+        + toString()
+    }
+  }
+  
+
+  namespace org.tensorflow.demo {
+    class org.tensorflow.demo.ClassifierActivity {
+        {static} - DESIRED_PREVIEW_SIZE : Size
+        {static} - IMAGE_MEAN : int
+        {static} - IMAGE_STD : float
+        {static} - INPUT_NAME : String
+        {static} - INPUT_SIZE : int
+        {static} - LABEL_FILE : String
+        {static} - LOGGER : Logger
+        {static} - MAINTAIN_ASPECT : boolean
+        {static} - MODEL_FILE : String
+        {static} - OUTPUT_NAME : String
+        {static} - SAVE_PREVIEW_BITMAP : boolean
+        {static} - TEXT_SIZE_DIP : float
+        - computing : boolean
+        - cropCopyBitmap : Bitmap
+        - cropToFrameTransform : Matrix
+        - croppedBitmap : Bitmap
+        - frameToCropTransform : Matrix
+        - lastProcessingTimeMs : long
+        - previewHeight : int
+        - previewWidth : int
+        - rgbBytes : int[]
+        - rgbFrameBitmap : Bitmap
+        - sensorOrientation : Integer
+        - yuvBytes : byte[][]
+        + clickFun()
+        + onImageAvailable()
+        + onPreviewSizeChosen()
+        + onSetDebug()
+        # getDesiredPreviewFrameSize()
+        # getLayoutId()
+        - renderDebug()
+    }
+  }
+  
+
+  namespace org.tensorflow.demo {
+    class org.tensorflow.demo.OverlayView {
+        - callbacks : List<DrawCallback>
+        + OverlayView()
+        + addCallback()
+        + draw()
+    }
+  }
+  
+
+  namespace org.tensorflow.demo {
+    interface org.tensorflow.demo.OverlayView.DrawCallback {
+        {abstract} + drawCallback()
+    }
+  }
+  
+
+  namespace org.tensorflow.demo {
+    class org.tensorflow.demo.RecognitionScoreView {
+        {static} - TEXT_SIZE_DIP : float
+        - bgPaint : Paint
+        - fgPaint : Paint
+        - results : List<Recognition>
+        - textSizePx : float
+        + RecognitionScoreView()
+        + onDraw()
+        + setResults()
+    }
+  }
+  
+
+  namespace org.tensorflow.demo {
+    interface org.tensorflow.demo.ResultsView {
+        {abstract} + setResults()
+    }
+  }
+  
+
+  namespace org.tensorflow.demo {
+    class org.tensorflow.demo.TensorFlowImageClassifier {
+        {static} - MAX_RESULTS : int
+        {static} - TAG : String
+        {static} - THRESHOLD : float
+        - floatValues : float[]
+        - imageMean : int
+        - imageStd : float
+        - inferenceInterface : TensorFlowInferenceInterface
+        - inputName : String
+        - inputSize : int
+        - intValues : int[]
+        - labels : Vector<String>
+        - logStats : boolean
+        - outputName : String
+        - outputNames : String[]
+        - outputs : float[]
+        + close()
+        {static} + create()
+        + enableStatLogging()
+        + getStatString()
+        + recognizeImage()
+        - TensorFlowImageClassifier()
+    }
+  }
+  
+
+  org.tensorflow.demo.AutoFitTextureView -up-|> android.view.TextureView
+  org.tensorflow.demo.CameraActivity .up.|> android.media.ImageReader.OnImageAvailableListener
+  org.tensorflow.demo.CameraActivity -up-|> android.app.Activity
+  org.tensorflow.demo.CameraConnectionFragment -up-|> android.app.Fragment
+  org.tensorflow.demo.CameraConnectionFragment o-- org.tensorflow.demo.CameraConnectionFragment.ConnectionCallback : cameraConnectionCallback
+  org.tensorflow.demo.CameraConnectionFragment o-- org.tensorflow.demo.AutoFitTextureView : textureView
+  org.tensorflow.demo.CameraConnectionFragment +-down- org.tensorflow.demo.CameraConnectionFragment.CompareSizesByArea
+  org.tensorflow.demo.CameraConnectionFragment +-down- org.tensorflow.demo.CameraConnectionFragment.ConnectionCallback
+  org.tensorflow.demo.CameraConnectionFragment +-down- org.tensorflow.demo.CameraConnectionFragment.ErrorDialog
+  org.tensorflow.demo.CameraConnectionFragment.CompareSizesByArea .up.|> java.util.Comparator
+  org.tensorflow.demo.CameraConnectionFragment.ErrorDialog -up-|> android.app.DialogFragment
+  org.tensorflow.demo.Classifier +-down- org.tensorflow.demo.Classifier.Recognition
+  org.tensorflow.demo.ClassifierActivity .up.|> android.media.ImageReader.OnImageAvailableListener
+  org.tensorflow.demo.ClassifierActivity -up-|> org.tensorflow.demo.CameraActivity
+  org.tensorflow.demo.ClassifierActivity o-- org.tensorflow.demo.env.BorderedText : borderedText
+  org.tensorflow.demo.ClassifierActivity o-- org.tensorflow.demo.Classifier : classifier
+  org.tensorflow.demo.ClassifierActivity o-- org.tensorflow.demo.ResultsView : resultsView
+  org.tensorflow.demo.OverlayView -up-|> android.view.View
+  org.tensorflow.demo.OverlayView +-down- org.tensorflow.demo.OverlayView.DrawCallback
+  org.tensorflow.demo.RecognitionScoreView .up.|> org.tensorflow.demo.ResultsView
+  org.tensorflow.demo.RecognitionScoreView -up-|> android.view.View
+  org.tensorflow.demo.TensorFlowImageClassifier .up.|> org.tensorflow.demo.Classifier
+
+
+right footer
+
+
+PlantUML diagram generated by SketchIt! (https://bitbucket.org/pmesmeur/sketch.it)
+For more information about this tool, please contact philippe.mesmeur@gmail.com
+endfooter
+
+@enduml

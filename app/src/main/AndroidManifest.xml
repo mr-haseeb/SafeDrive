@@ -22,7 +22,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme.Posenet">
-        <activity android:name=".nav_components.Profile.EditProfileActivity"></activity>
+        <activity android:name=".activities.AppGuide"></activity>
+        <activity android:name=".nav_components.Profile.EditProfileActivity" />
         <activity android:name=".ResetPasswordActivity" />
         <activity android:name=".SignInActivity" />
         <activity android:name=".SignUpActivity" />
@@ -32,13 +33,13 @@
         <activity android:name=".activities.driveralert.MainActivity" />
         <activity android:name=".activities.ViewData" />
         <activity android:name=".activities.driveralert.FaceTrackerActivity" />
-
         <activity android:name=".activities.Prediction" />
-
         <activity android:name=".nav_components.collect_data.SelectLabel" /> <!-- <activity -->
         <!-- android:name=".activities.driveralert.monitor_menu" -->
         <!-- android:screenOrientation="portrait" /> -->
         <activity android:name=".activities.driveralert.end" />
+
+        <activity android:name="org.tensorflow.demo.ClassifierActivity" />
         <activity android:name=".MainActivity" />
         <activity
             android:name=".IntroActivity"

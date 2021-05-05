@@ -50,6 +50,7 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme.Posenet" >
+        <activity android:name="com.example.safedrive.activities.AppGuide" />
         <activity android:name="com.example.safedrive.nav_components.Profile.EditProfileActivity" />
         <activity android:name="com.example.safedrive.ResetPasswordActivity" />
         <activity android:name="com.example.safedrive.SignInActivity" />
@@ -65,6 +66,7 @@
         <!-- android:name=".activities.driveralert.monitor_menu" -->
         <!-- android:screenOrientation="portrait" /> -->
         <activity android:name="com.example.safedrive.activities.driveralert.end" />
+        <activity android:name="org.tensorflow.demo.ClassifierActivity" />
         <activity android:name="com.example.safedrive.MainActivity" />
         <activity
             android:name="com.example.safedrive.IntroActivity"

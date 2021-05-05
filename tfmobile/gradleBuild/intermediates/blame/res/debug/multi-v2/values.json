@@ -1,61 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "F:\\FYP\\Code\\SafeDrive\\tfmobile\\gradleBuild\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values\\values.xml",
+            "outputFile": "U:\\FYP\\Code\\SafeDrive\\tfmobile\\gradleBuild\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values\\values.xml",
             "map": [
                 {
-                    "source": "F:\\FYP\\Code\\SafeDrive\\tfmobile\\res\\values\\base-strings.xml",
-                    "from": {
-                        "startLines": "19,20,21,18",
-                        "startColumns": "4,4,4,4",
-                        "startOffsets": "713,782,844,660",
-                        "endColumns": "68,61,60,52",
-                        "endOffsets": "777,839,900,708"
-                    },
-                    "to": {
-                        "startLines": "10,11,12,13",
-                        "startColumns": "4,4,4,4",
-                        "startOffsets": "465,534,596,657",
-                        "endColumns": "68,61,60,52",
-                        "endOffsets": "529,591,652,705"
-                    }
-                },
-                {
-                    "source": "F:\\FYP\\Code\\SafeDrive\\tfmobile\\res\\values\\template-dimens.xml",
-                    "from": {
-                        "startLines": "28,24,23,22,21,20,29",
-                        "startColumns": "4,4,4,4,4,4,4",
-                        "startOffsets": "972,893,849,804,761,719,1042",
-                        "endColumns": "69,42,43,44,42,41,67",
-                        "endOffsets": "1037,931,888,844,799,756,1105"
-                    },
-                    "to": {
-                        "startLines": "3,4,5,6,7,8,9",
-                        "startColumns": "4,4,4,4,4,4,4",
-                        "startOffsets": "110,180,223,267,312,355,397",
-                        "endColumns": "69,42,43,44,42,41,67",
-                        "endOffsets": "175,218,262,307,350,392,460"
-                    }
-                },
-                {
-                    "source": "F:\\FYP\\Code\\SafeDrive\\tfmobile\\res\\values\\styles.xml",
-                    "from": {
-                        "startLines": "16",
-                        "startColumns": "4",
-                        "startOffsets": "658",
-                        "endColumns": "95",
-                        "endOffsets": "749"
-                    },
-                    "to": {
-                        "startLines": "18",
-                        "startColumns": "4",
-                        "startOffsets": "978",
-                        "endColumns": "94",
-                        "endOffsets": "1068"
-                    }
-                },
-                {
-                    "source": "F:\\FYP\\Code\\SafeDrive\\tfmobile\\res\\values\\template-styles.xml",
+                    "source": "U:\\FYP\\Code\\SafeDrive\\tfmobile\\res\\values\\template-styles.xml",
                     "from": {
                         "startLines": "24,20,22,27,29,34",
                         "startColumns": "4,4,4,4,4,4",
@@ -74,24 +23,7 @@
                     }
                 },
                 {
-                    "source": "F:\\FYP\\Code\\SafeDrive\\tfmobile\\res\\values\\colors.xml",
-                    "from": {
-                        "startLines": "17",
-                        "startColumns": "4",
-                        "startOffsets": "659",
-                        "endColumns": "54",
-                        "endOffsets": "709"
-                    },
-                    "to": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "54",
-                        "endOffsets": "105"
-                    }
-                },
-                {
-                    "source": "F:\\FYP\\Code\\SafeDrive\\tfmobile\\res\\values\\strings.xml",
+                    "source": "U:\\FYP\\Code\\SafeDrive\\tfmobile\\res\\values\\strings.xml",
                     "from": {
                         "startLines": "18,16,17",
                         "startColumns": "4,4,4",
@@ -108,7 +40,41 @@
                     }
                 },
                 {
-                    "source": "F:\\FYP\\Code\\SafeDrive\\tfmobile\\res\\values\\attrs.xml",
+                    "source": "U:\\FYP\\Code\\SafeDrive\\tfmobile\\res\\values\\styles.xml",
+                    "from": {
+                        "startLines": "16",
+                        "startColumns": "4",
+                        "startOffsets": "658",
+                        "endColumns": "95",
+                        "endOffsets": "749"
+                    },
+                    "to": {
+                        "startLines": "18",
+                        "startColumns": "4",
+                        "startOffsets": "978",
+                        "endColumns": "94",
+                        "endOffsets": "1068"
+                    }
+                },
+                {
+                    "source": "U:\\FYP\\Code\\SafeDrive\\tfmobile\\res\\values\\colors.xml",
+                    "from": {
+                        "startLines": "17",
+                        "startColumns": "4",
+                        "startOffsets": "659",
+                        "endColumns": "54",
+                        "endOffsets": "709"
+                    },
+                    "to": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "54",
+                        "endOffsets": "105"
+                    }
+                },
+                {
+                    "source": "U:\\FYP\\Code\\SafeDrive\\tfmobile\\res\\values\\attrs.xml",
                     "from": {
                         "startLines": "8",
                         "startColumns": "2",
@@ -124,6 +90,40 @@
                         "endLines": "35",
                         "endColumns": "22",
                         "endOffsets": "1880"
+                    }
+                },
+                {
+                    "source": "U:\\FYP\\Code\\SafeDrive\\tfmobile\\res\\values\\base-strings.xml",
+                    "from": {
+                        "startLines": "19,20,21,18",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "713,782,844,660",
+                        "endColumns": "68,61,60,52",
+                        "endOffsets": "777,839,900,708"
+                    },
+                    "to": {
+                        "startLines": "10,11,12,13",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "465,534,596,657",
+                        "endColumns": "68,61,60,52",
+                        "endOffsets": "529,591,652,705"
+                    }
+                },
+                {
+                    "source": "U:\\FYP\\Code\\SafeDrive\\tfmobile\\res\\values\\template-dimens.xml",
+                    "from": {
+                        "startLines": "28,24,23,22,21,20,29",
+                        "startColumns": "4,4,4,4,4,4,4",
+                        "startOffsets": "972,893,849,804,761,719,1042",
+                        "endColumns": "69,42,43,44,42,41,67",
+                        "endOffsets": "1037,931,888,844,799,756,1105"
+                    },
+                    "to": {
+                        "startLines": "3,4,5,6,7,8,9",
+                        "startColumns": "4,4,4,4,4,4,4",
+                        "startOffsets": "110,180,223,267,312,355,397",
+                        "endColumns": "69,42,43,44,42,41,67",
+                        "endOffsets": "175,218,262,307,350,392,460"
                     }
                 }
             ]

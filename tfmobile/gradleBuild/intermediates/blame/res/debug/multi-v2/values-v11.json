@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "F:\\FYP\\Code\\SafeDrive\\tfmobile\\gradleBuild\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v11\\values-v11.xml",
+            "outputFile": "U:\\FYP\\Code\\SafeDrive\\tfmobile\\gradleBuild\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v11\\values-v11.xml",
             "map": [
                 {
-                    "source": "F:\\FYP\\Code\\SafeDrive\\tfmobile\\res\\values-v11\\template-styles.xml",
+                    "source": "U:\\FYP\\Code\\SafeDrive\\tfmobile\\res\\values-v11\\template-styles.xml",
                     "from": {
                         "startLines": "19",
                         "startColumns": "4",
@@ -21,7 +21,7 @@
                     }
                 },
                 {
-                    "source": "F:\\FYP\\Code\\SafeDrive\\tfmobile\\res\\values-v11\\styles.xml",
+                    "source": "U:\\FYP\\Code\\SafeDrive\\tfmobile\\res\\values-v11\\styles.xml",
                     "from": {
                         "startLines": "7,19,11",
                         "startColumns": "2,2,2",

@@ -2686,7 +2686,14 @@ id grayscale
 id group_divider
 id groups
 id guideline
+id heading
 id height
+id help
+id help_1
+id help_2
+id help_3
+id help_4
+id help_5
 id help_page
 id hideable
 id holo_dark
@@ -3180,6 +3187,7 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_app_guide
 layout activity_camera
 layout activity_cnn_tflite
 layout activity_contactus

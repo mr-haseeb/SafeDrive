@@ -1,8 +1,11 @@
 <component name="libraryTable">
   <library name="Gradle: com.google.firebase:firebase-iid:9.4.0@aar">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/682868eabaa4c123af830049fd7c8ee2/jetified-firebase-iid-9.4.0/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/682868eabaa4c123af830049fd7c8ee2/jetified-firebase-iid-9.4.0/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/b5208e784cf89439fe787ec9438f169c/jetified-firebase-iid-9.4.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/b5208e784cf89439fe787ec9438f169c/jetified-firebase-iid-9.4.0/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/2461eacc5a7664bd63682e17b243ba39/jetified-firebase-iid-9.4.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/2461eacc5a7664bd63682e17b243ba39/jetified-firebase-iid-9.4.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/2461eacc5a7664bd63682e17b243ba39/jetified-firebase-iid-9.4.0/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

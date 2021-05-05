@@ -195,6 +195,7 @@
                     >
 
                     <ImageView
+                        android:id="@+id/help"
                         android:layout_width="80dp"
                         android:layout_height="80dp"
                         android:src="@drawable/help"
@@ -203,7 +204,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Settings"
+                        android:text="Help Guide"
                         android:fontFamily="@font/googlesans_bold"
                         android:textSize="18sp"
                         android:textColor="@color/intro_title_color"

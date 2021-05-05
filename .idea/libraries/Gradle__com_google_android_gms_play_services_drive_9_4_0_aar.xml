@@ -3,6 +3,9 @@
     <CLASSES>
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/a1889f69a88c166e32fad1186a8be1e7/jetified-play-services-drive-9.4.0/jars/classes.jar!/" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/a1889f69a88c166e32fad1186a8be1e7/jetified-play-services-drive-9.4.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/ea5facf40cb4c05458b6579ed783851e/jetified-play-services-drive-9.4.0/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/ea5facf40cb4c05458b6579ed783851e/jetified-play-services-drive-9.4.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/ea5facf40cb4c05458b6579ed783851e/jetified-play-services-drive-9.4.0/res" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />
