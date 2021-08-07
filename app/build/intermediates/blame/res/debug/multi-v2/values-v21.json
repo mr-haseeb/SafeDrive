@@ -23,6 +23,23 @@
                     }
                 },
                 {
+                    "source": "C:\\Users\\mrhas\\.gradle\\caches\\transforms-2\\files-2.1\\3e06688e2c3ffd4d2a907f65a685a074\\jetified-play-services-appinvite-9.4.0\\res\\values-v21\\values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "4",
+                        "startOffsets": "219",
+                        "endColumns": "121",
+                        "endOffsets": "336"
+                    },
+                    "to": {
+                        "startLines": "368",
+                        "startColumns": "4",
+                        "startOffsets": "27018",
+                        "endColumns": "121",
+                        "endOffsets": "27135"
+                    }
+                },
+                {
                     "source": "C:\\Users\\mrhas\\.gradle\\caches\\transforms-2\\files-2.1\\9cb150eb6c1a245c030e57c8c53a8a4f\\material-1.2.1\\res\\values-v21\\values-v21.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,19,22,25,28,31,34,37,38,41,46,57,63,69,75,81,87,88,89,93,96,99,102,105,109,113",
@@ -39,23 +56,6 @@
                         "endLines": "3,4,5,6,7,8,9,10,11,12,79,80,81,82,86,89,92,187,190,193,196,264,267,272,283,289,349,355,361,367,369,370,374,377,380,383,386,398,402,405",
                         "endColumns": "67,78,87,87,87,87,86,86,86,86,92,106,104,118,10,10,10,10,10,10,10,115,10,12,10,10,10,10,10,10,143,155,10,10,10,10,10,10,10,10",
                         "endOffsets": "222,301,389,477,565,653,740,827,914,1001,6813,6920,7025,7144,7460,7719,7990,14550,14782,15018,15268,20139,20309,20630,21659,22116,25969,26313,26663,27013,27279,27435,27828,28046,28268,28494,28710,29461,29720,29897"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\mrhas\\.gradle\\caches\\transforms-2\\files-2.1\\fa4499b1ce24a662ceaf428e86f18459\\jetified-play-services-appinvite-9.4.0\\res\\values-v21\\values.xml",
-                    "from": {
-                        "startLines": "4",
-                        "startColumns": "4",
-                        "startOffsets": "219",
-                        "endColumns": "121",
-                        "endOffsets": "336"
-                    },
-                    "to": {
-                        "startLines": "368",
-                        "startColumns": "4",
-                        "startOffsets": "27018",
-                        "endColumns": "121",
-                        "endOffsets": "27135"
                     }
                 },
                 {

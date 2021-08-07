@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.safedrive">
+    package="com.example.safedrive" >
 
     <uses-sdk />
 
@@ -15,14 +15,23 @@
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.CAMERA" />
 
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme.Posenet">
-        <activity android:name=".activities.AppGuide"></activity>
+        android:theme="@style/AppTheme.Posenet"
+        android:requestLegacyExternalStorage="true">
+
+
+        <activity
+            android:name=".nav_components.dashborad.Dashborad"
+            android:label="@string/title_activity_dashboard"
+            android:theme="@style/AppTheme.Posenet.NoActionBar" >
+        </activity>
+        <activity android:name=".activities.AppGuide" />
         <activity android:name=".nav_components.Profile.EditProfileActivity" />
         <activity android:name=".ResetPasswordActivity" />
         <activity android:name=".SignInActivity" />
@@ -38,18 +47,29 @@
         <!-- android:name=".activities.driveralert.monitor_menu" -->
         <!-- android:screenOrientation="portrait" /> -->
         <activity android:name=".activities.driveralert.end" />
-
         <activity android:name="org.tensorflow.demo.ClassifierActivity" />
         <activity android:name=".MainActivity" />
         <activity
             android:name=".IntroActivity"
-            android:exported="true">
+            android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}"
+            android:exported="false"
+            android:grantUriPermissions="true">
+
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_provider_paths" />
+        </provider>
+
     </application>
 
 </manifest>

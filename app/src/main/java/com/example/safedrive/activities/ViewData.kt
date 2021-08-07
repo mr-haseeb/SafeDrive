@@ -4,7 +4,6 @@ import android.app.AlertDialog
 import android.content.pm.PackageManager
 import android.database.Cursor
 import android.os.Bundle
-import android.util.Log
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
@@ -14,7 +13,6 @@ import com.example.safedrive.R
 import com.example.safedrive.sqlite.DatabaseHelper
 import com.example.safedrive.sqlite.Model
 import kotlinx.android.synthetic.main.activity_view_data.*
-import java.util.jar.Manifest
 
 class ViewData : AppCompatActivity() {
     private var myDb: DatabaseHelper? = null
@@ -95,7 +93,22 @@ class ViewData : AppCompatActivity() {
         }
 
         export_data.setOnClickListener{
-            val cursor: Unit = DatabaseHelper(this).exportDB()
+
+            val REQUEST_EXTERNAL_STORAGE = 1
+            if (ContextCompat.checkSelfPermission(this, android.Manifest.permission.WRITE_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED
+            ) {
+                ActivityCompat.requestPermissions(this, arrayOf(android.Manifest.permission.WRITE_EXTERNAL_STORAGE), 101
+                )
+            } else {
+
+                DatabaseHelper(this).exportDB()
+                showMessage("Exported", "Data Exported")
+                Toast.makeText(this, "Data Exported!", Toast.LENGTH_LONG).show();
+
+            }
+
+
+
         }
 
 

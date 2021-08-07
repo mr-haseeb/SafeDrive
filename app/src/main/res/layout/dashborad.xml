@@ -131,7 +131,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="View Data"
+                        android:text="Manage Data"
                         android:fontFamily="@font/googlesans_bold"
                         android:textSize="18sp"
                         android:textColor="@color/intro_title_color"
@@ -205,40 +205,6 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Help Guide"
-                        android:fontFamily="@font/googlesans_bold"
-                        android:textSize="18sp"
-                        android:textColor="@color/intro_title_color"
-                        android:layout_marginTop="20dp"/>
-
-                </LinearLayout>
-
-            </androidx.cardview.widget.CardView>
-
-            <androidx.cardview.widget.CardView
-                android:layout_width="170dp"
-                android:layout_height="170dp"
-                app:cardCornerRadius="12dp"
-                app:cardElevation="5dp"
-                app:cardBackgroundColor="#FFFFFF"
-                android:layout_margin="10dp">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical"
-                    android:gravity="center"
-                    >
-
-                    <ImageView
-                        android:layout_width="80dp"
-                        android:layout_height="80dp"
-                        android:src="@drawable/delete"
-                        android:layout_marginTop="18dp"/>
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Delete Data"
                         android:fontFamily="@font/googlesans_bold"
                         android:textSize="18sp"
                         android:textColor="@color/intro_title_color"

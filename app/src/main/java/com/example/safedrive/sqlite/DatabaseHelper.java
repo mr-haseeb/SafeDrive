@@ -1,15 +1,29 @@
 package com.example.safedrive.sqlite;
 
+import android.Manifest;
 import android.content.ContentValues;
 import android.content.Context;
+import android.content.pm.PackageManager;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.os.Environment;
 import android.util.Log;
+import android.widget.Toast;
 
+import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
+
+import com.example.safedrive.activities.ViewData;
+import com.example.safedrive.nav_components.dashborad.Dashborad;
+
+import java.io.BufferedWriter;
 import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
 import java.io.FileWriter;
+import java.io.IOException;
+import java.nio.channels.FileChannel;
 
 public class DatabaseHelper extends SQLiteOpenHelper {
     // Database Version
@@ -284,7 +298,81 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     }
 
     public void exportDB() {
+
         SQLiteDatabase db = this.getWritableDatabase();
+
+        try {
+            Cursor c=db.rawQuery("select * from "+TABLE_NAME,null);
+            int rowcount = 0;
+            int colcount = 0;
+            File sdCardDir = Environment.getExternalStorageDirectory();
+            String filename = "activites.csv";
+            // the name of the file to export with
+            File saveFile = new File(sdCardDir, filename);
+            FileWriter fw = new FileWriter(saveFile);
+
+            BufferedWriter bw = new BufferedWriter(fw);
+            rowcount = c.getCount();
+            colcount = c.getColumnCount();
+            if (rowcount > 0) {
+                c.moveToFirst();
+
+                for (int i = 0; i < colcount; i++) {
+                    if (i != colcount - 1) {
+
+                        bw.write(c.getColumnName(i) + ",");
+                    } else {
+
+                        bw.write(c.getColumnName(i));
+
+                    }
+                }
+                bw.newLine();
+                for (int i = 0; i < rowcount; i++) {
+                    c.moveToPosition(i);
+
+                    for (int j = 0; j < colcount; j++) {
+                        if (j != colcount - 1)
+                            bw.write(c.getString(j) + ",");
+                        else
+                            bw.write(c.getString(j));
+                    }
+                    bw.newLine();
+                }
+                bw.flush();
+               Log.i("db","exported");
+            }
+        } catch (Exception ex) {
+            if (db.isOpen()) {
+                db.close();
+                Log.i("db",ex.getMessage());
+            }
+
+        }
+        /*
+        File sd = Environment.getExternalStorageDirectory();
+        File data = Environment.getDataDirectory();
+        FileChannel source=null;
+        FileChannel destination=null;
+        String currentDBPath = "/data/data/com.example.safedrive/databases/activities.sqlite";
+        String backupDBPath = DATABASE_NAME;
+        File currentDB = new File(data, currentDBPath);
+        File backupDB = new File(sd, backupDBPath);
+        try {
+            source = new FileInputStream(currentDB).getChannel();
+            destination = new FileOutputStream(backupDB).getChannel();
+            destination.transferFrom(source, 0, source.size());
+            source.close();
+            destination.close();
+
+        } catch(IOException e) {
+            e.printStackTrace();
+        }
+
+*/
+
+
+        /*
 
         File exportDir = new File(Environment.getExternalStorageDirectory(), "");
         if (!exportDir.exists())
@@ -312,5 +400,9 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         {
             Log.e("DataBaseHelper", sqlEx.getMessage(), sqlEx);
         }
+    }
+*/
+
+
     }
 }

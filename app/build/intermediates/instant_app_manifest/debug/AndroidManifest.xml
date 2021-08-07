@@ -46,10 +46,16 @@
         android:extractNativeLibs="false"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme.Posenet" >
+        <activity
+            android:name="com.example.safedrive.nav_components.dashborad.Dashborad"
+            android:label="@string/title_activity_dashboard"
+            android:theme="@style/AppTheme.Posenet.NoActionBar" >
+        </activity>
         <activity android:name="com.example.safedrive.activities.AppGuide" />
         <activity android:name="com.example.safedrive.nav_components.Profile.EditProfileActivity" />
         <activity android:name="com.example.safedrive.ResetPasswordActivity" />
@@ -77,6 +83,16 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.example.safedrive"
+            android:exported="false"
+            android:grantUriPermissions="true" >
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_provider_paths" />
+        </provider>
 
         <receiver android:name="com.google.android.gms.cast.framework.media.MediaIntentReceiver" />
 

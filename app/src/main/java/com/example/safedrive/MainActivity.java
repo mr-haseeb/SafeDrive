@@ -5,6 +5,10 @@ import android.os.Bundle;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+
 //private FirebaseAuth mAuth;
 //// ...
 //// Initialize Firebase Auth
@@ -15,9 +19,6 @@ import androidx.appcompat.app.AppCompatActivity;
 //        FirebaseUser currentUser = mAuth.getCurrentUser();
 //        updateUI(currentUser);
 //        }
-import com.google.firebase.auth.FirebaseAuth;
-
-import com.google.firebase.auth.FirebaseUser;
 public class MainActivity extends AppCompatActivity {
 
     @Override
